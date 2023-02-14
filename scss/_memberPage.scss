@@ -29,12 +29,12 @@
                         position: relative;
                         padding: 1vw 2vw;
 
-                        &::before {
-                            content: "";
-                            @include arrow_2;
-                            display: none;
-                            right: 15px;
-                        }
+                        // &::before {
+                        //     content: "";
+                        //     @include arrow_2;
+                        //     display: none;
+                        //     right: 15px;
+                        // }
 
                         .userPic {
                             width: 7vw;

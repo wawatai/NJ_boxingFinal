@@ -1606,23 +1606,6 @@ html .myPage .mainArea .innerBox.userHome .topBox .userBox {
   position: relative;
   padding: 1vw 2vw;
 }
-html .myPage .mainArea .innerBox.userHome .topBox .userBox::before {
-  content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 4px 0px 4px 6px;
-  border-color: transparent transparent transparent #dd2830;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: 0.3s all;
-  transition: 0.3s all;
-  pointer-events: none;
-  display: none;
-  right: 15px;
-}
 html .myPage .mainArea .innerBox.userHome .topBox .userBox .userPic {
   width: 7vw;
   height: 7vw;
