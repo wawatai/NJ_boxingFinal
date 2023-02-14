@@ -1,0 +1,181 @@
+.userSetting  {
+
+    //中
+    .mainArea {
+        
+        .innerBox {
+            width: 100%;
+            
+            form {
+                width: 100%;
+                height: auto;
+
+                label {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    border-bottom: 1px solid $mainColor_6;
+                    padding: 15px 0;
+                    position: relative;
+
+                    &:nth-of-type(2) {
+
+                        .inBox {
+                            justify-content: flex-start;
+                        }
+                    }
+
+                    &:last-child {
+                        border: none;
+                    }
+                    
+                    .bTitle {
+                        color: $mainColor_6;
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        margin-bottom: 2vw;
+                    }
+
+                    p {
+                        color: $mainColor_3;
+
+                        &.version {
+                            margin-right: 3vw;
+                        }
+
+                        &.state {
+                            color: $mainColor_10;
+                        }
+                    }
+
+                    .inBox {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .switchBtn {
+                            width: auto;
+                            height: auto;
+                            display: flex;
+                            align-items: center;
+                            background: $mainColor_17;
+                            border-radius: 50px;
+                            overflow: hidden;
+                            cursor: pointer;
+
+                            &.active {
+
+                                p {
+                                    order: 1;
+                                }
+
+                                span {
+                                    order: 0;
+                                }
+                            }
+
+                            p {
+                                font-weight: bold;
+                                white-space: nowrap;
+                                padding: 15px;
+                                order: 0;
+                                transition: all 0.3s;
+                            }
+
+                            span {
+                                background: $mainColor_7;
+                                border-radius: 50px;
+                                color: $mainColor_3;
+                                font-weight: bold;
+                                white-space: nowrap;
+                                padding: 15px;
+                                order: 1;
+                                transition: all 0.3s;
+                            }
+                        }
+                    }
+
+                    .submitBtn {
+                        width: 30%;
+                        height: auto;
+                        @include btnStyle_1;
+                        background: $mainColor_7;
+                        display: none;
+                        font-size: 1.1rem;
+                        padding: 15px;
+                        margin: 15px auto;
+
+                        &.display {
+                            display: flex;
+                        }
+                    }
+                }
+                 
+                .btnBox {
+                    width: 100%;
+                    height: auto;
+                    border-bottom: 1px solid $mainColor_6;
+                    padding: 15px 0;
+                    position: relative;
+                        
+                    p {
+                        &.bTitle {
+                            color: $mainColor_6;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            margin-bottom: 2vw;
+                        }
+
+                        &:nth-last-of-type(1) {
+                            color: $mainColor_3;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 0;
+                        }
+                    }
+
+                    .inBox {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        
+                        input {
+                            @include btnStyle_2;
+                            width: 10%;
+                            min-width: 59px;
+                            height: auto;
+                            padding: 10px;
+                            margin-right: 10px;
+                            cursor: pointer;
+
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .topLine {
+                width: 100%;
+                height: auto;
+                border-bottom: 3px solid $mainColor_8;
+                padding: 0 0 1vw;
+
+                button {
+                    display: none;
+                }
+
+                .pageName {
+                    color: $mainColor_3;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+    

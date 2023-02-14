@@ -1,0 +1,372 @@
+.servicePage {
+
+    //中
+    .mainArea {
+
+        .innerBox {
+            width: 100%;
+            height: auto;
+            padding: 0;
+
+            .topLine {
+                width: 100%;
+                height: auto;
+                border-bottom: 3px solid $mainColor_8;
+                padding: 0 0 1vw;
+
+                button {
+                    display: none;
+                }
+
+                .pageName {
+                    color: $mainColor_3;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+
+            .topnav {
+                width: 100%;
+                height: auto;
+                @include topNav;
+                margin: 15px 0;
+
+                li {
+                    width: auto;
+                    padding: 0 3vw;
+                }
+            }
+
+            // .userBox {
+            //     width: 100%;
+            //     height: auto;
+            //     background: $mainColor_17;
+            //     border-radius: 8px;
+            //     display: flex;
+            //     align-items: center;
+            //     padding: 4vw;
+            //     margin: 4vw 0;
+
+            //     .userPic {
+            //         width: 15vw;
+            //         height: 15vw;
+            //         margin-right: 4vw;
+            //     }
+
+            //     .rightBox {
+            //         width: auto;
+            //         height: auto;
+
+            //         .userName {
+            //             color: $mainColor;
+            //             font-size: 1.1rem;
+            //             font-weight: bold;
+
+            //             span {
+            //                 color: $mainColor_3;
+            //             }
+            //         }
+
+            //         .text {
+            //             color: $mainColor;
+            //             font-size: 0.85rem;
+            //             font-weight: bold;
+            //             margin-top: 3vw;
+            //         }
+            //     }
+            // }
+
+            // .linkBox {
+            //     width: 100%;
+            //     height: auto;
+
+            //     ul {
+            //         width: 100%;
+            //         height: auto;
+
+            //         li {
+            //             width: 100%;
+            //             height: auto;
+            //             border: solid 1px $mainColor;
+            //             border-radius: 8px;
+            //             padding: 4vw 2vw;
+            //             margin-bottom: 2vw;
+
+            //             &:last-child {
+            //                 margin: 0;
+            //             }
+
+            //             .top {
+            //                 width: 100%;
+            //                 height: auto;
+            //                 display: flex;
+            //                 align-items: center;
+
+            //                 i {
+            //                     width: 12vw;
+            //                     height: 12vw;
+            //                     margin-right: 2vw;
+
+            //                     &.main {
+            //                         background-position-x: 0;
+            //                     }
+
+            //                     &.reserve {
+            //                         background-position-x: 100%;
+            //                     }
+            //                 }
+
+            //                 .textBox {
+            //                     width: auto;
+            //                     height: auto;
+
+            //                     .title {
+            //                         color: $mainColor;
+            //                         font-size: 1.15rem;
+            //                         font-weight: bold;
+            //                         margin-bottom: 2vw;
+            //                     }
+
+            //                     .remind {
+            //                         color: $mainColor_9;
+            //                         font-size: 0.9rem;
+            //                         font-weight: bold;
+            //                     }
+            //                 }
+            //             }
+
+            //             .sp {
+            //                 color: $mainColor_10;
+            //                 font-size: 1rem;
+            //                 font-weight: bold;
+            //                 margin-top: 2vw;
+            //                 padding-left: 14vw;
+            //             }
+            //         }
+            //     }
+            // }
+
+            // .otherLink {
+            //     width: 100%;
+            //     height: 11vw;
+            //     background: $mainColor;
+            //     display: flex;
+            //     align-items: center;
+            //     position: relative;
+            //     padding: 0 2vw;
+            //     margin-top: 4vw;
+
+            //     &::before {
+            //         content: "";
+            //         @include arrow_1;
+            //         transform: translateY(-50%) rotate(-90deg);
+            //         right: 4vw;
+            //     }
+
+            //     i {
+            //         width: 7vw;
+            //         height: 7vw;
+            //         background-position-y: 50%;
+            //         margin-right: 4vw;
+            //     }
+
+            //     p {
+            //         color: $mainColor_3;
+            //         font-size: 1rem;
+            //         font-weight: bold;
+            //     }
+            // }
+
+            .title {
+                width: 100%;
+                height: auto;
+                border-bottom: solid 2px $mainColor;
+                padding-bottom: 1.5vw;
+                margin-bottom: 15px;
+
+                &:first-child {
+                    margin-top: 15px;
+                }
+
+                p {
+                    color: $mainColor;
+                    font-size: 1rem;
+                    font-weight: bold;
+                }
+            }
+
+            .contactBox {
+                width: 100%;
+                height: auto;
+
+                ul {
+                    width: 100%;
+                    height: auto;
+                    margin-bottom: 10vw;
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 4vw;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        i {
+                            width: 15vw;
+                            height: 15vw;
+                            margin-right: 4vw;
+                            flex-shrink: 0;
+
+                            &.qq {
+                                background-position-x: 25%;
+                                transform: scale(0.9);
+                            }
+                            &.skype {
+                                background-position-x: 50%;
+                            }
+                            &.sugram {
+                                background-position-x: 75%;
+                            }
+                            &.mail {
+                                background-position-x: 100%;
+                            }
+                        }
+
+                        .rightBox {
+                            width: 100%;
+                            height: auto;
+                            border-left: solid 1px $mainColor;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 2vw 2vw 2vw 4vw;
+
+                            .textBox {
+                                width: auto;
+                                height: auto;
+
+                                .smallTitle {
+                                    color: $mainColor;
+                                    font-size: 1rem;
+                                    font-weight: bold;
+                                }
+
+                                .text {
+                                    color: $mainColor_3;
+                                    font-size: 0.85rem;
+                                    font-weight: bold;
+                                    margin-top: 2vw;
+                                }
+                            }
+
+                            button {
+                                width: auto;
+                                height: auto;
+                                @include btnStyle_1;
+                                background: $mainColor_5;
+                            }
+                        }
+                    }
+                }
+
+                .serviceLink {
+                    width: 80%;
+                    height: auto;
+                    @include btnStyle_1;
+                    display: block;
+                    font-size: 1.1rem;
+                    padding: 3.2vw;
+                    margin: 0 auto;
+                }
+            }
+
+            .feebackBox {
+                width: 100%;
+                height: auto;
+
+                .selectBox {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 15px;
+
+                    select {
+                        width: 31%;
+                        min-width: 275px;
+                        height: 50px;
+                        @include selectStyle_2;
+                    }
+
+                    i {
+                        @include arrow_2;
+                        transform: translateY(-50%) rotate(90deg);
+                        left: 28.5%;
+                    }
+                }
+
+                .textBox {
+                    width: 100%;
+                    height: auto;
+                    background: $mainColor_18;
+                    border: solid 1px $mainColor_9;
+                    margin-bottom: 25px;
+
+                    textarea {
+                        width: 100%;
+                        height: 300px;
+                        background: none;
+                        border: none;
+                        outline: none;
+                        resize: none;
+                        color: $mainColor_3;
+                        font-size: 1rem;
+                        font-weight: bold;
+                        line-height: 1.5rem;
+                        font-family: "微軟正黑體";
+                        box-sizing: border-box;
+                        padding: 15px;
+
+                        &::placeholder {
+                            color: $mainColor_9;
+                        }
+                    }
+
+                    .imgBox {
+                        width: 100%;
+                        height: auto;
+                        border-top: solid 1px $mainColor_9;
+                        padding: 15px;
+
+                        i {
+                            width: 80px;
+                            height: 80px;
+                            margin-bottom: 15px;
+                        }
+
+                        p {
+                            color: $mainColor_10;
+                            font-size: 0.9rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                button {
+                    width: 50%;
+                    height: auto;
+                    @include btnStyle_1;
+                    font-size: 1.1rem;
+                    padding: 15px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+    

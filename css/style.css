@@ -1,0 +1,7346 @@
+@charset "UTF-8";
+header .top li i {
+  background: url("../image/icon/header_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+.mainArea .searchBox i {
+  background: url("../image/icon/searchIC.png") no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .userPic {
+  background: url(../image/user.png) no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .picEdit i {
+  background: url(../image/icon/editpic_IC.png) no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .datebox i {
+  background: url(../image/icon/date.png) no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .topBox ul li a .userNav_IC {
+  background: url(../image/icon/mybigNav_IC.png) no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .topBox ul li a .acpw_IC {
+  background: url(../image/icon/acpw_ic.png) no-repeat center;
+  background-size: 100%;
+}
+
+.myPage .pageList i {
+  background: url(../image/icon/mysmallNav_IC.png) no-repeat center;
+  background-size: 100%;
+}
+
+.servicePage .userPic {
+  background: url("../image/user.png") no-repeat center;
+  background-size: contain;
+}
+
+.servicePage .service_ic {
+  background: url("../image/icon/service_ic.png") no-repeat;
+  background-size: 200%;
+}
+
+.servicePage .feeback_ic {
+  background: url("../image/icon/mysmallNav_IC.png") no-repeat;
+  background-size: 100%;
+}
+
+.servicePage .contact_ic {
+  background: url("../image/icon/contact_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+.servicePage .addPic_ic {
+  background: url("../image/icon/feeback_addPicture_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.messagePage .message_ic {
+  background: url("../image/icon/message_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.settingACPW .databox i {
+  background: url("../image/icon/eye_ic.png") no-repeat center;
+  background-size: contain;
+}
+
+.settingACPW .remind i {
+  background: url("../image/icon/remind_green.png") no-repeat center;
+  background-size: contain;
+}
+
+footer .flag.jp {
+  background: url("../image/icon/flag/JP.svg") no-repeat center;
+  background-size: contain;
+}
+
+footer .flag.uk {
+  background: url("../image/icon/flag/UK.svg") no-repeat center;
+  background-size: contain;
+}
+
+footer .mobileFooter li a i {
+  background: url("../image/icon/footer_ic.png") no-repeat;
+  background-size: 500%;
+}
+
+.register .chooseCountry .flagBox .flag.jp {
+  background: url("../image/icon/flag/JP.svg") no-repeat center;
+  background-size: contain;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+main {
+  display: block;
+}
+
+i {
+  display: block;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  background: #000000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html body {
+  width: 100%;
+  height: auto;
+}
+html body main {
+  width: 100%;
+  height: auto;
+  padding-top: 125px;
+}
+html body main.innerPage {
+  padding-top: 120px;
+}
+html body main.innerPage .left {
+  display: none;
+}
+html header {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+html header .top {
+  width: 100%;
+  height: 90px;
+  background: #b8151b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 24px;
+}
+html header .top .logo {
+  width: auto;
+  height: auto;
+}
+html header .top .logo img {
+  height: 69px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html header .top ul {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html header .top ul li {
+  width: auto;
+  margin-right: 25px;
+}
+html header .top ul li:last-of-type {
+  margin: 0;
+}
+html header .top ul li:hover p, html header .top ul li:active p, html header .top ul li.active p {
+  color: #ffffff;
+}
+html header .top ul li:hover i.sport, html header .top ul li:active i.sport, html header .top ul li.active i.sport {
+  background-position-y: 108%;
+}
+html header .top ul li:hover i.casino, html header .top ul li:active i.casino, html header .top ul li.active i.casino {
+  background-position-y: 109%;
+}
+html header .top ul li:hover i.live, html header .top ul li:active i.live, html header .top ul li.active i.live {
+  background-position-y: 107%;
+}
+html header .top ul li:hover i.event, html header .top ul li:active i.event, html header .top ul li.active i.event {
+  background-position-y: 107%;
+}
+html header .top ul li a {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html header .top ul li a i {
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+html header .top ul li a i.sport {
+  background-position-x: 25%;
+}
+html header .top ul li a i.casino {
+  background-position-x: 50%;
+}
+html header .top ul li a i.live {
+  background-position-x: 75%;
+}
+html header .top ul li a i.event {
+  background-position-x: 100%;
+}
+html header .top ul li a p {
+  color: #FF9B9F;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html header .top .loginArea {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 24px;
+}
+html header .top .loginArea .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+}
+html header .top .loginArea .checkBox .title {
+  color: #FF9B9F;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html header .top .loginArea .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #FF9B9F transparent;
+  margin-left: 5px;
+}
+html header .top .loginArea .checkBox ul {
+  display: none;
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  z-index: 100;
+}
+html header .top .loginArea .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+html header .top .loginArea .checkBox ul.display {
+  display: block;
+}
+html header .top .loginArea .checkBox ul.display {
+  display: block;
+}
+html header .top .loginArea .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .top .loginArea .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+html header .top .loginArea .checkBox ul li:first-child {
+  display: none;
+}
+html header .top .loginArea .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .top .loginArea .checkBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html header .top .loginArea .checkBox ul li a p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html header .top .loginArea button {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  color: #dd2830;
+  padding: 0.5vw 3vw;
+  margin-right: 10px;
+}
+html header .top .loginArea button:hover, html header .top .loginArea button:active, html header .top .loginArea button.active {
+  background: #f3c01a;
+  color: #000000;
+}
+html header .top .loginArea button:last-child {
+  background: #66E123;
+  color: #000000;
+  padding: 0.5vw 2vw;
+  margin: 0;
+}
+html header .top .loginArea button:last-child:hover, html header .top .loginArea button:last-child:active, html header .top .loginArea button:last-child.active {
+  background: #0F7E06;
+  color: #ffffff;
+}
+html header .top .mem_Area {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html header .top .mem_Area .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-right: 10px;
+  opacity: 0;
+}
+html header .top .mem_Area .checkBox .title {
+  color: #FF9B9F;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+html header .top .mem_Area .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #FF9B9F transparent;
+  margin-left: 5px;
+}
+html header .top .mem_Area .checkBox ul {
+  display: none;
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 25px;
+  left: -20px;
+  z-index: 100;
+}
+html header .top .mem_Area .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+html header .top .mem_Area .checkBox ul.display {
+  display: block;
+}
+html header .top .mem_Area .checkBox ul.display {
+  display: block;
+}
+html header .top .mem_Area .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .top .mem_Area .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+html header .top .mem_Area .checkBox ul li:first-child {
+  display: none;
+}
+html header .top .mem_Area .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .top .mem_Area .checkBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html header .top .mem_Area .checkBox ul li a p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html header .top .mem_Area div {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+}
+html header .top .mem_Area div.account {
+  cursor: pointer;
+}
+html header .top .mem_Area div.account i {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 5px;
+}
+html header .top .mem_Area div button:not(:last-child) {
+  background: #dd2830;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1px 4px;
+  margin: 0 5px 0 10px;
+}
+html header .top .mem_Area div p {
+  color: #ffffff;
+}
+html header .top .mem_Area .logoutBtn {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  color: #dd2830;
+  padding: 0.5vw 1vw;
+  margin-left: 20px;
+}
+html header .top .mem_Area .logoutBtn:hover, html header .top .mem_Area .logoutBtn:active, html header .top .mem_Area .logoutBtn.active {
+  background: #FF9B9F;
+  color: #ffffff;
+}
+html header .top .rwd_TOPNav {
+  display: none;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+html header .top .rwd_TOPNav.logInner .itemBox:not(:last-child) {
+  display: none;
+}
+html header .top .rwd_TOPNav .itemBox {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px;
+}
+html header .top .rwd_TOPNav .itemBox:first-child svg {
+  margin-left: 5.5px;
+}
+html header .top .rwd_TOPNav .itemBox:nth-of-type(2) svg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  margin: 2px 0 0 3px;
+}
+html header .top .rwd_TOPNav .itemBox:nth-of-type(2) p {
+  margin-top: 4px;
+}
+html header .top .rwd_TOPNav .itemBox.nav {
+  width: 65px;
+  background: #8f2d2c;
+  padding: 8px 0;
+}
+html header .top .rwd_TOPNav .itemBox.nav svg {
+  fill: #ffffff;
+}
+html header .top .rwd_TOPNav .itemBox.active .hamIC {
+  display: none;
+}
+html header .top .rwd_TOPNav .itemBox svg {
+  width: 21px;
+  height: 21px;
+  fill: #8f2d2c;
+}
+html header .top .rwd_TOPNav .itemBox svg.injected-svg {
+  display: none;
+}
+html header .top .rwd_TOPNav .itemBox p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  cursor: default;
+}
+html header .top .langBox {
+  display: none;
+  width: auto;
+  height: auto;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+html header .top .langBox p {
+  color: #ffffff;
+  font-size: 4vw;
+  margin: 7px 10px;
+  white-space: nowrap;
+}
+html header .top .langBox p span {
+  margin-left: 25px;
+  position: relative;
+}
+html header .top .langBox p span::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  left: -13px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html header .top .mobile_Login {
+  display: none;
+  width: auto;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  background: #66E123;
+  border-radius: 30px;
+  color: #000000;
+  font-size: 4vw;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 5px 15px;
+}
+html header .bottom {
+  width: 100%;
+  height: 35px;
+  background: #8f2d2c;
+  position: relative;
+}
+html header .bottom .mid {
+  width: 1200px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+html header .bottom .mid .searchBox {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html header .bottom .mid .searchBox input {
+  width: 187px;
+  height: 27px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html header .bottom .mid .searchBox i {
+  color: #b8151b;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 5px;
+}
+html header .bottom .mid .checkBox {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-left: 10px;
+}
+html header .bottom .mid .checkBox .title {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+html header .bottom .mid .checkBox .title i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  margin-left: 5px;
+}
+html header .bottom .mid .checkBox ul {
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 35px;
+  left: -110px;
+}
+html header .bottom .mid .checkBox ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+html header .bottom .mid .checkBox ul.display {
+  display: block;
+}
+html header .bottom .mid .checkBox ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html header .bottom .mid .checkBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html header .bottom .mid .checkBox ul li:last-child {
+  margin: 0;
+}
+html header .bottom .mid .checkBox ul li label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+html header .bottom .mid .checkBox ul li label:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html header .bottom .mid .checkBox ul li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html header .bottom .mid .checkBox ul li p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html header .bottom .mid .time {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin: 0 0 2px 15px;
+}
+html .login {
+  width: 1100px;
+  height: auto;
+  background: #131313;
+  border-radius: 5px;
+  padding: 40px 70px 10px;
+  margin: 0 auto;
+}
+html .login .inputArea {
+  width: 100%;
+  height: auto;
+}
+html .login .inputArea > li {
+  width: 100%;
+  height: auto;
+  border-bottom: dotted 1px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+html .login .inputArea > li .typeName {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .login .inputArea > li .typeName p {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .login .inputArea > li .rightBox {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .login .inputArea > li .rightBox .inputBox {
+  width: 100%;
+  height: auto;
+}
+html .login .inputArea > li .rightBox .inputBox input {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .login .check {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+html .login .check .checkBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .login .check .checkBox label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+html .login .check .checkBox label:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .login .check .checkBox label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .login .check .checkBox p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .login .check button {
+  width: 150px;
+  height: 40px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  display: block;
+  margin: 20px auto 0;
+}
+html .registerBox {
+  width: 1100px;
+  height: auto;
+  background: #131313;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin: 40px auto;
+}
+html .registerBox p {
+  width: 100%;
+  color: #8f2d2c;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+html .registerBox button {
+  width: 130px;
+  height: 30px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  html .login {
+    width: calc(100% - 100px);
+  }
+  html .registerBox {
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  html .login .inputArea > li {
+    display: block;
+  }
+  html .login .inputArea > li .typeName {
+    margin-bottom: 1rem;
+  }
+  html .login .inputArea > li .rightBox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html .login {
+    width: calc(100% - 32px);
+    padding: 24px;
+    margin: 70px auto 0;
+  }
+  html .login .check {
+    padding: 1rem 0;
+  }
+  html .login .check .checkBox p {
+    font-size: 0.75rem;
+  }
+  html .registerBox {
+    width: calc(100% - 32px);
+  }
+}
+html .register {
+  width: 1100px;
+  height: auto;
+  background: #131313;
+  border-radius: 5px;
+  padding: 40px 70px 10px;
+  margin: 0 auto;
+}
+html .register .bigTitle {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+html .register .bigTitle p {
+  color: #b8151b;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .register .bigTitle span {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+html .register .inputArea {
+  width: 100%;
+  height: auto;
+}
+html .register .inputArea > li {
+  width: 100%;
+  height: auto;
+  border-bottom: dotted 1px #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0;
+}
+html .register .inputArea > li .typeName {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .register .inputArea > li .typeName svg {
+  fill: #b8151b;
+  margin-right: 20px;
+}
+html .register .inputArea > li .typeName p {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .register .inputArea > li .rightBox {
+  width: 50%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .register .inputArea > li .rightBox .inputBox {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox:nth-last-of-type(1) {
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox input {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox input.phone {
+  padding-left: 60px;
+}
+html .register .inputArea > li .rightBox .inputBox select {
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border-radius: 3px;
+  border: none;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox div span {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .remind {
+  width: 100%;
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1rem;
+  margin-top: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 4px 0 4px;
+  border-color: #000000 transparent;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  pointer-events: none;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry {
+  width: 60px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry .flagBox {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry .flagBox .flag {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul {
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 40px;
+  left: -175px;
+  z-index: 100;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul.display {
+  display: block;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul .flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  overflow-y: overlay;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar {
+  width: 5px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li:last-child {
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .register .inputArea > li .rightBox .inputBox .chooseCountry ul ol li p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html .register .inputArea > li .rightBox .inputBox .eye {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+html .register .inputArea > li .rightBox .inputBox .sercurity {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 1px #ffffff;
+  padding: 10px 0;
+}
+html .register .inputArea > li .rightBox .inputBox .sercurity p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .register .inputArea > li .rightBox .must {
+  width: auto;
+  height: auto;
+  background: #b8151b;
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -50px;
+  padding: 5px;
+}
+html .register .check {
+  width: 100%;
+  height: auto;
+  padding: 40px 0;
+}
+html .register .check .checkBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .register .check .checkBox label {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-right: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .register .check .checkBox label:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .register .check .checkBox label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html .register .check .checkBox p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+html .register .check .checkBox p a {
+  color: #f3c01a;
+}
+html .register .check button {
+  width: 150px;
+  height: 40px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  margin: 20px auto 0;
+}
+html .loginBox {
+  width: 1100px;
+  height: auto;
+  background: #131313;
+  border-radius: 5px;
+  padding: 20px 0;
+  margin: 40px auto;
+}
+html .loginBox p {
+  width: 100%;
+  color: #8f2d2c;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+html .loginBox button {
+  width: 130px;
+  height: 30px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  background: #ffffff;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1200px) {
+  html .register {
+    width: calc(100% - 100px);
+  }
+  html .loginBox {
+    width: calc(100% - 100px);
+  }
+}
+@media only screen and (max-width: 840px) {
+  html .register .bigTitle {
+    text-align: center;
+  }
+  html .register .inputArea > li {
+    display: block;
+  }
+  html .register .inputArea > li .typeName {
+    margin-bottom: 1rem;
+  }
+  html .register .inputArea > li .rightBox {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 670px) {
+  html .register .inputArea > li .rightBox .inputBox .remind {
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html .register {
+    width: calc(100% - 32px);
+    margin: 70px auto 0;
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox .inputBox {
+    width: calc(50% - 5px);
+  }
+  html .register .inputArea > li:nth-of-type(3) .rightBox .inputBox:nth-of-type(1) {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  html .register .check {
+    padding: 1rem 0;
+  }
+  html .register .check .checkBox p {
+    font-size: 0.75rem;
+  }
+  html .loginBox {
+    width: calc(100% - 32px);
+  }
+}
+html .myPage .mainArea {
+  padding: 0;
+}
+html .myPage .mainArea .innerBox {
+  width: 100%;
+  padding: 0 4vw 19vw;
+}
+html .myPage .mainArea .innerBox.userHome .topBox {
+  width: 100%;
+  height: auto;
+  border: 1px solid #dd2830;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+}
+html .myPage .mainArea .innerBox.userHome .topBox .userBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 1vw 2vw;
+}
+html .myPage .mainArea .innerBox.userHome .topBox .userBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0px 4px 6px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  display: none;
+  right: 15px;
+}
+html .myPage .mainArea .innerBox.userHome .topBox .userBox .userPic {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0vw 1.5vw 0vw 0vw;
+}
+html .myPage .mainArea .innerBox.userHome .topBox .userBox p {
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .innerBox.userHome .topBox .userBox p span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: 1vw;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul {
+  display: none;
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li {
+  width: 25%;
+  height: auto;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li:not(:first-child) .userNav_IC {
+  margin: 10px auto 15px;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.betLimit .userNav_IC {
+  background-position-y: 0%;
+  margin-top: 15px;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.rule .userNav_IC {
+  background-position-y: 34%;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.setting .userNav_IC {
+  background-position-y: 68%;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.setting .userNav_IC {
+  background-position-y: 68%;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.acpw .acpw_IC {
+  width: 10vw;
+  height: 10vw;
+  margin: auto;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li.goWeb .userNav_IC {
+  background-position-y: 100%;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li a {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li a .userNav_IC {
+  width: 10vw;
+  height: 10vw;
+  margin: auto;
+}
+html .myPage .mainArea .innerBox.userHome .topBox ul li a p {
+  color: #dd2830;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 10px 0;
+}
+html .myPage .mainArea .innerBox.userHome .pageList {
+  display: none;
+  width: 100%;
+  height: auto;
+  margin-top: 4vw;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li {
+  width: 100%;
+  height: auto;
+  background: #b8151b;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 2vw;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  right: 15px;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.qa i {
+  background-position-y: 0%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.message_center i {
+  background-position-y: 16%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.cs_service i {
+  background-position-y: 33%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.feedback i {
+  background-position-y: 50%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.overView i {
+  background-position-y: 66%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.acpw i {
+  background-position-y: 82%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a.logout i {
+  background-position-y: 100%;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a i {
+  width: 5vw;
+  height: 5vw;
+}
+html .myPage .mainArea .innerBox.userHome .pageList li a p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 40px;
+  margin-left: 15px;
+}
+html .myPage .mainArea .innerBox.userDetail {
+  padding: 0 0 22vw;
+}
+html .myPage .mainArea .innerBox.userDetail .topLine {
+  width: calc(100% - 8vw);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #B1B1B1;
+  position: relative;
+  padding: 4vw 0;
+  margin: 0 auto;
+}
+html .myPage .mainArea .innerBox.userDetail .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .myPage .mainArea .innerBox.userDetail .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .myPage .mainArea .innerBox.userDetail .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  margin-top: 2vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border: 1px solid #dd2830;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0 auto;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox p {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 3vw;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox .picblock {
+  width: 31%;
+  height: auto;
+  margin-right: 3vw;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  position: relative;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox .picblock .userPic {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2vw 0;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox .picblock .picEdit {
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: azure;
+  border-radius: 50px;
+  border: 3px solid #B1B1B1;
+  position: absolute;
+  bottom: 7px;
+  right: -10px;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .userBox .picblock .picEdit i {
+  width: 15px;
+  height: 15px;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .acName {
+  width: 90%;
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4vw 0;
+  margin: 0 auto;
+}
+html .myPage .mainArea .innerBox.userDetail .userBasic .acName span {
+  display: block;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-top: 1vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input {
+  width: 87%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input::-moz-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit input::placeholder {
+  color: #dd2830;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .datebox {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .datebox input {
+  margin: 0;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .datebox i {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 50%;
+  right: 18%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .selectBox {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-bottom: 10px;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .selectBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0px 4px 6px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  right: 10%;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .selectBox select {
+  width: auto;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  padding: 8px 30px 10px 12px;
+  display: block;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .editing {
+  color: #66E123;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther.edit .remind {
+  display: none;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form {
+  width: 100%;
+  height: auto;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label:last-child {
+  border: none;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label input {
+  display: none;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label select {
+  display: none;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .submitBtn {
+  width: 46%;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  font-size: 1.1rem;
+  padding: 3.2vw;
+  margin: 0 auto 4vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .userCurrent {
+  color: #ffffff;
+  font-size: 1rem;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .userCurrent span {
+  color: #848484;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .remind {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  padding: 5vw;
+  margin-bottom: 5vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .remind p {
+  color: #b8151b;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .remind p:first-child {
+  margin-bottom: 2vw;
+}
+html .myPage .mainArea .innerBox.userDetail .userOther form label .remind p span {
+  color: #66E123;
+  text-decoration: underline;
+}
+html .myPage .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .myPage .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .myPage .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .betPage .mainArea .innerBox {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .innerBox.myResult {
+  display: none;
+  width: 100%;
+  height: auto;
+  background: #202020;
+  border-top: 1px solid #dd2830;
+  position: fixed;
+  bottom: calc(-31vw + 5px);
+}
+html .betPage .mainArea .innerBox.myResult div {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3vw 0;
+}
+html .betPage .mainArea .innerBox.myResult div:first-child {
+  border-right: 1px solid #dd2830;
+}
+html .betPage .mainArea .innerBox.myResult div p {
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+html .betPage .mainArea .innerBox.myResult div p span {
+  display: block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 2vw;
+}
+html .betPage .mainArea .innerBox.betLimit {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 15px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 15px;
+}
+html .betPage .mainArea .innerBox.betLimit .topLine {
+  grid-column-start: span 2;
+}
+html .betPage .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .betPage .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .betPage .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .betPage .mainArea .innerBox .selectNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+}
+html .betPage .mainArea .innerBox .selectNav .selectBox {
+  width: auto;
+  height: auto;
+  position: relative;
+  margin-right: 10px;
+}
+html .betPage .mainArea .innerBox .selectNav .selectBox select {
+  width: auto;
+  height: auto;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 8px 30px 10px 12px;
+}
+html .betPage .mainArea .innerBox .selectNav .selectBox select:optional {
+  background: #000000;
+}
+html .betPage .mainArea .innerBox .selectNav .selectBox i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  right: 15px;
+}
+html .betPage .mainArea .innerBox .betBox {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .innerBox .betBox.display {
+  display: block;
+}
+html .betPage .mainArea .innerBox .betBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .innerBox .betBox table:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .innerBox .betBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .innerBox .betBox table.active tr th:last-child p span {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+html .betPage .mainArea .innerBox .betBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .innerBox .betBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .innerBox .betBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:first-child {
+  padding: 0 0 0 20px;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:first-child p {
+  text-align: left;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:last-child {
+  padding: 0 20px 0 0;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:last-child p {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:last-child p span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  position: static;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin-left: 10px;
+}
+html .betPage .mainArea .innerBox .betBox table tr th:nth-of-type(2) p {
+  text-align: left;
+}
+html .betPage .mainArea .innerBox .betBox table tr th p {
+  color: #ffffff;
+  text-align: center;
+}
+html .betPage .mainArea .innerBox .betBox table tr td {
+  width: 25%;
+  max-width: 0;
+  height: 40px;
+  border: 2px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+  position: relative;
+}
+html .betPage .mainArea .innerBox .betBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .innerBox .betBox table tr td:nth-of-type(odd) p {
+  text-align: center;
+}
+html .betPage .mainArea .innerBox .betBox table tr td:nth-of-type(even) p {
+  color: #ffffff;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div.teamBox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1vw 0;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div.teamBox p {
+  text-align: left;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div.teamBox p:last-child {
+  color: #ffffff;
+  margin-top: 1vw;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div.teamBox p:last-child span {
+  color: #66E123;
+  margin: 0 2vw;
+}
+html .betPage .mainArea .innerBox .betBox table tr td div .cancleBtn {
+  width: auto;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #66E123;
+  color: #000000;
+  padding: 0.7vw;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .betBox table tr td p {
+  color: #dd2830;
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .betBox table tr td p.active {
+  width: auto;
+  height: auto;
+  background: #000000;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 50;
+}
+html .betPage .mainArea .innerBox .betBox .betData {
+  width: 100%;
+}
+html .betPage .mainArea .innerBox .betBox .betData .dataName {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #b8151b;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+html .betPage .mainArea .innerBox .betBox .betData .dataName p {
+  width: 30%;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .betBox .betData li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 0.8vw;
+}
+html .betPage .mainArea .innerBox .betBox .betData li.active .dataNum {
+  background: transparent;
+  border-color: #b8151b;
+}
+html .betPage .mainArea .innerBox .betBox .betData li.active .dataNum::before {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+html .betPage .mainArea .innerBox .betBox .betData li.active table {
+  display: table;
+}
+html .betPage .mainArea .innerBox .betBox .betData li .dataNum {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #8f2d2c;
+  opacity: 0.8;
+  border: 2px solid transparent;
+  padding: 0 29px;
+  position: relative;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .betBox .betData li .dataNum::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  right: 3%;
+}
+html .betPage .mainArea .innerBox .betBox .betData li .dataNum span {
+  background: #66E123;
+  border-radius: 5px;
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  left: 1.8%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html .betPage .mainArea .innerBox .betBox .betData li .dataNum p {
+  width: 30%;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .betBox .betData li table {
+  display: none;
+  width: 94%;
+  margin: 1vw 0;
+}
+html .betPage .mainArea .innerBox .resultBox {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .innerBox .resultBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-bottom: 20px;
+}
+html .betPage .mainArea .innerBox .resultBox table:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .innerBox .resultBox table.active tr th span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+html .betPage .mainArea .innerBox .resultBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .innerBox .resultBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .innerBox .resultBox table tr:nth-of-type(2) td {
+  background: #202020;
+}
+html .betPage .mainArea .innerBox .resultBox table tr:nth-of-type(2) td p {
+  color: #b8151b;
+  font-size: 1rem;
+  text-align: center;
+}
+html .betPage .mainArea .innerBox .resultBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .innerBox .resultBox table tr.row td:nth-of-type(1) {
+  width: 20%;
+}
+html .betPage .mainArea .innerBox .resultBox table tr.row td:nth-of-type(2) {
+  width: 50%;
+}
+html .betPage .mainArea .innerBox .resultBox table tr.row td:nth-of-type(2) svg {
+  fill: #27A7F0;
+}
+html .betPage .mainArea .innerBox .resultBox table tr.row td:nth-of-type(3), html .betPage .mainArea .innerBox .resultBox table tr.row td:nth-of-type(4) {
+  width: 15%;
+}
+html .betPage .mainArea .innerBox .resultBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .resultBox table tr th p {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 2vw;
+}
+html .betPage .mainArea .innerBox .resultBox table tr th span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 40%;
+  right: 3vw;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td {
+  max-width: 0;
+  height: 40px;
+  border: 1px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td.date p {
+  color: #848484;
+  line-height: 1.2rem;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td.name p {
+  color: #ffffff;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td div svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 2vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: #b8151b;
+}
+html .betPage .mainArea .innerBox .resultBox table tr td p {
+  color: #66E123;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .limitBox {
+  width: 100%;
+  height: auto;
+}
+html .betPage .mainArea .innerBox .limitBox table {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 0 2px #dd2830;
+          box-shadow: 0 0 0 2px #dd2830;
+  margin-top: 20px;
+}
+html .betPage .mainArea .innerBox .limitBox table.active tr th span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+html .betPage .mainArea .innerBox .limitBox table.active tr:not(:first-child) {
+  display: table-row;
+}
+html .betPage .mainArea .innerBox .limitBox table tr:not(:first-child) {
+  display: none;
+}
+html .betPage .mainArea .innerBox .limitBox table tr:nth-of-type(2) td {
+  background: #202020;
+}
+html .betPage .mainArea .innerBox .limitBox table tr:nth-of-type(2) td p {
+  color: #b8151b;
+  font-size: 1rem;
+  text-align: center;
+}
+html .betPage .mainArea .innerBox .limitBox table tr:last-child td {
+  border-bottom: none;
+}
+html .betPage .mainArea .innerBox .limitBox table tr th {
+  height: 40px;
+  background: #b8151b;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .limitBox table tr th p {
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 2vw;
+}
+html .betPage .mainArea .innerBox .limitBox table tr th span {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px 4px 0 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  top: 40%;
+  right: 3vw;
+}
+html .betPage .mainArea .innerBox .limitBox table tr td {
+  max-width: 0;
+  height: 40px;
+  border: 1px solid #dd2830;
+  border-width: 0 1px 1px 0;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+html .betPage .mainArea .innerBox .limitBox table tr td:last-child {
+  border-right: none;
+}
+html .betPage .mainArea .innerBox .limitBox table tr td p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin-bottom: 0vw;
+}
+html .betPage .mainArea .innerBox .topnav li {
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .topnav li.active {
+  background: #cf0505;
+}
+html .betPage .mainArea .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .betPage .mainArea .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .betPage .mainArea .innerBox .topnav li {
+  width: auto;
+  padding: 0 2.5vw;
+  margin-right: 0.5vw;
+}
+html .servicePage .mainArea .innerBox {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+html .servicePage .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .servicePage .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .servicePage .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin: 15px 0;
+}
+html .servicePage .mainArea .innerBox .topnav li {
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html .servicePage .mainArea .innerBox .topnav li.active {
+  background: #cf0505;
+}
+html .servicePage .mainArea .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .servicePage .mainArea .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .servicePage .mainArea .innerBox .topnav li {
+  width: auto;
+  padding: 0 3vw;
+}
+html .servicePage .mainArea .innerBox .title {
+  width: 100%;
+  height: auto;
+  border-bottom: solid 2px #b8151b;
+  padding-bottom: 1.5vw;
+  margin-bottom: 15px;
+}
+html .servicePage .mainArea .innerBox .title:first-child {
+  margin-top: 15px;
+}
+html .servicePage .mainArea .innerBox .title p {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .innerBox .contactBox {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .innerBox .contactBox ul {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10vw;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4vw;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li:last-child {
+  margin: 0;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li i {
+  width: 15vw;
+  height: 15vw;
+  margin-right: 4vw;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li i.qq {
+  background-position-x: 25%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html .servicePage .mainArea .innerBox .contactBox ul li i.skype {
+  background-position-x: 50%;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li i.sugram {
+  background-position-x: 75%;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li i.mail {
+  background-position-x: 100%;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li .rightBox {
+  width: 100%;
+  height: auto;
+  border-left: solid 1px #b8151b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2vw 2vw 2vw 4vw;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li .rightBox .textBox {
+  width: auto;
+  height: auto;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li .rightBox .textBox .smallTitle {
+  color: #b8151b;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li .rightBox .textBox .text {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 2vw;
+}
+html .servicePage .mainArea .innerBox .contactBox ul li .rightBox button {
+  width: auto;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #851316;
+}
+html .servicePage .mainArea .innerBox .contactBox .serviceLink {
+  width: 80%;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: block;
+  font-size: 1.1rem;
+  padding: 3.2vw;
+  margin: 0 auto;
+}
+html .servicePage .mainArea .innerBox .feebackBox {
+  width: 100%;
+  height: auto;
+}
+html .servicePage .mainArea .innerBox .feebackBox .selectBox {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 15px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .selectBox select {
+  width: 31%;
+  min-width: 275px;
+  height: 50px;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  padding: 8px 30px 10px 12px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .selectBox i {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0px 4px 6px;
+  border-color: transparent transparent transparent #dd2830;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  pointer-events: none;
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  left: 28.5%;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox {
+  width: 100%;
+  height: auto;
+  background: #131313;
+  border: solid 1px #848484;
+  margin-bottom: 25px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea {
+  width: 100%;
+  height: 300px;
+  background: none;
+  border: none;
+  outline: none;
+  resize: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+  font-family: "微軟正黑體";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea::-webkit-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea::-moz-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea:-ms-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea::-ms-input-placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox textarea::placeholder {
+  color: #848484;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox .imgBox {
+  width: 100%;
+  height: auto;
+  border-top: solid 1px #848484;
+  padding: 15px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox .imgBox i {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+html .servicePage .mainArea .innerBox .feebackBox .textBox .imgBox p {
+  color: #66E123;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+html .servicePage .mainArea .innerBox .feebackBox button {
+  width: 50%;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 0 auto;
+}
+html .userSetting .mainArea .innerBox {
+  width: 100%;
+}
+html .userSetting .mainArea .innerBox form {
+  width: 100%;
+  height: auto;
+}
+html .userSetting .mainArea .innerBox form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 15px 0;
+  position: relative;
+}
+html .userSetting .mainArea .innerBox form label:nth-of-type(2) .inBox {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+html .userSetting .mainArea .innerBox form label:last-child {
+  border: none;
+}
+html .userSetting .mainArea .innerBox form label .bTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .userSetting .mainArea .innerBox form label p {
+  color: #ffffff;
+}
+html .userSetting .mainArea .innerBox form label p.version {
+  margin-right: 3vw;
+}
+html .userSetting .mainArea .innerBox form label p.state {
+  color: #66E123;
+}
+html .userSetting .mainArea .innerBox form label .inBox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .userSetting .mainArea .innerBox form label .inBox .switchBtn {
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #202020;
+  border-radius: 50px;
+  overflow: hidden;
+  cursor: pointer;
+}
+html .userSetting .mainArea .innerBox form label .inBox .switchBtn.active p {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+html .userSetting .mainArea .innerBox form label .inBox .switchBtn.active span {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+html .userSetting .mainArea .innerBox form label .inBox .switchBtn p {
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 15px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .userSetting .mainArea .innerBox form label .inBox .switchBtn span {
+  background: #cf0505;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  white-space: nowrap;
+  padding: 15px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .userSetting .mainArea .innerBox form label .submitBtn {
+  width: 30%;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  display: none;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 15px auto;
+}
+html .userSetting .mainArea .innerBox form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .userSetting .mainArea .innerBox form .btnBox {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 15px 0;
+  position: relative;
+}
+html .userSetting .mainArea .innerBox form .btnBox p.bTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2vw;
+}
+html .userSetting .mainArea .innerBox form .btnBox p:nth-last-of-type(1) {
+  color: #ffffff;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+html .userSetting .mainArea .innerBox form .btnBox .inBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html .userSetting .mainArea .innerBox form .btnBox .inBox input {
+  background: #280606;
+  border-radius: 8px;
+  border: 2px solid #cf0505;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 2vw 3vw;
+  width: 10%;
+  min-width: 59px;
+  height: auto;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html .userSetting .mainArea .innerBox form .btnBox .inBox input:hover, html .userSetting .mainArea .innerBox form .btnBox .inBox input:active, html .userSetting .mainArea .innerBox form .btnBox .inBox input.active {
+  background: #ffffff;
+  color: #000000;
+}
+html .userSetting .mainArea .innerBox form .btnBox .inBox input:last-child {
+  margin-right: 0;
+}
+html .userSetting .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .userSetting .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .userSetting .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .settingACPW .mainArea .innerBox {
+  width: 100%;
+  padding: 0 0 22vw;
+}
+html .settingACPW .mainArea .innerBox form {
+  width: 100%;
+  height: auto;
+}
+html .settingACPW .mainArea .innerBox form label {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 15px 0 5px;
+}
+html .settingACPW .mainArea .innerBox form label:last-child {
+  border: none;
+}
+html .settingACPW .mainArea .innerBox form label .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+html .settingACPW .mainArea .innerBox form label .databox {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html .settingACPW .mainArea .innerBox form label .databox input {
+  width: 45%;
+  height: auto;
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  display: block;
+  margin-bottom: 10px;
+}
+html .settingACPW .mainArea .innerBox form label .databox input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .settingACPW .mainArea .innerBox form label .databox input::-moz-placeholder {
+  color: #dd2830;
+}
+html .settingACPW .mainArea .innerBox form label .databox input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .settingACPW .mainArea .innerBox form label .databox input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .settingACPW .mainArea .innerBox form label .databox input::placeholder {
+  color: #dd2830;
+}
+html .settingACPW .mainArea .innerBox form label .databox i {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 57%;
+}
+html .settingACPW .mainArea .innerBox form label .safeBlock {
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+}
+html .settingACPW .mainArea .innerBox form label .safeBlock .textBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .settingACPW .mainArea .innerBox form label .safeBlock .textBox p {
+  color: #848484;
+  font-size: 0.975rem;
+  font-weight: bold;
+  margin: 3px 0 10px;
+}
+html .settingACPW .mainArea .innerBox form label .safeBlock .line {
+  width: 100%;
+  height: 5px;
+  background: #2d2d2d;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+html .settingACPW .mainArea .innerBox form label .safeBlock .line span {
+  width: 30%;
+  height: 100%;
+  background: #f3c01a;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+}
+html .settingACPW .mainArea .innerBox form label .remind {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 25px;
+}
+html .settingACPW .mainArea .innerBox form label .remind i {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+html .settingACPW .mainArea .innerBox form label .remind p {
+  max-width: 39%;
+  min-width: 344px;
+  color: #66E123;
+  font-size: 0.975rem;
+  text-align: center;
+}
+html .settingACPW .mainArea .innerBox form label .submitBtn {
+  width: 30%;
+  min-width: 158px;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  display: none;
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 15px auto;
+  cursor: pointer;
+}
+html .settingACPW .mainArea .innerBox form label .submitBtn.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .settingACPW .mainArea .innerBox form label i {
+  width: 6vw;
+  height: 6vw;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #dd2830;
+  padding: 4vw 5vw;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .inputTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5vw;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess:last-of-type {
+  margin: 0;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .itemName {
+  width: 40%;
+  height: auto;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .itemName p {
+  color: #ffffff;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .item {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .item .check {
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .item .check input {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .item .check input:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html .settingACPW .mainArea .innerBox form .checkBlock .choess .item .check label {
+  color: #ffffff;
+  white-space: nowrap;
+  padding: 0;
+}
+html .settingACPW .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .settingACPW .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .settingACPW .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .overViewPage .mainArea .innerBox {
+  width: 100%;
+  padding: 0;
+}
+html .overViewPage .mainArea .innerBox ul {
+  width: 100%;
+  height: auto;
+  padding: 15px 0;
+}
+html .overViewPage .mainArea .innerBox ul li {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+}
+html .overViewPage .mainArea .innerBox ul li:nth-of-type(3) {
+  border-bottom: 1px solid #cf0505;
+}
+html .overViewPage .mainArea .innerBox ul li:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html .overViewPage .mainArea .innerBox ul li:last-child p {
+  color: #848484;
+  font-weight: bold;
+}
+html .overViewPage .mainArea .innerBox ul li:last-child p:last-child {
+  color: #ffffff;
+  margin-left: 50px;
+}
+html .overViewPage .mainArea .innerBox ul li p {
+  color: #ffffff;
+  font-size: 1rem;
+}
+html .overViewPage .mainArea .innerBox ul li p:last-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+html .overViewPage .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .overViewPage .mainArea .innerBox .topLine button {
+  display: none;
+}
+html .overViewPage .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .filter {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+}
+html .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .filter .jumpWindow {
+  display: none;
+  width: 80%;
+  height: auto;
+  background: #131313;
+  border: 1px solid #cf0505;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+html .filter .jumpWindow.plsLogIn {
+  display: none;
+}
+html .filter .jumpWindow.plsLogIn.display {
+  display: block;
+}
+html .filter .jumpWindow.plsLogIn .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .filter .jumpWindow.plsLogIn .content p {
+  color: #ffffff;
+  text-align: center;
+  margin: 0vh auto 5vh;
+}
+html .filter .jumpWindow.plsLogIn .content .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: auto;
+  background: #414141;
+  margin: 0 auto 3vw;
+}
+html .filter .jumpWindow.cancelBet {
+  display: none;
+}
+html .filter .jumpWindow.cancelBet.display {
+  display: block;
+}
+html .filter .jumpWindow.cancelBet .content table {
+  width: 100%;
+}
+html .filter .jumpWindow.cancelBet .content table tr {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #848484;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(3) td:last-child p {
+  color: #66E123;
+  font-weight: bold;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(4) td:last-child p span {
+  line-height: 23px;
+}
+html .filter .jumpWindow.cancelBet .content table tr:nth-of-type(4) td:last-child p span.vs {
+  color: #B1B1B1;
+  font-size: 1rem;
+  margin: 2vw;
+}
+html .filter .jumpWindow.cancelBet .content table tr:last-child {
+  border: none;
+}
+html .filter .jumpWindow.cancelBet .content table tr:last-child td {
+  padding: 0;
+}
+html .filter .jumpWindow.cancelBet .content table tr td {
+  max-width: 0;
+  padding: 3vw 0;
+  vertical-align: middle;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:first-child {
+  width: 40%;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:first-child p {
+  color: #dd2830;
+  font-weight: bold;
+}
+html .filter .jumpWindow.cancelBet .content table tr td:last-child p {
+  color: #ffffff;
+}
+html .filter .jumpWindow.cancelBet .content table tr td p {
+  font-size: 0.975rem;
+}
+html .filter .jumpWindow.cancelBet .content table tr td button {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: auto;
+  background: #cf0505;
+  margin: 4vw auto;
+}
+html .filter .jumpWindow.cancelBet .content .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  height: auto;
+  background: #414141;
+  margin: 0 auto 3vw;
+}
+html .filter .jumpWindow .jwTitle {
+  width: 100%;
+  height: 8vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b8151b;
+  color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+html .filter .jumpWindow .jwTitle p {
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .filter .jumpWindow .jwTitle i {
+  color: #ffffff;
+  font-size: 1.275rem;
+  position: absolute;
+  right: 20px;
+}
+html .filter .jumpWindow .content {
+  width: 100%;
+  height: auto;
+  min-height: 30vh;
+  padding: 0 10px;
+}
+html .messagePage .mainArea .innerBox {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .messagePage .mainArea .innerBox.display {
+  display: block;
+}
+html .messagePage .mainArea .innerBox .topLine {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #B1B1B1;
+  padding: 0 0 1vw;
+}
+html .messagePage .mainArea .innerBox .topLine button {
+  display: none;
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  padding: 5px 20px 6px 30px;
+}
+html .messagePage .mainArea .innerBox .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .messagePage .mainArea .innerBox .topLine .pageName {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+html .messagePage .mainArea .innerBox .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+  margin: 15px 0;
+}
+html .messagePage .mainArea .innerBox .topnav li {
+  height: 35px;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+html .messagePage .mainArea .innerBox .topnav li.active {
+  background: #cf0505;
+}
+html .messagePage .mainArea .innerBox .topnav li:last-child {
+  margin: 0;
+}
+html .messagePage .mainArea .innerBox .topnav li p {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .messagePage .mainArea .innerBox .topnav li {
+  width: 25%;
+}
+html .messagePage .mainArea .innerBox .messageBox {
+  width: 100%;
+  height: auto;
+}
+html .messagePage .mainArea .innerBox .messageBox li {
+  width: 100%;
+  height: auto;
+  border: solid 2px #b8151b;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+html .messagePage .mainArea .innerBox .messageBox li:last-child {
+  margin: 0;
+}
+html .messagePage .mainArea .innerBox .messageBox li i {
+  width: 50px;
+  height: 48px;
+  margin-right: 30px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .messagePage .mainArea .innerBox .messageBox li .textBox {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+html .messagePage .mainArea .innerBox .messageBox li .textBox .title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .messagePage .mainArea .innerBox .messageBox li .textBox .subTitle {
+  color: #848484;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .messagePage .mainArea .innerBox .messageBox li .textBox .text {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .messagePage .mainArea .innerBox .messageBox li .unread {
+  display: none;
+  width: 15px;
+  height: 15px;
+  background: #66E123;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-left: 0;
+}
+html .messagePage .mainArea .innerBox .messageBox li .unread.display {
+  display: block;
+}
+html .messagePage .mainArea .innerBox .messageCnt {
+  width: 100%;
+  height: auto;
+  border: solid 2px #b8151b;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 15px;
+}
+html .messagePage .mainArea .innerBox .messageCnt p:not(.date) {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+html .messagePage .mainArea .innerBox .messageCnt .date {
+  color: #848484;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+html .center {
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+html .center .left {
+  width: 250px;
+  height: auto;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+html .center .left .navTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 2px solid #dd2830;
+}
+html .center .left ul {
+  width: 100%;
+  height: auto;
+  background: tr;
+}
+html .center .left ul li {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #B1B1B1;
+  overflow: hidden;
+}
+html .center .left ul li:hover a, html .center .left ul li:active a {
+  -webkit-transform: translateX(-34px);
+          transform: translateX(-34px);
+}
+html .center .left ul li:hover a svg, html .center .left ul li:active a svg {
+  fill: #8f2d2c;
+}
+html .center .left ul li:hover a p, html .center .left ul li:active a p {
+  color: #dd2830;
+}
+html .center .left ul li.active a {
+  -webkit-transform: translateX(-34px);
+          transform: translateX(-34px);
+}
+html .center .left ul li.active a svg {
+  fill: #8f2d2c;
+}
+html .center .left ul li.active a p {
+  color: #dd2830;
+}
+html .center .left ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 10px;
+}
+html .center .left ul li a svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  margin-right: 10px;
+}
+html .center .left ul li a p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .leftSide {
+  width: 250px;
+  height: 640px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow-y: auto;
+  padding-right: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 20px 0;
+}
+html .center .leftSide::-webkit-scrollbar {
+  width: 5px;
+}
+html .center .leftSide::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .center .leftSide::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .center .leftSide.active {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 90;
+}
+html .center .leftSide.active .navTitle {
+  width: 250px;
+  background: #202020;
+  padding-left: 10px;
+}
+html .center .leftSide.active ul {
+  width: 250px;
+}
+html .center .leftSide .navoutter {
+  width: 100%;
+  height: auto;
+}
+html .center .leftSide .navoutter .navTitle {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+html .center .leftSide .navoutter ul {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  margin-bottom: 20px;
+}
+html .center .leftSide .navoutter ul:last-child {
+  margin: 20px 0 0;
+}
+html .center .leftSide .navoutter ul li {
+  width: 100%;
+  height: 50px;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+html .center .leftSide .navoutter ul li:hover, html .center .leftSide .navoutter ul li:active {
+  background: #000000;
+  border-color: #cf0505;
+}
+html .center .leftSide .navoutter ul li:hover a, html .center .leftSide .navoutter ul li:active a {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+html .center .leftSide .navoutter ul li:hover a p, html .center .leftSide .navoutter ul li:active a p {
+  color: #cf0505;
+}
+html .center .leftSide .navoutter ul li.active {
+  background: #000000;
+  border-color: #cf0505;
+}
+html .center .leftSide .navoutter ul li.active a {
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+html .center .leftSide .navoutter ul li.active a p {
+  color: #cf0505;
+}
+html .center .leftSide .navoutter ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  padding: 0 10px;
+}
+html .center .leftSide .navoutter ul li a p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .leftSide .navoutter ul li a i {
+  color: #B1B1B1;
+  font-size: 0.8rem;
+}
+html .center .mainArea {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+html .center .mainArea .searchBox {
+  display: none;
+  width: 100%;
+  height: 9vw;
+  margin: 50px 0 2vw;
+  position: relative;
+}
+html .center .mainArea .searchBox input {
+  background: #280606;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  width: 100%;
+  height: 100%;
+  font-size: 0.9rem;
+  border-width: 2px;
+}
+html .center .mainArea .searchBox input::-webkit-input-placeholder {
+  color: #dd2830;
+}
+html .center .mainArea .searchBox input::-moz-placeholder {
+  color: #dd2830;
+}
+html .center .mainArea .searchBox input:-ms-input-placeholder {
+  color: #dd2830;
+}
+html .center .mainArea .searchBox input::-ms-input-placeholder {
+  color: #dd2830;
+}
+html .center .mainArea .searchBox input::placeholder {
+  color: #dd2830;
+}
+html .center .mainArea .searchBox i {
+  width: 5vw;
+  height: 5vw;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+html .center .mainArea .featured {
+  width: 100;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #202020;
+  padding: 0 10px;
+}
+html .center .mainArea .featured p {
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .center .mainArea .swiper {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+html .center .mainArea .swiper .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .swiper .swiper-wrapper .swiper-slide .banner {
+  width: 100%;
+}
+html .center .mainArea .swiper .swiper-button-prev,
+html .center .mainArea .swiper .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 20px;
+  left: unset;
+  right: unset;
+  margin: 0;
+}
+html .center .mainArea .swiper .swiper-button-prev::before, html .center .mainArea .swiper .swiper-button-prev::after,
+html .center .mainArea .swiper .swiper-button-next::before,
+html .center .mainArea .swiper .swiper-button-next::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: 2px solid #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .center .mainArea .swiper .swiper-button-prev i,
+html .center .mainArea .swiper .swiper-button-next i {
+  color: #ffffff;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .center .mainArea .swiper .swiper-button-prev {
+  right: 80px;
+}
+html .center .mainArea .swiper .swiper-button-next {
+  right: 30px;
+}
+html .center .mainArea .middleNav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .middleNav .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #b8151b;
+}
+html .center .mainArea .middleNav .topnav li {
+  width: 20%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #414141;
+  border-radius: 5px 5px 0 0;
+  padding: 0 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html .center .mainArea .middleNav .topnav li:last-child {
+  margin: 0;
+}
+html .center .mainArea .middleNav .topnav li:hover, html .center .mainArea .middleNav .topnav li:active, html .center .mainArea .middleNav .topnav li.active {
+  background: #cf0505;
+}
+html .center .mainArea .middleNav .topnav li:hover p, html .center .mainArea .middleNav .topnav li:active p, html .center .mainArea .middleNav .topnav li.active p {
+  color: #ffffff;
+}
+html .center .mainArea .middleNav .topnav li p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .mainArea .typselect.swiper02 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px;
+  overflow: hidden;
+  position: relative;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide {
+  width: 20% !important;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox {
+  width: auto;
+  height: auto;
+  border: 3px solid #cf0505;
+  border-radius: 8px;
+  padding: 0px 10px 10px;
+  cursor: pointer;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active {
+  background: #cf0505;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active p, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active p {
+  color: #ffffff;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:hover .picBox svg, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox:active .picBox svg, html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox.active .picBox svg {
+  fill: #ffffff;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
+  width: 100%;
+  height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 5px;
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
+}
+html .center .mainArea .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox p {
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02::before,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02 i,
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 i {
+  color: #ffffff;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-prev02 {
+  left: 0;
+}
+html .center .mainArea .typselect.swiper02 .swiper-button-next02 {
+  right: 0;
+}
+html .center .mainArea .countryList {
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+}
+html .center .mainArea .countryList.active {
+  height: auto;
+}
+html .center .mainArea .countryList.active .cTitle i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+html .center .mainArea .countryList .cTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #dd2830;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+html .center .mainArea .countryList .cTitle i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .center .mainArea .countryList ul {
+  width: 100%;
+  height: 34px;
+  overflow: hidden;
+}
+html .center .mainArea .countryList ul.active {
+  height: auto;
+}
+html .center .mainArea .countryList ul.active .smallTitle i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+html .center .mainArea .countryList ul:not(:first-child) {
+  margin-top: 5px;
+}
+html .center .mainArea .countryList ul .smallTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #851316;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+html .center .mainArea .countryList ul .smallTitle i {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+html .center .mainArea .countryList ul li {
+  width: 100%;
+  height: 35px;
+  border-left: 1px solid #dd2830;
+  border-right: 1px solid #dd2830;
+}
+html .center .mainArea .countryList ul li:nth-of-type(1) {
+  border-top: 1px solid #dd2830;
+}
+html .center .mainArea .countryList ul li:not(:last-child) {
+  border-bottom: 1px dotted #dd2830;
+}
+html .center .mainArea .countryList ul li:last-child {
+  border-bottom: 1px solid #dd2830;
+}
+html .center .mainArea .countryList ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+}
+html .center .mainArea .countryList ul li a p {
+  color: #b8151b;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+html .center .mainArea .countryList ul li a i {
+  color: #b8151b;
+  cursor: pointer;
+}
+html .center .mainArea .countryList ul li a i.fa-solid {
+  color: #f3c01a;
+}
+html .center .mainArea .gameContent {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0 0;
+}
+html .center .mainArea .gameContent .gtypeTitle {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 10px;
+  position: relative;
+  width: 100%;
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .center .mainArea .gameContent .gtypeTitle::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .gameContent .content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 20px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+html .center .mainArea .gameContent .content .gBlock {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .gameContent .content .gBlock .up {
+  width: 100%;
+  height: 40px;
+  background: #b8151b;
+  border-radius: 8px 8px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3px 10px 0;
+  position: relative;
+}
+html .center .mainArea .gameContent .content .gBlock .up span {
+  background: #dd2830;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: default;
+  padding: 7px 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox {
+  width: auto;
+  height: auto;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+html .center .mainArea .gameContent .content .gBlock .up .iconBox svg:first-child {
+  margin-right: 5px;
+}
+html .center .mainArea .gameContent .content .gBlock .down {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-radius: 0 0 8px 8px;
+  border: 3px solid #b8151b;
+  position: relative;
+  padding: 20px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .timeZone {
+  color: #dd2830;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .date {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 10px;
+  position: relative;
+}
+html .center .mainArea .gameContent .content .gBlock .down .date::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time svg {
+  width: 24px;
+  height: 24px;
+  fill: #B1B1B1;
+  margin-right: 5px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .time p {
+  color: #B1B1B1;
+  font-size: 0.9rem;
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
+  width: 130px;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  padding: 0.5vw 1vw;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
+  -webkit-transform: translateX(-50%) translateY(2px);
+          transform: translateX(-50%) translateY(2px);
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team:first-child svg {
+  fill: #27A7F0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 10px 0 40px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button {
+  width: 100%;
+  background: #dd2830;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px 0 6px;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:hover, html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button:active, html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team button.active {
+  background: #851316;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
+  display: none;
+  color: #dd2830;
+  text-align: center;
+  margin: 20px 0 0;
+}
+html .center .mainArea .gameContent .content .gBlock .down .winner {
+  color: #dd2830;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 70px;
+}
+html .center .mainArea .swiper03 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
+  width: auto !important;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up {
+  width: 100%;
+  height: 40px;
+  background: #b8151b;
+  border-radius: 8px 8px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3px 10px 0;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up span {
+  background: #dd2830;
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: default;
+  padding: 7px 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox {
+  width: auto;
+  height: auto;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .up .iconBox svg:first-child {
+  margin-right: 5px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  border-radius: 0 0 8px 8px;
+  border: 3px solid #b8151b;
+  position: relative;
+  padding: 20px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .timeZone {
+  color: #dd2830;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .date {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  padding: 0 0 10px;
+  position: relative;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .date::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+  width: 100%;
+  height: auto;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time svg {
+  width: 24px;
+  height: 24px;
+  fill: #B1B1B1;
+  margin-right: 5px;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .time p {
+  color: #B1B1B1;
+  font-size: 0.9rem;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
+  width: 130px;
+  height: auto;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  padding: 0.5vw 1vw;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
+  -webkit-transform: translateX(-50%) translateY(2px);
+          transform: translateX(-50%) translateY(2px);
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  padding: 20px 20px 10px;
+  margin: 30px 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team:first-child svg {
+  fill: #27A7F0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin: 10px 0 40px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button {
+  width: 100%;
+  background: #dd2830;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 3px;
+  padding: 5px 0 6px;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button:hover, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button:active, html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team button.active {
+  background: #851316;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
+  display: none;
+  color: #dd2830;
+  text-align: center;
+  margin: 20px 0 0;
+}
+html .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
+  color: #dd2830;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 70px;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03,
+html .center .mainArea .swiper03 .swiper-button-next03 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03::before,
+html .center .mainArea .swiper03 .swiper-button-next03::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+html .center .mainArea .swiper03 .swiper-button-prev03 i,
+html .center .mainArea .swiper03 .swiper-button-next03 i {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+html .center .mainArea .swiper03 .swiper-button-prev03 {
+  left: 0px;
+}
+html .center .mainArea .swiper03 .swiper-button-next03 {
+  right: 0;
+}
+html .center .gameDetail {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 5vw 19vw;
+  overflow: hidden;
+}
+html .center .gameDetail .topLine {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #B1B1B1;
+  position: relative;
+  padding: 4vw 0;
+  margin: 0 auto;
+}
+html .center .gameDetail .topLine button {
+  background: transparent;
+  border: 1px solid #dd2830;
+  border-radius: 30px;
+  color: #dd2830;
+  font-size: 1rem;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  padding: 5px 20px 6px 30px;
+}
+html .center .gameDetail .topLine button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 5px 4px 0;
+  border-color: transparent #dd2830 transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+}
+html .center .gameDetail .topLine p {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+html .center .gameDetail .title {
+  color: #dd2830;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 5vw;
+  text-align: center;
+}
+html .center .gameDetail .title .vs {
+  font-size: 0.875rem;
+}
+html .center .gameDetail .subTitle {
+  color: #848484;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2vw 0 3vw;
+}
+html .center .gameDetail .topnav {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 4px solid #cf0505;
+}
+html .center .gameDetail .topnav li {
+  width: 24%;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #cf0505;
+  border-radius: 5px 5px 0 0;
+  padding: 0 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+html .center .gameDetail .topnav li:last-child {
+  margin: 0;
+}
+html .center .gameDetail .topnav li:hover, html .center .gameDetail .topnav li:active, html .center .gameDetail .topnav li.active {
+  background: #b8151b;
+}
+html .center .gameDetail .topnav li:hover p, html .center .gameDetail .topnav li:active p, html .center .gameDetail .topnav li.active p {
+  color: #ffffff;
+}
+html .center .gameDetail .topnav li p {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .gameDetail .pkteam {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  padding: 38px 0;
+  margin: 3vw 0;
+}
+html .center .gameDetail .pkteam .outbox {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html .center .gameDetail .pkteam .outbox .team {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .gameDetail .pkteam .outbox .team:first-child svg {
+  fill: #27A7F0;
+}
+html .center .gameDetail .pkteam .outbox .team svg {
+  width: 24px;
+  height: 24px;
+  fill: #dd2830;
+  -webkit-transform: scale(2.3);
+          transform: scale(2.3);
+  margin: 16px 0 30px;
+}
+html .center .gameDetail .pkteam .outbox .team .teamName {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+}
+html .center .gameDetail .pkteam .outbox .VS {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html .center .gameDetail .gTitle {
+  width: 100%;
+  color: #dd2830;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0 10px 10px;
+  position: relative;
+}
+html .center .gameDetail .gTitle::before {
+  content: "";
+  display: none;
+  width: 30%;
+  height: 5px;
+  background: #851316;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+}
+html .center .gameDetail .gTitle::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #b8151b;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+html .center .gameDetail .gTitle .hint {
+  width: 8vw;
+  height: 8vw;
+}
+html .center .gameDetail .info_content {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.5vw 0;
+  margin-bottom: 5vw;
+}
+html .center .gameDetail .info_content .infoBlock {
+  width: 49%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #202020;
+  border-radius: 8px;
+  padding: 1.8vw 1.5vw;
+  cursor: pointer;
+}
+html .center .gameDetail .info_content .infoBlock:hover, html .center .gameDetail .info_content .infoBlock:active {
+  background: #dd2830;
+}
+html .center .gameDetail .info_content .infoBlock.active {
+  background: #dd2830;
+}
+html .center .gameDetail .info_content .infoBlock p {
+  color: #ffffff;
+  font-size: 0.975rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .gameDetail .info_content .infoBlock .rateBtn {
+  width: auto;
+  height: auto;
+  background: #dd2830;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 3vw 4vw;
+}
+html .center .right {
+  width: 300px;
+  height: auto;
+  max-height: 2315px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+html .center .right .betBlock {
+  width: 100%;
+  height: auto;
+  background: #202020;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+html .center .right .betBlock .topList {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .center .right .betBlock .topList li {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 0 10px;
+}
+html .center .right .betBlock .topList li::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #cf0505;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+html .center .right .betBlock .topList li:hover::before, html .center .right .betBlock .topList li:active::before, html .center .right .betBlock .topList li.active::before {
+  display: block;
+}
+html .center .right .betBlock .topList li:hover p, html .center .right .betBlock .topList li:active p, html .center .right .betBlock .topList li.active p {
+  color: #dd2830;
+}
+html .center .right .betBlock .topList li p {
+  color: #848484;
+  font-size: 0.975rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .right .betBlock .betTypeList {
+  width: 100%;
+  height: auto;
+  background: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+html .center .right .betBlock .betTypeList li {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+html .center .right .betBlock .betTypeList li:hover::before, html .center .right .betBlock .betTypeList li:active::before {
+  display: block;
+}
+html .center .right .betBlock .betTypeList li:hover a p, html .center .right .betBlock .betTypeList li:active a p {
+  color: #dd2830;
+}
+html .center .right .betBlock .betTypeList li.active::before {
+  display: block;
+}
+html .center .right .betBlock .betTypeList li.active a p {
+  color: #dd2830;
+}
+html .center .right .betBlock .betTypeList li::before {
+  display: none;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #cf0505;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+html .center .right .betBlock .betTypeList li a {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 5px;
+}
+html .center .right .betBlock .betTypeList li a p {
+  color: #848484;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html .center .right .betBlock .betContent {
+  width: 100%;
+  height: auto;
+  min-height: 275px;
+}
+html .center .right .betBlock .betContent .noData {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .center .right .betBlock .betContent .noData.display {
+  display: block;
+}
+html .center .right .betBlock .betContent .noData p {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+html .center .right .betBlock .betContent .betData {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html .center .right .betBlock .betContent .betData.display {
+  display: block;
+}
+html .center .right .betBlock .betContent .betData .bdOuter {
+  width: 100%;
+  max-height: 2040px;
+  padding: 15px 10px;
+  overflow: overlay;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar {
+  width: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar-thumb {
+  background: #b61d21;
+  border-radius: 30px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter::-webkit-scrollbar-track {
+  background: #b1b1b1;
+  border-radius: 30px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail:not(:first-child) {
+  margin-top: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #2d2d2d;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  position: relative;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+  width: 24px;
+  height: 24px;
+  fill: #848484;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle p {
+  color: #848484;
+  font-size: 0.975rem;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent {
+  width: 100%;
+  background: #000000;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #cf0505;
+  padding: 0 10px 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+  background: #dd2830;
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top i {
+  color: #dd2830;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #202020;
+  border-radius: 5px;
+  padding: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team {
+  width: 45%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team.win svg {
+  opacity: 1;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team:last-child svg {
+  fill: #dd2830;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team svg {
+  width: 35px;
+  height: 35px;
+  fill: #27A7F0;
+  opacity: 0.2;
+  margin: 10px 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .team .teamName {
+  min-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 0.875rem;
+  text-align: center;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+  color: #8f2d2c;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+  color: #dd2830;
+  font-size: 0.975rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #cf0505;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+  color: #dd2830;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #8f2d2c;
+  position: relative;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount p {
+  color: #848484;
+  font-size: 0.875rem;
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%);
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount input {
+  width: 100%;
+  border: none;
+  padding: 7px 10px;
+  border: 1px solid #cf0505;
+  border-radius: 5px;
+  text-align: right;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span {
+  color: #ffffff;
+  font-size: 0.975rem;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span:first-child {
+  background: #8f2d2c;
+  border-radius: 5px;
+  padding: 5px 4px 5px 5px;
+  margin-right: 10px;
+}
+html .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .return span.num {
+  font-weight: bold;
+}
+html .center .right .betBlock .betContent .betData .betTotal {
+  width: 100%;
+}
+html .center .right .betBlock .betContent .betData .betTotal li {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+html .center .right .betBlock .betContent .betData .betTotal li:last-child {
+  padding: 10px 10px 20px;
+}
+html .center .right .betBlock .betContent .betData .betTotal li p {
+  color: #dd2830;
+  font-weight: bold;
+}
+html .center .right .betBlock .betContent .betData .betTotal li span {
+  color: #ffffff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn {
+  width: 60px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #848484;
+  border-radius: 50px;
+  cursor: pointer;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn.active {
+  background: #66E123;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn.active i {
+  display: block;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn i {
+  display: none;
+  color: #0F7E06;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: auto;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .changeBtn span {
+  width: 25px;
+  height: 25px;
+  background: #ffffff;
+  border-radius: 50px;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .okBtn {
+  background: #cf0505;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.5vw 1vw;
+  margin: auto;
+}
+html .center .right .betBlock .betContent .betData .betTotal li .okBtn:hover, html .center .right .betBlock .betContent .betData .betTotal li .okBtn:active, html .center .right .betBlock .betContent .betData .betTotal li .okBtn.active {
+  background: #851316;
+}
+html .center .right .betBlock .smallFilter {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .right .betBlock .smallFilter button {
+  width: 150px;
+  height: 40px;
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html .center .right .betBlock .closeRight {
+  display: none;
+  width: 100%;
+  height: 47px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #b8151b;
+  cursor: pointer;
+  z-index: 1;
+}
+html .center .right .betBlock .closeRight p {
+  color: #ffffff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+html .center aside.betRecordBtn {
+  display: none;
+  width: 75px;
+  height: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ae2b2b), to(#cd3535));
+  background: linear-gradient(90deg, #ae2b2b 0%, #cd3535 100%);
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  cursor: pointer;
+}
+html .center aside.betRecordBtn .betCount {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #66E123;
+  border-radius: 50px;
+  position: absolute;
+  right: -8px;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(1) {
+  top: 5px;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(1) p {
+  color: #000000;
+}
+html .center aside.betRecordBtn .betCount:nth-of-type(2) {
+  background: #851316;
+  bottom: 5px;
+}
+html .center aside.betRecordBtn .betCount p {
+  color: #ffffff;
+}
+html footer {
+  width: 100%;
+  height: auto;
+  background: #202020;
+}
+html footer .top {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+html footer .top .infoLine {
+  width: 100%;
+  height: auto;
+  min-height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+html footer .top .infoLine .lang {
+  width: auto;
+  position: absolute;
+  left: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer .top .infoLine .lang .langTitle {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 20px;
+  white-space: nowrap;
+}
+html footer .top .infoLine .lang .flag {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+html footer .top .infoLine .lang ul {
+  width: 220px;
+  height: auto;
+  display: none;
+  background: #ffffff;
+  border-radius: 3px;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: -150px;
+}
+html footer .top .infoLine .lang ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0px 4px 6px 4px;
+  border-color: #ffffff transparent;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+html footer .top .infoLine .lang ul.display {
+  display: block;
+}
+html footer .top .infoLine .lang ul .innerTitle {
+  color: #000000;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+html footer .top .infoLine .lang ul li {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+html footer .top .infoLine .lang ul li:last-child {
+  margin: 0;
+}
+html footer .top .infoLine .lang ul li .flag {
+  margin-right: 10px;
+}
+html footer .top .infoLine .lang ul li label {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  margin-right: 10px;
+  margin-right: 10px;
+}
+html footer .top .infoLine .lang ul li label:checked {
+  background-color: #66E123;
+  -webkit-box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+          box-shadow: inset -0.5px -0.5px 1px #000000, inset 0.5px 0.5px 1px #000000;
+}
+html footer .top .infoLine .lang ul li label input {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: 0;
+  margin: 0;
+}
+html footer .top .infoLine .lang ul li p {
+  color: #b8151b;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+html footer .top .infoLine .payway {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+html footer .top .infoLine .payway span {
+  margin: 0 5px;
+}
+html footer .top .infoLine .betRate {
+  display: none;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer .top .infoLine .betRate p {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+html footer .top .infoLine .betRate select {
+  width: auto;
+  background: none;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+html footer .top .company {
+  width: 100%;
+  height: auto;
+  min-height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 20px;
+}
+html footer .top .company .logo {
+  height: 69px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+html footer .top .company .line {
+  width: 1px;
+  height: 100%;
+  background: #414141;
+  margin: 0 10px;
+}
+html footer .top .company .coDetail {
+  max-width: 670px;
+  color: #B1B1B1;
+  font-size: 1rem;
+  line-height: 20px;
+}
+html footer .bottom {
+  width: 100%;
+  height: 70px;
+  background: #b8151b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+html footer .bottom p {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+html footer .bottom p:last-child {
+  margin-top: 10px;
+}
+html footer .mobileFooter {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+html footer .mobileFooter li {
+  width: 25%;
+  height: auto;
+}
+html footer .mobileFooter li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2vw 0;
+}
+html footer .mobileFooter li a i {
+  width: 7vw;
+  height: 7vw;
+}
+html footer .mobileFooter li a i.home {
+  background-position-x: 25%;
+}
+html footer .mobileFooter li a i.winlose {
+  background-position-x: 50%;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+html footer .mobileFooter li a i.bet {
+  background-position-x: 75%;
+}
+html footer .mobileFooter li a i.member {
+  background-position-x: 100%;
+}
+html footer .mobileFooter li a p {
+  color: #FF9B9F;
+  font-size: 3vw;
+  margin-top: 5px;
+}
+html footer .mobileFooter li:active a, html footer .mobileFooter li.active a {
+  background: #dd2830;
+}
+html footer .mobileFooter li:active a i, html footer .mobileFooter li.active a i {
+  background-position-y: 100%;
+}
+html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 1315px) {
+  html body header .top ul {
+    left: 40%;
+  }
+  html body header .top ul li:last-child {
+    display: none;
+  }
+  html body header .top .login_Area {
+    margin-left: 15px;
+  }
+  html body header .top .login_Area .checkBox {
+    opacity: 1;
+    pointer-events: auto !important;
+    cursor: pointer;
+  }
+  html body header .top .mem_Area {
+    margin-left: 15px;
+  }
+  html body header .top .mem_Area .checkBox {
+    opacity: 1;
+    pointer-events: auto !important;
+    cursor: pointer;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  html body header .bottom .mid {
+    margin: 0 10px;
+  }
+}
+@media only screen and (max-width: 1188px) {
+  html body header .top ul li:nth-of-type(3) {
+    display: none;
+  }
+  html body header .top .mem_Area .checkBox ul li:first-child {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  html body main.innerPage .leftSide {
+    padding-left: 30px;
+  }
+  html body main .center .mainArea .gameContent .content {
+    gap: 20px 10px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down {
+    padding: 12px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    padding: 16px 12px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    padding: 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    padding: 16px 12px;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html body header .top {
+    padding: 0;
+    position: relative;
+  }
+  html body header .top .logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+  html body header .top .logo img {
+    height: 40px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  html body header .top ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 10px;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    top: 70px;
+  }
+  html body header .top ul li:nth-of-type(3), html body header .top ul li:nth-of-type(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body header .top ul li a i {
+    display: none;
+  }
+  html body header .top ul li a p {
+    font-size: 0.8rem;
+  }
+  html body header .top .loginArea {
+    display: none;
+  }
+  html body header .top .rwd_TOPNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body header .top .mem_Area {
+    display: none;
+  }
+  html body header .bottom {
+    display: none;
+  }
+  html body main {
+    padding-top: 100px;
+  }
+  html body main.innerPage .center .left {
+    display: block;
+  }
+  html body main .center .left {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 90;
+  }
+  html body main .center .left.active {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5019607843);
+  }
+  html body main .center .left .navTitle {
+    width: 250px;
+    background: #000000;
+    padding-left: 10px;
+  }
+  html body main .center .left ul {
+    width: 250px;
+    height: calc(100% - (1.2rem + 20px));
+    overflow-y: auto;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+  }
+  html body main .center .left ul::-webkit-scrollbar {
+    width: 0;
+  }
+  html body main .center .left ul li {
+    background: #000000;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  html body footer .top .infoLine {
+    height: 105px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+  }
+  html body footer .top .infoLine .lang {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  html body footer .top .infoLine .lang ul {
+    top: 30px;
+    left: -125px;
+  }
+  html body footer .top .infoLine .payway {
+    font-size: 0.8rem;
+  }
+  html body footer .top .company {
+    width: 60%;
+    min-width: 540px;
+  }
+  html body footer .top .company .coDetail {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  html body footer .top .infoLine {
+    height: 60px;
+    background: #b8151b;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+    padding: 0 20%;
+  }
+  html body footer .top .infoLine .lang {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html body footer .top .infoLine .payway {
+    display: none;
+  }
+  html body footer .top .infoLine .betRate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  html body footer .top .company {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 840px) {
+  html body main .center .mainArea .gameContent .content {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 16px;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail {
+    width: 48%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more {
+    display: block;
+    margin: 20px auto 0;
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:hover, html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more:active, html body main .center .mainArea .gameContent .content .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam {
+    width: 48%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html body main .center .mainArea .gameContent .content .gBlock .down .winner {
+    display: none;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide {
+    width: 100% !important;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: 48%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more {
+    display: block;
+    margin: 20px auto 0;
+    position: static;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:hover, html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more:active, html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail .more.active {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 48%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin: 0;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .winRWD {
+    display: block;
+  }
+  html body main .center .mainArea .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .winner {
+    display: none;
+  }
+  html body main .center .right {
+    width: 0;
+    height: calc(100% - 90px);
+    position: fixed;
+    top: 90px;
+    left: 0;
+    z-index: 110;
+    margin-top: 0;
+  }
+  html body main .center .right.active {
+    width: 100%;
+  }
+  html body main .center .right .betBlock {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body main .center .right .betBlock .topList {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .right .betBlock .topList li {
+    width: 25%;
+  }
+  html body main .center .right .betBlock .topList li p {
+    width: 100%;
+    text-align: center;
+  }
+  html body main .center .right .betBlock .betTypeList {
+    padding: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .right .betBlock .betTypeList li {
+    width: 34%;
+  }
+  html body main .center .right .betBlock .betTypeList li a {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html body main .center .right .betBlock .betContent {
+    height: 100%;
+  }
+  html body main .center .right .betBlock .smallFilter {
+    height: calc(100% - 47px);
+  }
+  html body main .center .right .betBlock .closeRight {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center aside.betRecordBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html body footer .top .company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  html body footer .top .company .logo {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 4vw;
+  }
+  html body header.logINN .top .mem_Area {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  html body header.logINN .top .mem_Area .account {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+  }
+  html body header.logINN .top .mem_Area .account i {
+    font-size: 5vw;
+    cursor: pointer;
+  }
+  html body header.logINN .top .mem_Area .account p {
+    display: none;
+  }
+  html body header.logINN .top .mem_Area .wallet {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-right: 10px;
+  }
+  html body header.logINN .top .mem_Area .logoutBtn {
+    display: none;
+  }
+  html body header .top {
+    height: 50px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 20px;
+  }
+  html body header .top a.logo {
+    width: auto;
+    height: auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: 3px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  html body header .top a.logo img {
+    height: 30px;
+  }
+  html body header .top ul {
+    display: none;
+  }
+  html body header .top .rwd_TOPNav {
+    display: none;
+  }
+  html body header .top .langBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body header .top .mobile_Login {
+    display: block;
+  }
+  html body header .top .mem_Area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 65px;
+  }
+  html body header .top .mem_Area .checkBox,
+html body header .top .mem_Area .money,
+html body header .top .mem_Area .message {
+    display: none;
+  }
+  html body header .top .mem_Area .account {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  html body header .top .mem_Area .account i {
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  html body header .top .mem_Area .account p {
+    display: none;
+  }
+  html body header .top .mem_Area .wallet {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-right: 10px;
+  }
+  html body header .top .mem_Area .wallet button {
+    display: none;
+  }
+  html body main {
+    padding-top: 0px;
+  }
+  html body main.inMain {
+    padding-top: 50px;
+  }
+  html body main.inMain .mainArea .searchBox {
+    margin-top: 0;
+  }
+  html body main .center.betPage .mainArea .innerBox {
+    padding: 0 4vw 45vw;
+  }
+  html body main .center.betPage .mainArea .innerBox .topLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #B1B1B1;
+    position: relative;
+    padding: 4vw 0;
+  }
+  html body main .center.betPage .mainArea .innerBox .topLine button {
+    background: transparent;
+    border: 1px solid #dd2830;
+    border-radius: 30px;
+    color: #dd2830;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    padding: 5px 20px 6px 30px;
+  }
+  html body main .center.betPage .mainArea .innerBox .topLine button:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 5px 4px 0;
+    border-color: transparent #dd2830 transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  html body main .center.betPage .mainArea .innerBox .topLine p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  html body main .center.betPage .mainArea .innerBox .topLine button {
+    display: block;
+  }
+  html body main .center.betPage .mainArea .innerBox .topnav {
+    margin-bottom: 2vw;
+  }
+  html body main .center.betPage .mainArea .innerBox .topnav li {
+    width: 20%;
+    padding: 0 1vw;
+    margin-right: 1vw;
+  }
+  html body main .center.betPage .mainArea .innerBox.myResult {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .center.betPage .mainArea .innerBox .betBox .betData li {
+    margin-bottom: 2vw;
+  }
+  html body main .center.betPage .mainArea .innerBox .betBox .betData li .dataNum {
+    background: #cf0505;
+  }
+  html body main .center.betPage .mainArea .innerBox .betBox .betData li .dataNum table {
+    margin: 4vw 0;
+  }
+  html body main .center.betPage .mainArea .innerBox .betBox table tr td div.teamBox {
+    padding: 2vw 0;
+  }
+  html body main .center.betPage .mainArea .innerBox .betBox table tr td div .cancleBtn {
+    padding: 1.5vw;
+  }
+  html body main .center.settingACPW .mainArea .innerBox .topLine button {
+    left: 20px;
+  }
+  html body main .center.settingACPW .mainArea .innerBox .topLine .pageName {
+    font-size: 0.9rem;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label {
+    padding: 4vw 5vw;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .inputTitle {
+    margin-bottom: 5vw;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label input {
+    width: 100%;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .databox i {
+    width: 6vw;
+    height: 6vw;
+    right: 5vw;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .safeBlock {
+    width: 100%;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .remind {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 0;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .remind i {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 4vw;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .remind p {
+    max-width: 90%;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form label .submitBtn {
+    width: 50%;
+    padding: 3.2vw;
+    margin: 4vw auto;
+  }
+  html body main .center.settingACPW .mainArea .innerBox form .checkBlock .inputTitle {
+    margin-bottom: 5vw;
+  }
+  html body main .center.messagePage .innerBox {
+    padding: 0 4vw 22vw;
+  }
+  html body main .center.messagePage .innerBox .topLine button {
+    left: 20px;
+  }
+  html body main .center.messagePage .innerBox .topLine .pageName {
+    font-size: 1.2rem;
+  }
+  html body main .center.messagePage .innerBox .topnav {
+    margin: 4vw 0;
+  }
+  html body main .center.messagePage .innerBox .messageBox li {
+    padding: 4vw;
+    margin-bottom: 4vw;
+  }
+  html body main .center.messagePage .innerBox .messageBox li i {
+    width: 9vw;
+    height: 7vw;
+    margin-right: 4vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center.messagePage .innerBox .messageBox li .textBox .title {
+    margin-bottom: 2vw;
+  }
+  html body main .center.messagePage .innerBox .messageBox li .textBox .subTitle {
+    margin-bottom: 2vw;
+  }
+  html body main .center.messagePage .innerBox .messageBox li .unread {
+    width: 3vw;
+    height: 3vw;
+    margin-left: 4vw;
+  }
+  html body main .center.messagePage .innerBox .messageCnt {
+    padding: 4vw;
+    margin-top: 4vw;
+  }
+  html body main .center.messagePage .innerBox .messageCnt .date {
+    margin-bottom: 4vw;
+  }
+  html body main .center.overViewPage .innerBox {
+    padding: 0 4vw 22vw;
+  }
+  html body main .center.overViewPage .innerBox .topLine button {
+    left: 20px;
+  }
+  html body main .center.overViewPage .innerBox .topLine .pageName {
+    font-size: 1.2rem;
+  }
+  html body main .center.overViewPage .innerBox ul {
+    padding: 4vw;
+  }
+  html body main .center.overViewPage .innerBox ul li {
+    padding: 0;
+  }
+  html body main .center.userSetting .innerBox {
+    padding: 0 4vw 22vw;
+  }
+  html body main .center.userSetting .innerBox .topLine button {
+    left: 20px;
+  }
+  html body main .center.userSetting .innerBox .topLine .pageName {
+    font-size: 1.2rem;
+  }
+  html body main .center.userSetting .innerBox form label {
+    padding: 4vw 5vw;
+  }
+  html body main .center.userSetting .innerBox form label .submitBtn {
+    width: 50%;
+    padding: 3.2vw;
+    margin: 4vw auto;
+  }
+  html body main .center.userSetting .innerBox form label .inBox .switchBtn p {
+    padding: 2.5vw;
+  }
+  html body main .center.userSetting .innerBox form label .inBox .switchBtn p span {
+    padding: 2.5vw;
+  }
+  html body main .center.userSetting .innerBox form .btnBox p.bTitle {
+    margin-bottom: 2vw;
+  }
+  html body main .center.userSetting .innerBox form .btnBox p:nth-last-of-type(1) {
+    position: relative;
+    bottom: unset;
+    left: unset;
+  }
+  html body main .center.userSetting .innerBox form .btnBox .inBox {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2vw 1fr 2vw 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    margin-top: 4vw;
+  }
+  html body main .center.userSetting .innerBox form .btnBox .inBox input {
+    background: #280606;
+    border-radius: 8px;
+    border: 2px solid #cf0505;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 2vw 3vw;
+    width: 100%;
+    margin: 0;
+  }
+  html body main .center.userSetting .innerBox form .btnBox .inBox input:hover, html body main .center.userSetting .innerBox form .btnBox .inBox input:active, html body main .center.userSetting .innerBox form .btnBox .inBox input.active {
+    background: #ffffff;
+    color: #000000;
+  }
+  html body main .center.servicePage .innerBox {
+    padding: 0 4vw 22vw;
+  }
+  html body main .center.servicePage .innerBox .topLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #B1B1B1;
+    position: relative;
+    padding: 4vw 0;
+  }
+  html body main .center.servicePage .innerBox .topLine button {
+    background: transparent;
+    border: 1px solid #dd2830;
+    border-radius: 30px;
+    color: #dd2830;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    padding: 5px 20px 6px 30px;
+  }
+  html body main .center.servicePage .innerBox .topLine button:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 5px 4px 0;
+    border-color: transparent #dd2830 transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  html body main .center.servicePage .innerBox .topLine p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  html body main .center.servicePage .innerBox .topLine button {
+    left: 20px;
+  }
+  html body main .center.servicePage .innerBox .topLine .pageName {
+    font-size: 1.2rem;
+  }
+  html body main .center.servicePage .innerBox .topnav {
+    margin: 4vw 0;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .title {
+    padding-bottom: 1.5vw;
+    margin-bottom: 2vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .title:first-child {
+    margin-top: 4vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .selectBox {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 8vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .selectBox select {
+    width: 100%;
+    height: 11vw;
+    background: #280606;
+    border: 1px solid #dd2830;
+    border-radius: 30px;
+    color: #dd2830;
+    font-size: 1rem;
+    padding: 8px 30px 10px 12px;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .selectBox i {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0px 4px 6px;
+    border-color: transparent transparent transparent #dd2830;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    pointer-events: none;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+            transform: translateY(-50%) rotate(90deg);
+    left: unset;
+    right: 6vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .textBox {
+    margin-bottom: 8vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .textBox textarea {
+    height: 30vh;
+    padding: 3vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .textBox .imgBox {
+    padding: 3vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox .textBox .imgBox i {
+    width: 15vw;
+    height: 15vw;
+    margin-bottom: 4vw;
+  }
+  html body main .center.servicePage .innerBox .feebackBox button {
+    width: 50%;
+    height: auto;
+    padding: 3.2vw;
+  }
+  html body main .center .left,
+html body main .center .leftSide {
+    display: none;
+  }
+  html body main .center .mainArea {
+    padding: 0;
+  }
+  html body main .center .mainArea.index {
+    padding: 2vw 2vw 22vw;
+  }
+  html body main .center .mainArea.index .searchBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .center .mainArea.index .swiper {
+    display: none;
+  }
+  html body main .center .mainArea.index .middleNav .topnav li {
+    width: 25%;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 {
+    padding: 4vw 3vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide {
+    width: auto !important;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox {
+    padding: 0 3vw 3vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox {
+    width: 16vw;
+    height: 16vw;
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox .picBox svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  html body main .center .mainArea.index .typselect.swiper02 .swiper-wrapper .swiper-slide .gameTypeBox p {
+    max-width: 16vw;
+  }
+  html body main .center .mainArea.index .gameContent {
+    padding: 4vw 0 0;
+  }
+  html body main .center .mainArea.index .gameContent .content {
+    gap: 4vw 0;
+    padding: 4vw 0;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down {
+    padding: 2vw;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .infoDetail {
+    width: 100%;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam {
+    width: 58%;
+    padding: 7vw 4vw 4vw;
+    margin-right: 4vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .outbox .team svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 0 0 5vw;
+  }
+  html body main .center .mainArea.index .gameContent .content .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 4vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down {
+    padding: 4vw 2vw 2vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .infoDetail {
+    width: 100%;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam {
+    width: 58%;
+    padding: 7vw 4vw 4vw;
+    margin-right: 4vw;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team svg {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    margin: 0 0 5vw;
+  }
+  html body main .center .mainArea.index .swiper03 .swiper-wrapper .swiper-slide .gBlock .down .pkTeam .outbox .team .teamName {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 4vw;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox {
+    margin-top: 4vw;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox .userBox {
+    padding: 1vw 3vw 2vw;
+    border-bottom: 1px solid #dd2830;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox .userBox::before {
+    display: block;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox .userBox .userPic {
+    width: 15vw;
+    height: 15vw;
+    margin: 1vw 4.5vw 1vw 0;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox .userBox p {
+    font-size: 0.95rem;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox .userBox p span {
+    font-size: 1rem;
+    margin-top: 2vw;
+  }
+  html body main .center .mainArea .innerBox.userHome .topBox ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main .center .mainArea .innerBox.userHome .pageList {
+    display: block;
+  }
+  html body main .center .mainArea .innerBox.betLimit {
+    display: block;
+  }
+  html body main .center .mainArea .innerBox .topLine {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #B1B1B1;
+    position: relative;
+    padding: 4vw 0;
+  }
+  html body main .center .mainArea .innerBox .topLine button {
+    background: transparent;
+    border: 1px solid #dd2830;
+    border-radius: 30px;
+    color: #dd2830;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    padding: 5px 20px 6px 30px;
+  }
+  html body main .center .mainArea .innerBox .topLine button:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 5px 4px 0;
+    border-color: transparent #dd2830 transparent transparent;
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-right: 10px;
+  }
+  html body main .center .mainArea .innerBox .topLine p {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  html body main .center .mainArea .innerBox .topLine button {
+    display: block;
+  }
+  html body main .center .mainArea .gameContent .down .infoDetail .more {
+    padding: 2vw 3vw !important;
+  }
+  html body main .center .right {
+    display: none;
+    height: 100%;
+    top: 0;
+    z-index: 999;
+  }
+  html body main .center .right.active {
+    display: block;
+  }
+  html body main .center .right .betBlock {
+    background: #000000;
+  }
+  html body main .center .right .betBlock .topList li.active::before {
+    background: #b8151b;
+  }
+  html body main .center .right .betBlock .topList li.active p {
+    color: #b8151b;
+  }
+  html body main .center .right .betBlock .betTypeList {
+    background: #131313;
+  }
+  html body main .center .right .betBlock .betTypeList li:hover::before, html body main .center .right .betBlock .betTypeList li:active::before, html body main .center .right .betBlock .betTypeList li.active::before {
+    background: #cf0505;
+  }
+  html body main .center .right .betBlock .betTypeList li:hover a p, html body main .center .right .betBlock .betTypeList li:active a p, html body main .center .right .betBlock .betTypeList li.active a p {
+    color: #cf0505;
+  }
+  html body main .center .right .betBlock .betTypeList li a p {
+    color: #B1B1B1;
+  }
+  html body main .center .right .betBlock .bdTitle {
+    padding: 5px 10px !important;
+  }
+  html body main .center .right .betBlock .betContent .betData {
+    max-height: calc(100vh - 127px);
+    overflow: auto;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter {
+    max-height: auto;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .top span {
+    background-color: #dd2830;
+    padding: 7px 10px !important;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle {
+    background: #414141;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdTitle svg {
+    fill: #848484;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top {
+    border-color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .top span {
+    background: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .pkTeam .VS {
+    color: #ffffff;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .wintext {
+    color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin {
+    border-color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betwin p {
+    color: #dd2830;
+  }
+  html body main .center .right .betBlock .betContent .betData .bdOuter .betDetail .bdContent .betamount {
+    border-color: #b8151b;
+  }
+  html body main .center .right .betBlock .betContent .betData .betTotal li p {
+    color: #dd2830;
+    font-weight: bold;
+  }
+  html body main .center .right .betBlock .betContent .betData .betTotal li .okBtn {
+    padding: 3.2vw;
+  }
+  html body main .center .right .betBlock .closeRight {
+    background: #cf0505;
+  }
+  html body main .center .betRecordBtn {
+    bottom: 22vw;
+    right: 20px;
+  }
+  html body footer {
+    background: #851316;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 120;
+  }
+  html body footer .top,
+html body footer .bottom {
+    display: none;
+  }
+  html body footer .mobileFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}

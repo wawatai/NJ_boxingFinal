@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link class="css" rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <header>
+        <!-- 上 -->
+        <div class="top">
+            <a href="../index.html" class="logo">
+                <img src="../image/logo.png">
+            </a>
+            <div class="loginArea">
+                <button type="button" class="signIN" onclick="window.location.href='./register.html'">登録</button>
+                <button type="button" class="signUP" onclick="window.location.href='./login.html'">ログイン</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="login">
+            <ul class="inputArea">
+                <li>
+                    <div class="typeName">
+                        <p>EメールまたはユーザーID</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text" placeholder="ユーザーネーム">
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <p>パスワード</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text" placeholder="パスワード">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="check">
+                <div class="checkBox">
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                    <p>ログイン情報を保存</p>
+                </div>
+                <button onclick="window.location.href='./login_index.html'">ログイン</button>
+            </div>
+        </div>
+        <div class="registerBox">
+            <p>会員登録をされていない方はこちら</p>
+            <button onclick="window.location.href='./register.html'">登録</button>
+        </div>
+    </main>
+    <footer>
+        <!-- 上 -->
+        <div class="top">
+            <div class="infoLine">
+                <div class="lang">
+                    <p class="langTitle">言語:</p>
+                    <i class="flag jp"></i>
+                    <ul class="checkBox">
+                        <p class="innerTitle">言語</p>
+                        <li>
+                            <i class="flag jp"></i>
+                            <label class="active">
+                                <input type="checkbox">
+                            </label>
+                            <p>日本語</p>
+                        </li>
+                        <li>
+                            <i class="flag"></i>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                            <p>English</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <p class="payway">
+                    <span>VISA</span>
+                    <span>MASTERCARD</span>
+                    <span>BITCON</span>
+                </p>
+            </div>
+            <div class="company">
+                <img class="logo" src="../image/logo.png">
+                <div class="line"></div>
+                <p class="coDetail">
+                    MANEKIの運営とサービスはキュラソー政府に登録されている1ban Ventures B.V. (ライセンス番号 No. 8048/JAZ)が提供しており、キュラソー政府の法令に則り行っています。
+                </p>
+            </div>
+        </div>
+        <!-- 下 -->
+        <div class="bottom">
+            <p class="copyRight">©2023 MANEKI</p>
+        </div>
+    </footer>
+</body>
+</html>

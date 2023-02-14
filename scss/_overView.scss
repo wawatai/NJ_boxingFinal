@@ -1,0 +1,74 @@
+.overViewPage {
+
+    //中
+    .mainArea {
+
+        .innerBox {
+            width: 100%;
+            padding: 0;
+            
+            ul {
+                width: 100%;
+                height: auto;
+                padding: 15px 0;
+                
+
+                li {
+                    width: 100%;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 10px;
+
+                    &:nth-of-type(3) {
+                        border-bottom: 1px solid $mainColor_7;
+                    }
+
+                    &:last-child {
+                        justify-content: flex-end;
+
+                        p {
+                            color: $mainColor_9;
+                            font-weight: bold;
+
+                            &:last-child {
+                                color: $mainColor_3;
+                                margin-left: 50px;
+                            }
+                        }
+                    }
+
+                    p {
+                        color: $mainColor_3;
+                        font-size: 1rem;
+
+                        &:last-child {
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            
+            .topLine {
+                width: 100%;
+                height: auto;
+                border-bottom: 3px solid $mainColor_8;
+                padding: 0 0 1vw;
+
+                button {
+                    display: none;
+                }
+
+                .pageName {
+                    color: $mainColor_3;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+    

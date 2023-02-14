@@ -1,0 +1,469 @@
+//主色
+$mainColor: #b8151b;
+$mainColor_2: #000000;
+$mainColor_3: #ffffff;
+$mainColor_4: #414141;
+$mainColor_5: #851316;
+$mainColor_6: #dd2830;
+$mainColor_7: #cf0505;
+$mainColor_8: #B1B1B1;
+$mainColor_9: #848484;
+$mainColor_10: #66E123;
+$mainColor_11: #0F7E06;
+$mainColor_12: #27A7F0;
+$mainColor_13: #FF9B9F;
+$mainColor_14: #280606;
+$mainColor_15: #8f2d2c;
+$mainColor_16: #f3c01a;
+$mainColor_17: #202020;
+$mainColor_18: #131313;
+$mainColor_19: #2d2d2d;
+
+//mainWrap
+@mixin gBlock {
+
+    .up {
+        width: 100%;
+        height: 40px;
+        background: $mainColor;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3px 10px 0;
+        position: relative;
+
+        span {
+            background: $mainColor_6;
+            filter: brightness(1.1);
+            border-radius: 3px;
+            color: $mainColor_3;
+            font-size: 0.9rem;
+            font-weight: bold;
+            cursor: default;
+            padding: 7px 5px;
+        }
+
+        .iconBox {
+            width: auto;
+            height: auto;
+            
+            svg {
+                width: 24px;
+                height: 24px;
+                fill: $mainColor_3;
+
+                &:first-child {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .down {
+        width: 100%;
+        height: auto;
+        background: transparent;
+        border-radius: 0 0 8px 8px;
+        border: 3px solid $mainColor;
+        position: relative;
+        padding: 20px;
+
+        .timeZone {
+            color: $mainColor_6;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            @include bigtitle_Line;
+        }
+
+        // 時間資訊
+        .infoDetail {
+            width: 100%;
+            height: auto;
+
+            .time {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin: 10px 0 0;
+                    
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: $mainColor_8;
+                    margin-right: 5px;
+                    transform: scale(0.9);
+                }
+
+                p {
+                    color: $mainColor_8;
+                    font-size: 0.9rem;
+                }
+            }
+
+            .more {
+                width: 130px;
+                height: auto;
+                @include btnStyle_1;
+                background: $mainColor_7;
+                padding: 0.5vw 1vw;
+                position: absolute;
+                bottom: 35px;
+                left: 50%;
+                transform: translateX(-50%);
+
+                &:hover,&:active,&.active {
+                    transform: translateX(-50%) translateY(2px);
+                }
+            }
+        }
+
+        .pkTeam {
+            width: 100%;
+            height: auto;
+            background: $mainColor_17;
+            padding: 20px 20px 10px;
+            margin: 30px 0;
+
+            .outbox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                align-items: center;
+
+                .team {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:first-child {
+
+                        svg {
+                            fill: $mainColor_12;
+                        }
+                    }
+                   
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        fill: $mainColor_6;
+                        transform: scale(1.8);
+                        margin: 10px 0 40px;
+                    }
+
+                    .teamName {
+                        color: $mainColor_3;
+                        font-size: 0.9rem;
+                        font-weight: bold;
+                        text-align: center;
+                        margin-bottom: 30px;
+                    }
+
+                    button {
+                        width: 100%;
+                        background: $mainColor_6;
+                        color: $mainColor_3;
+                        font-weight: bold;
+                        border-radius: 3px;
+                        padding: 5px 0 6px;
+
+                        &:hover,&:active,&.active {
+                            background: $mainColor_5;
+                        }
+                    }
+                }
+
+                .VS {
+                    color: $mainColor_3;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin: 0 10px;
+                    flex-shrink: 0;
+                }
+            }
+
+            .winRWD {
+                display: none;
+                color: $mainColor_6;
+                text-align: center;
+                margin: 20px 0 0;
+            }
+        }
+
+        .winner {
+            color: $mainColor_6;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 0 70px;
+        }
+    }
+}
+
+//jumpWindow
+$filter: #00000080;
+
+//button
+@mixin btnStyle_1 {
+    background: $mainColor_6;
+    border-radius: 50px;
+    border: none;
+    color: $mainColor_3;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin btnStyle_2 {
+    background: $mainColor_14;
+    border-radius: 8px;
+    border: 2px solid $mainColor_7;
+    color: $mainColor_3;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vw 3vw;
+
+    &:hover,&:active,&.active {
+        background: $mainColor_3;
+        color: $mainColor_2;
+    }
+}
+
+//input
+@mixin inputStyle_1 {
+    background: #ffffff;
+    border-radius: 3px;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+@mixin inputStyle_2 {
+    background: $mainColor_14;
+    border: 1px solid $mainColor_6;
+    border-radius: 30px;
+    color: $mainColor_3;
+    font-size: 1rem;
+    padding: 8px 15px;
+
+    &::placeholder {
+        color: $mainColor_6;
+    }
+}
+
+//select
+@mixin selectStyle_1 {
+    background: none;
+    border: 2px solid $mainColor_3;
+    border-radius: 30px;
+    color: $mainColor_3;
+    padding: 8px 30px 10px 12px;
+
+    &:optional {
+        background: $mainColor_2
+    }
+}
+@mixin selectStyle_2 {
+    background: $mainColor_14;
+    border: 1px solid $mainColor_6;
+    border-radius: 30px;
+    color: $mainColor_6;
+    font-size: 1rem;
+    padding: 8px 30px 10px 12px;
+}
+
+//共用
+@mixin arrow_1 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 4px 0 4px;
+    border-color: $mainColor_3 transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+    pointer-events: none;
+}
+@mixin arrow_2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0px 4px 6px;
+    border-color:  transparent transparent  transparent $mainColor_6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+    pointer-events: none;
+}
+
+@mixin mobile_Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid $mainColor_8;
+    position: relative;
+    padding: 4vw 0;
+
+    button {
+        background: transparent;
+        border: 1px solid $mainColor_6;
+        border-radius: 30px;
+        color: $mainColor_6;
+        font-size: 1rem;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+        padding: 5px 20px 6px 30px;
+
+        &:before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 4px 5px 4px 0;
+            border-color: transparent $mainColor_6 transparent transparent;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translateY(-50%);
+            margin-right: 10px;
+        }
+    }
+
+    p {
+        color: $mainColor_3;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}
+
+@mixin topNav {
+    display: flex;
+    border-bottom: 4px solid $mainColor;
+
+    li {
+        height: 35px;
+        background: $mainColor_4;
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &.active {
+            background: $mainColor_7;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        p {
+            color: $mainColor_3;
+            font-size: 0.85rem;
+            font-weight: bold;
+            @include textHide;
+        }
+    }
+}
+
+@mixin checkboxStyle_1 {
+    position: relative;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid $mainColor_3;
+    margin-right: 10px;
+
+    &:checked {
+        background-color: $mainColor_10;
+        box-shadow: inset -0.5px -0.5px 1px $mainColor_2,
+                    inset 0.5px 0.5px 1px $mainColor_2;
+    } 
+}
+
+@mixin bigtitle_Line {
+    color: $mainColor_3;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    padding: 0 0 10px;
+    position: relative;
+    
+    &::after {
+        content: "";
+        width: 100%;
+        height: 3px;
+        background: $mainColor;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+@mixin bottomList {
+    display: none;
+    background: $mainColor_3;
+    border-radius: 3px;
+    padding: 10px;
+
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 4px 6px 4px;
+        border-color: $mainColor_3 transparent;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+    }
+
+    &.display {
+        display: block;
+    }
+}
+
+@mixin betRecordBtn {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #ae2b2b 0%, #cd3535 100%);
+    border: 3px solid #ffffff;
+    border-radius: 50px;
+}
+
+@mixin scrollbarStyle_1 {
+    
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #b61d21;
+        border-radius: 30px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #b1b1b1;
+        border-radius: 30px;
+    }
+}
+
+@mixin textHide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

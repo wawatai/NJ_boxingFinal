@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link class="css" rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/js.js"></script>
+</head>
+<body>
+    <header>
+        <!-- 上 -->
+        <div class="top">
+            <a href="../index.html" class="logo">
+                <img src="../image/logo.png">
+            </a>
+            <div class="loginArea">
+              <button type="button" class="signIN" onclick="window.location.href='./register.html'">登録</button>
+              <button type="button" class="signUP" onclick="window.location.href='./login.html'">ログイン</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="register">
+            <div class="bigTitle">
+                <p>登録フォーム</p>
+                <span>半角英数字で入力してください</span>
+            </div>
+            <ul class="inputArea">
+                <li>
+                    <div class="typeName">
+                        <svg width="25.732" height="37.976"><g transform="translate(-82.594)"><circle cx="8.288" cy="8.288" r="8.288" transform="translate(87.172)"></circle><path d="M98.4 19.339h-5.874a9.96 9.96 0 00-9.932 9.932v8.7-4.406h25.732v-4.3a9.96 9.96 0 00-9.926-9.926z"></path></g></svg>
+                        <p>ユーザーID</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text">
+                            <p class="remind">ユーザーIDは他のユーザーに公開されます。個人が特定可能な情報は推奨しません。</p>
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="25.732" height="37.976"><g transform="translate(-82.594)"><circle cx="8.288" cy="8.288" r="8.288" transform="translate(87.172)"></circle><path d="M98.4 19.339h-5.874a9.96 9.96 0 00-9.932 9.932v8.7-4.406h25.732v-4.3a9.96 9.96 0 00-9.926-9.926z"></path></g></svg>
+                        <p>名前</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <div>
+                                <span>姓</span>
+                                <input type="text">
+                            </div>
+                            <p class="remind">例) Yamada</p>
+                        </label>
+                        <label class="inputBox">
+                            <div>
+                                <span>名</span>
+                                <input type="text">
+                            </div>
+                            <p class="remind">例) Taro</p>
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="32.552" height="38"><path d="M16.279 7.5A2.221 2.221 0 0018.5 5.279c0-1.057-1.645-4.2-2.1-5.054a3.774 3.774 0 01-.109-.215v.007L16.279 0s-2.221 4.048-2.221 5.275A2.221 2.221 0 0016.279 7.5zM7.899 10.142a2.221 2.221 0 002.221-2.221c0-1.057-1.645-4.2-2.1-5.053a3.774 3.774 0 01-.109-.215v.007l-.007-.013S5.677 6.694 5.677 7.921a2.221 2.221 0 002.222 2.221zM24.653 10.142a2.221 2.221 0 002.221-2.221c0-1.057-1.645-4.2-2.1-5.053a3.774 3.774 0 01-.109-.215v.007l-.007-.013s-2.221 4.048-2.221 5.275a2.221 2.221 0 002.216 2.22zM28.181 18.739h-2.425v-7.275h-2.2v7.275h-6.173V8.818h-2.2v9.921H9.01v-7.275h-2.2v7.275H4.372v5.952h23.81zM.111 27.129h-.113v10.1c0 1.073 7.287.719 16.276.719s16.276.354 16.276-.719v-10.1z"></path></svg>
+                        <p>誕生日</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <div>
+                                <span>年</span>
+                                <select>
+                                    <option value="">2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="">2020</option>
+                                </select>
+                                <i class="arrow"></i>
+                            </div>
+                        </label>
+                        <label class="inputBox">
+                            <div>
+                                <span>月</span>
+                                <select>
+                                    <option value="">Jan</option>
+                                    <option value="">Feb</option>
+                                    <option value="">Mar</option>
+                                    <option value="">Apr</option>
+                                </select>
+                                <i class="arrow"></i>
+                            </div>
+                        </label>
+                        <label class="inputBox">
+                            <div>
+                                <span>日</span>
+                                <select>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                </select>
+                                <i class="arrow"></i>
+                            </div>
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="29.127" height="21.296"><path d="M28.249 0H.878A.879.879 0 000 .879v1.729l14.563 9.764 14.563-9.76V.879A.879.879 0 0028.249 0z"></path><path d="M0 6.211v11.571a3.513 3.513 0 003.515 3.514h22.1a3.513 3.513 0 003.515-3.514V6.211l-14.563 9.76z"></path></svg>
+                        <p>Eメール</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text">
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="32" height="32" viewBox="0 0 32 32"><g><rect x="0" y="0" width="32" height="32" rx="0" ry="0" fill="none" stroke="none"></rect><g><path d="M21.028,19.528l-2.445,3.057a25.8,25.8,0,0,1-9.168-9.168l3.057-2.445a2.078,2.078,0,0,0,.6-2.464L10.286,2.235A2.076,2.076,0,0,0,7.865,1.067l-5.3,1.376A2.088,2.088,0,0,0,1.02,4.75,30.815,30.815,0,0,0,27.25,30.98a2.088,2.088,0,0,0,2.306-1.542l1.376-5.3a2.077,2.077,0,0,0-1.167-2.419L23.492,18.93A2.077,2.077,0,0,0,21.028,19.528Z"></path></g></g></svg>
+                        <p>電話番号</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <div class="chooseCountry">
+                                <div class="flagBox">
+                                    <i class="flag jp"></i>
+                                    <i class="arrow"></i>
+                                </div>
+                                <ul>
+                                    <p class="innerTitle">
+                                        <i class="flag jp"></i>
+                                        Japan(日本) +81
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Canada +1</p>
+                                        </li>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Angola +244</p>
+                                        </li>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Anguilla +1264</p>
+                                        </li>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Canada +1</p>
+                                        </li>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Angola +244</p>
+                                        </li>
+                                        <li>
+                                            <i class="flag jp"></i>
+                                            <label>
+                                                <input type="checkbox">
+                                            </label>
+                                            <p>Anguilla +1264</p>
+                                        </li>
+                                    </ol>
+                                </ul>
+                            </div>
+                            <input class="phone" type="text" placeholder="090-1234-5678">
+                            <p class="remind">半角英数字で入力してください</p>
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="27.26" height="24.444"><path d="M24.882 17.034l-2.816 2.821-1.558-1.559 2.816-2.816-2.377-2.377-2.817 2.811-3.319-3.319a8.106 8.106 0 10-10.526 2.63c.226.121.456.229.689.326l.046.019q.343.14.694.248l.035.011a8.117 8.117 0 004.689 0h.012q.271-.083.537-.184l.048-.019c.171-.067.341-.139.508-.218l.051-.025a8.012 8.012 0 001-.565l9.632 9.632 1.267-1.267.95-.95 2.816-2.816zM5.223 5.223a4.055 4.055 0 110 5.735 4.06 4.06 0 010-5.735z"></path></svg>
+                        <p>パスワード</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text">
+                            <svg class="eye" x="0px" y="0px" viewBox="0 0 16 16" width="16" height="16"><g><path d="M8,14c3.6,0,6.4-3.1,7.6-4.9c0.5-0.7,0.5-1.6,0-2.3C14.4,5.1,11.6,2,8,2C4.4,2,1.6,5.1,0.4,6.9 c-0.5,0.7-0.5,1.6,0,2.2C1.6,10.9,4.4,14,8,14z M8,5c1.7,0,3,1.3,3,3s-1.3,3-3,3S5,9.7,5,8S6.3,5,8,5z"></path></g></svg>
+                            <div class="sercurity">
+                                <p>
+                                    パスワードの安全度:
+                                    <span></span>
+                                </p>
+                            </div>
+                            <p class="remind">パスワードは8〜20字以内。半角英数字で大文字、小文次、数字が1字以上含む形にしてください。</p>
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="27.26" height="24.444"><path d="M24.882 17.034l-2.816 2.821-1.558-1.559 2.816-2.816-2.377-2.377-2.817 2.811-3.319-3.319a8.106 8.106 0 10-10.526 2.63c.226.121.456.229.689.326l.046.019q.343.14.694.248l.035.011a8.117 8.117 0 004.689 0h.012q.271-.083.537-.184l.048-.019c.171-.067.341-.139.508-.218l.051-.025a8.012 8.012 0 001-.565l9.632 9.632 1.267-1.267.95-.95 2.816-2.816zM5.223 5.223a4.055 4.055 0 110 5.735 4.06 4.06 0 010-5.735z"></path></svg>
+                        <p>パスワード確認</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text">
+                        </label>
+                        <p class="must">必須</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="typeName">
+                        <svg width="26.307" height="16.637"><path d="M0 0h2.496v16.637H0zM3.743 0h1.248v16.637H3.743zM6.239-.003v16.64h2.5V-.003h-2.5zM9.982-.003v16.64h2.5V-.003h-2.5zM13.726 0h1.248v16.637h-1.248zM17.469-.003h-1.248v16.64h3.743V-.003h-2.5zM21.212-.003v16.64h2.53V-.003h-2.53zM25.025 0h1.282v16.637h-1.282z"></path></svg>
+                        <p>プロモーションコード</p>
+                    </div>
+                    <div class="rightBox">
+                        <label class="inputBox">
+                            <input type="text">
+                        </label>
+                    </div>
+                </li>
+            </ul>
+            <div class="check">
+                <div class="checkBox">
+                    <label>
+                        <input type="checkbox">
+                    </label>
+                    <p>
+                        私は18歳以上であり、<a href="#">利用規約</a>に同意します。
+                        <br>
+                        アカウントは、お一人様ひとつまでとなります
+                    </p>
+                </div>
+                <button onclick="window.location.href='../index.html'">登録</button>
+            </div>
+        </div>
+        <div class="loginBox">
+            <p>登録済みの方はこちら</p>
+            <button onclick="window.location.href='./login.html'">ログイン</button>
+        </div>
+    </main>
+    <footer>
+        <!-- 上 -->
+        <div class="top">
+            <div class="infoLine">
+                <div class="lang">
+                    <p class="langTitle">言語:</p>
+                    <i class="flag jp"></i>
+                    <ul class="checkBox">
+                        <p class="innerTitle">言語</p>
+                        <li>
+                            <i class="flag jp"></i>
+                            <label class="active">
+                                <input type="checkbox">
+                            </label>
+                            <p>日本語</p>
+                        </li>
+                        <li>
+                            <i class="flag"></i>
+                            <label>
+                                <input type="checkbox">
+                            </label>
+                            <p>English</p>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <p class="payway">
+                    <span>VISA</span>
+                    <span>MASTERCARD</span>
+                    <span>BITCON</span>
+                </p>
+            </div>
+            <div class="company">
+                <img class="logo" src="../image/logo.png">
+                <div class="line"></div>
+                <p class="coDetail">
+                    MANEKIの運営とサービスはキュラソー政府に登録されている1ban Ventures B.V. (ライセンス番号 No. 8048/JAZ)が提供しており、キュラソー政府の法令に則り行っています。
+                </p>
+            </div>
+        </div>
+        <!-- 下 -->
+        <div class="bottom">
+            <p class="copyRight">©2023 MANEKI</p>
+        </div>
+    </footer>
+</body>
+</html>

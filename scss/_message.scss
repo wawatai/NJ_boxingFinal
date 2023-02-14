@@ -1,0 +1,163 @@
+.messagePage {
+
+    //中
+    .mainArea {
+        
+        .innerBox {
+            display: none;
+            width: 100%;
+            height: auto;
+            
+
+            &.display {
+                display: block;
+            }
+
+            .topLine {
+                width: 100%;
+                height: auto;
+                border-bottom: 3px solid $mainColor_8;
+                padding: 0 0 1vw;
+
+                button {
+                    display: none;
+                    background: transparent;
+                    border: 1px solid $mainColor_6;
+                    border-radius: 30px;
+                    color: $mainColor_6;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    position: absolute;
+                    padding: 5px 20px 6px 30px;
+            
+                    &:before {
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 4px 5px 4px 0;
+                        border-color: transparent $mainColor_6 transparent transparent;
+                        position: absolute;
+                        top: 50%;
+                        left: 15px;
+                        transform: translateY(-50%);
+                        margin-right: 10px;
+                    }
+                }
+
+                .pageName {
+                    color: $mainColor_3;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+
+            .topnav {
+                width: 100%;
+                height: auto;
+                @include topNav;
+                margin: 15px 0;
+
+                li {
+                    width: 25%;
+                }
+            }
+
+            .messageBox {
+                width: 100%;
+                height: auto;
+
+                li {
+                    width: 100%;
+                    height: auto;
+                    border: solid 2px $mainColor;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    padding: 20px;
+                    margin-bottom: 15px;
+
+                    &:last-child {
+                        margin: 0;
+                    }
+
+                    i {
+                        width: 50px;
+                        height: 48px;
+                        margin-right: 30px;
+                        flex-shrink: 0;
+                    }
+
+                    .textBox {
+                        width: 100%;
+                        height: auto;
+                        overflow: hidden;
+
+                        .title {
+                            color: $mainColor_3;
+                            font-size: 1.2rem;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .subTitle {
+                            color: $mainColor_9;
+                            font-size: 1rem;
+                            font-weight: bold;
+                            margin-bottom: 10px;
+                        }
+
+                        .text {
+                            width: 100%;
+                            height: auto;
+                            color: $mainColor_3;
+                            font-size: 1.1rem;
+                            font-weight: bold;
+                            line-height: 1.2rem;
+                            @include textHide;
+                        }
+                    }
+
+                    .unread {
+                        display: none;
+                        width: 15px;
+                        height: 15px;
+                        background: $mainColor_10;
+                        border-radius: 50%;
+                        flex-shrink: 0;
+                        margin-left: 0;
+
+                        &.display {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .messageCnt {
+                width: 100%;
+                height: auto;
+                border: solid 2px $mainColor;
+                border-radius: 8px;
+                padding: 20px;
+                margin-top: 15px;
+
+                p:not(.date) {
+                    color: $mainColor_3;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    line-height: 1.5rem;
+                }
+
+                .date {
+                    color: $mainColor_9;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+    
