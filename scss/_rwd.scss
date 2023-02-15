@@ -8,10 +8,10 @@
 
                 .top {
 
-                    ul {
+                    &>ul {
                         left: 40%;
 
-                        li {
+                        &>li {
 
                             &:last-child {
                                 display: none;
@@ -19,24 +19,20 @@
                         }
                     }
 
-                    .login_Area {
-                        margin-left: 15px;
-        
-                        .checkBox {
-                            opacity: 1;
-                            pointer-events: auto !important;
-                            cursor: pointer;
-                        }
-                    }
-
                     .mem_Area {
                         margin-left: 15px;
         
                         .checkBox {
-                            opacity: 1;
-                            pointer-events: auto !important;
-                            cursor: pointer;
+                            display: flex;
                         }
+                    }
+                }
+
+                .bottom {
+                    padding: 0 20px;
+
+                    .mid {
+                        width: auto;
                     }
                 }
             }
@@ -57,27 +53,8 @@
     }
 }
 
-//rwd_1210 網頁用
-@media only screen and (max-width: 1210px) {
-    html {
-
-        body {
-
-            header {
-
-                .bottom {
-
-                    .mid {
-                        margin: 0 10px;
-                    }
-                } 
-            }
-        }
-    }
-}
-
-//rwd_1188 網頁用
-@media only screen and (max-width: 1188px) {
+//rwd_1200 網頁用
+@media only screen and (max-width: 1200px) {
     html {
 
         body {
@@ -113,15 +90,6 @@
                     }
                 }
             }
-        }
-    }
-}
-
-//rwd_1100 網頁用
-@media only screen and (max-width: 1100px) {
-    html {
-
-        body {
 
             main {
 
@@ -131,66 +99,15 @@
                         padding-left: 30px;
                     }
                 }
-    
+
                 .center {
-    
+
                     .mainArea {
-    
+
                         .gameContent {
-                            
+
                             .content {
-                                gap: 20px 10px;
-                
-                                .gBlock {
-                
-                                    .down {
-                                        padding: 12px;
-                                        
-                                        .pkTeam {
-                                            padding: 16px 12px;
-                
-                                            .outbox {
-                
-                                                .team {
-                
-                                                    .teamName {
-                                                        font-size: 12px;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                
-                        .swiper03 {
-                
-                            .swiper-wrapper {
-                
-                                .swiper-slide {
-                
-                                    .gBlock {
-                
-                                        .down {
-                                            padding: 12px;
-                                            
-                                            .pkTeam {
-                                                padding: 16px 12px;
-                
-                                                .outbox {
-                
-                                                    .team {
-                
-                                                        .teamName {
-                                                            font-size: 12px;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+                                grid-template-columns: repeat(1,1fr);
                             }
                         }
                     }
@@ -224,7 +141,6 @@
                     }
 
                     ul {
-                        display: flex;
                         left: 10px;
                         transform: translateX(0);
                         top: 70px;
@@ -233,7 +149,7 @@
 
                             &:nth-of-type(3),
                             &:nth-of-type(4){
-                                display: flex;
+                                display: block;
                             }
                             
                             a {
@@ -249,12 +165,8 @@
                         }
                     }
         
-                    .loginArea {
-                        display: none;
-                    }
-        
                     .rwd_TOPNav {
-                        display: flex;
+                        display: block;
                     }
         
                     .mem_Area {
@@ -268,8 +180,7 @@
             }
 
             main {
-                //上層增加間距 10px
-                padding-top: 100px;
+                padding-top: 90px;
     
                 &.innerPage {
     
@@ -278,6 +189,10 @@
                         //內頁開啟.left
                         .left {
                             display: block;
+                        }
+
+                        .leftSide {
+                            display: none;
                         }
                     }
                 }
@@ -300,23 +215,20 @@
             
                         .navTitle {
                             width: 250px;
-                            background: $mainColor_2;
+                            background: $BG;
                             padding-left: 10px;
                         }
             
                         ul {
                             width: 250px;
                             height: calc(100% - (1.2rem + 20px));
+                            background: $BG;
                             overflow-y: auto;
                             overscroll-behavior: none;
             
                             &::-webkit-scrollbar {
                                 width: 0;
                             }
-
-                            li {
-                                background: $mainColor_2;
-                            }
                         }
                     }
                 }
@@ -325,318 +237,1313 @@
     }
 }
 
-//rwd_1010 網頁用
-@media only screen and (max-width: 1010px) {
-    html {
+// //rwd_990 網頁用
+// @media only screen and (max-width: 990px) {
+//     html {
 
-        body {
+//         body {
 
-            footer {
+//             footer {
 
-                .top {
-
-                    .infoLine {
-                        height: 105px;
-                        justify-content: space-between;
-                        margin-top: 20px;
+//                 .top {
         
-                        .lang {
-                            position: absolute;
-                            top: 0px;
-                            left: 50%;
-                            transform: translateX(-50%);
+//                     .infoLine {
+//                         height: 60px;
+//                         background: $mainColor;
+//                         order: 0;
+//                         margin: 0;
+//                         padding: 0 20%;
         
-                            ul {
-                                top: 30px;
-                                left: -125px;
-                            }
-                        }
+//                         .lang {
+//                             order: 1;
+//                             position: relative;
+//                             left: 0;
+//                             transform: translateX(0);
+//                         }
         
-                        .payway {
-                            font-size: 0.8rem;
-                        }
-                    }
-                    .company {
-                        width: 60%;
-                        min-width: 540px;
+//                         .payway {
+//                             display: none;
+//                         }
         
-                        .coDetail {
-                            font-size: 0.8rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-//rwd_990 網頁用
-@media only screen and (max-width: 990px) {
-    html {
-
-        body {
-
-            footer {
-
-                .top {
+//                         .betRate {
+//                             display: flex;
+//                             order: 0;
+//                         }
+//                     }
         
-                    .infoLine {
-                        height: 60px;
-                        background: $mainColor;
-                        order: 0;
-                        margin: 0;
-                        padding: 0 20%;
-        
-                        .lang {
-                            order: 1;
-                            position: relative;
-                            left: 0;
-                            transform: translateX(0);
-                        }
-        
-                        .payway {
-                            display: none;
-                        }
-        
-                        .betRate {
-                            display: flex;
-                            order: 0;
-                        }
-                    }
-        
-                    .company {
-                        order: 2;
-                        margin-top: 30px;
-                    }
-                }
-            }
-        }
-    }
+//                     .company {
+//                         order: 2;
+//                         margin-top: 30px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-}
+// }
 
-//rwd_840 網頁用
-@media only screen and (max-width: 840px) {
-    html {
+// //rwd_840 網頁用
+// @media only screen and (max-width: 840px) {
+//     html {
 
-        body {
+//         body {
 
-            main {
+//             main {
 
-                .center {
+//                 .center {
 
-                    .mainArea {
+//                     .mainArea {
 
-                        .gameContent {
+//                         .gameContent {
                 
-                            .content {
-                                grid-template-columns: repeat(1,1fr);
+//                             .content {
+//                                 grid-template-columns: repeat(1,1fr);
                 
-                                .gBlock {
+//                                 .gBlock {
                                     
-                                    .down {
-                                        display: flex;
-                                        justify-content: space-between;
-                                        padding: 16px;
+//                                     .down {
+//                                         display: flex;
+//                                         justify-content: space-between;
+//                                         padding: 16px;
                 
-                                        .infoDetail {
-                                            width: 48%;
-                                            order: 1;
+//                                         .infoDetail {
+//                                             width: 48%;
+//                                             order: 1;
                 
-                                            .more {
-                                                display: block;
-                                                margin: 20px auto 0;
-                                                position: static;
-                                                transform: translateX(0);
+//                                             .more {
+//                                                 display: block;
+//                                                 margin: 20px auto 0;
+//                                                 position: static;
+//                                                 transform: translateX(0);
                 
-                                                &:hover,&:active,&.active {
-                                                    transform: translateY(2px);
-                                                }
-                                            }
-                                        }
+//                                                 &:hover,&:active,&.active {
+//                                                     transform: translateY(2px);
+//                                                 }
+//                                             }
+//                                         }
                 
-                                        .pkTeam {
-                                            width: 48%;
-                                            order: 0;
-                                            margin: 0;
+//                                         .pkTeam {
+//                                             width: 48%;
+//                                             order: 0;
+//                                             margin: 0;
                 
-                                            .winRWD {
-                                                display: block;
-                                            }
-                                        }
+//                                             .winRWD {
+//                                                 display: block;
+//                                             }
+//                                         }
                 
-                                        .winner {
-                                            display: none;
-                                        }
-                                    }
+//                                         .winner {
+//                                             display: none;
+//                                         }
+//                                     }
                                     
-                                }
-                            }
-                        }
+//                                 }
+//                             }
+//                         }
                 
-                        .swiper03 {
+//                         .swiper03 {
                 
-                            .swiper-wrapper {
+//                             .swiper-wrapper {
                 
-                                .swiper-slide {
-                                    width: 100% !important;
+//                                 .swiper-slide {
+//                                     width: 100% !important;
                 
-                                    .gBlock {
+//                                     .gBlock {
                                     
-                                        .down {
-                                            display: flex;
-                                            justify-content: space-between;
-                                            padding: 1rem;
+//                                         .down {
+//                                             display: flex;
+//                                             justify-content: space-between;
+//                                             padding: 1rem;
                 
-                                            .infoDetail {
-                                                width: 48%;
-                                                order: 1;
+//                                             .infoDetail {
+//                                                 width: 48%;
+//                                                 order: 1;
                 
-                                                .more {
-                                                    display: block;
-                                                    margin: 20px auto 0;
-                                                    position: static;
-                                                    transform: translateX(0);
+//                                                 .more {
+//                                                     display: block;
+//                                                     margin: 20px auto 0;
+//                                                     position: static;
+//                                                     transform: translateX(0);
                 
-                                                    &:hover,&:active,&.active {
-                                                        transform: translateY(2px);
-                                                    }
-                                                }
-                                            }
+//                                                     &:hover,&:active,&.active {
+//                                                         transform: translateY(2px);
+//                                                     }
+//                                                 }
+//                                             }
                 
-                                            .pkTeam {
-                                                width: 48%;
-                                                order: 0;
-                                                margin: 0;
+//                                             .pkTeam {
+//                                                 width: 48%;
+//                                                 order: 0;
+//                                                 margin: 0;
                 
-                                                .winRWD {
-                                                    display: block;
-                                                }
-                                            }
+//                                                 .winRWD {
+//                                                     display: block;
+//                                                 }
+//                                             }
                 
-                                            .winner {
-                                                display: none;
-                                            }
-                                        }
+//                                             .winner {
+//                                                 display: none;
+//                                             }
+//                                         }
                                         
-                                    }
-                                }
-                            }
-                        }
-                    }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
                 
-                    .right {
-                        width: 0;
-                        height: calc(100% - 90px);
-                        position: fixed;
-                        top: 90px;
-                        left: 0;
-                        z-index: 110;
-                        margin-top: 0;
+//                     .right {
+//                         width: 0;
+//                         height: calc(100% - 90px);
+//                         position: fixed;
+//                         top: 90px;
+//                         left: 0;
+//                         z-index: 110;
+//                         margin-top: 0;
                 
-                        &.active {
-                            width: 100%;
-                        }
+//                         &.active {
+//                             width: 100%;
+//                         }
                 
-                        .betBlock {
-                            width: 100%;
-                            height: 100%;
-                            border-radius: 0;
-                            display: flex;
-                            flex-direction: column;
+//                         .betBlock {
+//                             width: 100%;
+//                             height: 100%;
+//                             border-radius: 0;
+//                             display: flex;
+//                             flex-direction: column;
                 
-                            .topList {
-                                flex-shrink: 0;
+//                             .topList {
+//                                 flex-shrink: 0;
                 
-                                li {
-                                    width: 25%;
+//                                 li {
+//                                     width: 25%;
                                     
-                                    p {
-                                        width: 100%;
-                                        text-align: center;
-                                    }
-                                }
-                            }
+//                                     p {
+//                                         width: 100%;
+//                                         text-align: center;
+//                                     }
+//                                 }
+//                             }
                 
-                            .betTypeList {
-                                padding: 0;
-                                flex-shrink: 0;
+//                             .betTypeList {
+//                                 padding: 0;
+//                                 flex-shrink: 0;
                 
-                                li {
-                                    width: 34%;
+//                                 li {
+//                                     width: 34%;
                 
-                                    a {
-                                        width: 100%;
-                                        justify-content: center;
-                                    }
-                                }
-                            }
+//                                     a {
+//                                         width: 100%;
+//                                         justify-content: center;
+//                                     }
+//                                 }
+//                             }
                 
-                            .betContent {
-                                height: 100%;
-                            }
+//                             .betContent {
+//                                 height: 100%;
+//                             }
                 
-                            .smallFilter {
-                                height: calc(100% - 47px);
-                            }
+//                             .smallFilter {
+//                                 height: calc(100% - 47px);
+//                             }
                 
-                            .closeRight {
-                                display: flex;
-                                flex-shrink: 0;
-                            }
-                        }
-                    }
+//                             .closeRight {
+//                                 display: flex;
+//                                 flex-shrink: 0;
+//                             }
+//                         }
+//                     }
                     
-                    aside {
+//                     aside {
                 
-                        &.betRecordBtn {
-                            display: flex;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+//                         &.betRecordBtn {
+//                             display: flex;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
-//rwd_767 網頁用
-@media only screen and (max-width: 767px) {
-    html {
+// //rwd_767 網頁用
+// @media only screen and (max-width: 767px) {
+//     html {
 
-        body {
+//         body {
 
-            footer {
+//             footer {
 
-                .top {
-                    .company {
-                        flex-direction: column;
+//                 .top {
+//                     .company {
+//                         flex-direction: column;
         
-                        .logo {
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
-            }
+//                         .logo {
+//                             margin-bottom: 10px;
+//                         }
+//                     }
+//                 }
+//             }
 
-            .filter {
+//             .filter {
                 
-                .jumpWindow {
-                    width: 80%;
+//                 .jumpWindow {
+//                     width: 80%;
 
-                    &.choosedate {
-                        height: auto;
+//                     &.choosedate {
+//                         height: auto;
 
-                        .content {
-                            grid-template-columns: repeat(3, 1fr);
-                        }
-                    }
-                }
-            }
-        }
-    }
+//                         .content {
+//                             grid-template-columns: repeat(3, 1fr);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
 
-}
+// }
+
+//rwd_840 平板
+// @media only screen and (max-width: 1024px) {
+//     html {
+//         //rem繼承
+//         font-size: 4vw;
+
+//         body {
+
+//             header {
+//                  // 已登入手機版header
+//                 &.logINN {
+
+//                     .top {
+//                         height: 75px;
+
+//                         .mem_Area {
+//                             order: 2;
+//                             position: relative;
+//                             top: 0;
+//                             right: 0;
+                            
+//                             .account {
+//                                 order: 1;
+//                                 margin: 0;
+            
+//                                 i {
+//                                     font-size: 5vw;
+//                                     cursor: pointer;
+//                                 }
+            
+//                                 p {
+//                                     display: none;
+//                                 }
+//                             }
+//                             .wallet {
+//                                 order: 0;
+//                                 margin-right: 10px;
+//                             }
+
+//                             .logoutBtn {
+//                                 display: none;
+//                             }
+//                         }
+
+//                     }
+
+//                     .bottom {
+//                         display: none;
+//                     }
+//                 }
+
+//                 .top {
+//                     height: 50px;
+//                     position: relative;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: space-between;
+//                     padding: 0 20px;
+        
+//                     a {
+
+//                         &.logo {
+//                             width: auto;
+//                             height: auto;
+//                             order: 1;
+//                             margin-top: 3px;
+//                             position: relative;
+//                             top: 0;
+//                             left: 0;
+        
+//                             img {
+//                                 height: 30px;
+//                             }
+//                         }
+//                     }
+                    
+//                     ul {
+//                         display: none;
+//                     }
+        
+//                     .rwd_TOPNav {
+//                         display: none;
+//                     }
+        
+//                     .langBox {
+//                         display: flex;
+//                     }
+        
+//                     .mobile_Login {
+//                         display: block;
+//                     }
+
+//                     .mem_Area {
+//                         display: flex;
+//                         position: absolute;
+//                         top: 20px;
+//                         right: 65px;
+                        
+//                         .checkBox,
+//                         .money,
+//                         .message {
+//                             display: none;
+//                         }
+
+//                         .account {
+//                             order: 1;
+        
+//                             i {
+//                                 font-size: 3rem;
+//                                 cursor: pointer;
+//                             }
+        
+//                             p {
+//                                 display: none;
+//                             }
+//                         }
+
+//                         .wallet {
+//                             order: 0;
+//                             margin-right: 10px;
+        
+//                             button {
+//                                 display: none;
+//                             }
+//                         }
+        
+//                     }
+//                 }
+//             }
+
+//             main {
+//                 //手機版未登入
+//                 padding-top: 0px;
+
+//                 //手機版登入後
+//                 &.inMain {
+//                     padding-top: 50px;
+
+//                     .mainArea {
+
+//                         .searchBox {
+//                             margin-top: 0;
+//                         }
+//                     }
+//                 }
+
+//                 .center {
+
+//                     .mainArea {
+
+//                         .gameContent {
+                
+//                             .content {
+//                                 grid-template-columns: repeat(1,1fr);
+
+//                                 .gBlock {
+                                    
+//                                     .down {
+//                                         display: flex;
+//                                         justify-content: space-between;
+//                                         padding: 16px;
+                
+//                                         .infoDetail {
+//                                             width: 48%;
+//                                             order: 1;
+                
+//                                             .more {
+//                                                 display: block;
+//                                                 margin: 20px auto 0;
+//                                                 position: static;
+//                                                 transform: translateX(0);
+                
+//                                                 &:hover,&:active,&.active {
+//                                                     transform: translateY(2px);
+//                                                 }
+//                                             }
+//                                         }
+                
+//                                         .pkTeam {
+//                                             width: 48%;
+//                                             order: 0;
+//                                             margin: 0;
+                
+//                                             .winRWD {
+//                                                 display: block;
+//                                             }
+//                                         }
+                
+//                                         .winner {
+//                                             display: none;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }                    
+
+//                     //投注紀錄頁
+//                     &.betPage {
+
+//                         .mainArea {
+
+//                             .innerBox {
+//                                 padding: 0 4vw 45vw;
+                            
+//                                 .topLine {
+//                                     @include mobile_Title;
+    
+//                                     button {
+//                                         display: block;
+//                                     }
+//                                 }
+
+//                                 .topnav {
+//                                     margin-bottom: 2vw;
+
+//                                     li {
+//                                         width: 20%;
+//                                         padding: 0 1vw;
+//                                         margin-right: 1vw;
+//                                     }
+//                                 }
+
+//                                 &.myResult {
+//                                     display: flex;
+//                                 }
+
+//                                 .betBox {
+
+//                                     .betData {
+
+//                                         li {
+//                                             margin-bottom: 2vw;
+
+//                                             .dataNum {
+//                                                 background: $mainColor_7;
+
+//                                                 table {
+//                                                     margin: 4vw 0;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+
+//                                     table {
+
+//                                         tr {
+
+//                                             td {
+
+//                                                 div {
+
+//                                                     &.teamBox {
+//                                                         padding: 2vw 0;
+//                                                     }
+
+//                                                     .cancleBtn {
+//                                                         padding: 1.5vw;
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //設定帳號密碼頁
+//                     &.settingACPW {
+
+//                         .mainArea {
+
+//                             .innerBox {
+
+//                                 .topLine {
+
+//                                     button {
+//                                         left: 20px;
+//                                     }
+
+//                                     .pageName {
+//                                         font-size: 0.9rem;
+//                                     }
+//                                 }
+                                
+//                                 form {
+
+//                                     label {
+//                                         padding: 4vw 5vw;
+
+//                                         .inputTitle {
+//                                             margin-bottom: 5vw;
+//                                         }
+
+//                                         input {
+//                                             width: 100%;
+//                                         }
+
+//                                         .databox {
+
+//                                             i {
+//                                                 width: 6vw;
+//                                                 height: 6vw;
+//                                                 right: 5vw;
+//                                             }
+//                                         }
+
+//                                         .safeBlock {
+//                                             width: 100%;
+//                                         }
+
+//                                         .remind {
+//                                             justify-content: flex-start;
+//                                             margin-top: 0;
+
+//                                             i {
+//                                                 width: 6vw;
+//                                                 height: 6vw;
+//                                                 margin-right: 4vw;
+//                                             }
+
+//                                             p {
+//                                                 max-width: 90%;
+//                                             }
+//                                         }
+
+//                                         .submitBtn {
+//                                             width: 50%;
+//                                             padding: 3.2vw;
+//                                             margin: 4vw auto;
+//                                         }
+//                                     }
+
+//                                     .checkBlock {
+
+//                                         .inputTitle {
+//                                             margin-bottom: 5vw;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //訊息中心頁
+//                     &.messagePage {
+
+//                         .innerBox {
+//                             padding: 0 4vw 22vw;
+                            
+//                             .topLine {
+
+//                                 button {
+//                                     left: 20px;
+//                                 }
+
+//                                 .pageName {
+//                                     font-size: 1.2rem;
+//                                 }
+//                             }
+
+//                             .topnav {
+//                                 margin: 4vw 0;
+//                             }
+
+//                             .messageBox {
+
+//                                 li {
+//                                     padding: 4vw;
+//                                     margin-bottom: 4vw;
+
+//                                     i {
+//                                         width: 9vw;
+//                                         height: 7vw;
+//                                         margin-right: 4vw;
+//                                         flex-shrink: 0;
+//                                     }
+
+//                                     .textBox {
+
+//                                         .title {
+//                                             margin-bottom: 2vw;
+//                                         }
+
+//                                         .subTitle {
+//                                             margin-bottom: 2vw;
+//                                         }
+//                                     }
+
+//                                     .unread {
+//                                         width: 3vw;
+//                                         height: 3vw;
+//                                         margin-left: 4vw;
+//                                     }
+//                                 }
+//                             }
+
+//                             .messageCnt {
+//                                 padding: 4vw;
+//                                 margin-top: 4vw;
+
+//                                 .date {
+//                                     margin-bottom: 4vw;
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //口座殘高
+//                     &.overViewPage {
+
+//                         .innerBox {
+//                             padding: 0 4vw 22vw;
+                            
+//                             .topLine {
+
+//                                 button {
+//                                     left: 20px;
+//                                 }
+
+//                                 .pageName {
+//                                     font-size: 1.2rem;
+//                                 }
+//                             }
+
+//                             ul {
+//                                 padding: 4vw;
+
+//                                 li {
+//                                     padding: 0;
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //設定頁
+//                     &.userSetting {
+                        
+//                         .innerBox {
+//                             padding: 0 4vw 22vw;
+                            
+//                             .topLine {
+
+//                                 button {
+//                                     left: 20px;
+//                                 }
+
+//                                 .pageName {
+//                                     font-size: 1.2rem;
+//                                 }
+//                             }
+
+//                             form {
+
+//                                 label {
+//                                     padding: 4vw 5vw;
+
+//                                     .submitBtn {
+//                                         width: 50%;
+//                                         padding: 3.2vw;
+//                                         margin: 4vw auto;
+//                                     }
+
+//                                     .inBox {
+
+//                                         .switchBtn {
+
+//                                             p {
+//                                                 padding: 2.5vw;
+
+//                                                 span {
+//                                                     padding: 2.5vw;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+
+//                                 .btnBox {
+
+//                                     p {
+//                                         &.bTitle {
+//                                             margin-bottom: 2vw;
+//                                         }
+                
+//                                         &:nth-last-of-type(1) {
+//                                             position: relative;
+//                                             bottom: unset;
+//                                             left: unset;
+//                                         }
+//                                     }
+
+//                                     .inBox {
+//                                         display: grid;
+//                                         grid-template-columns: repeat(3,1fr);
+//                                         gap: 2vw;
+//                                         margin-top: 4vw;
+                                        
+//                                         input {
+//                                             @include btnStyle_2;
+//                                             width: 100%;
+//                                             margin: 0;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //feedback
+//                     &.servicePage {
+
+//                         .innerBox {
+//                             padding: 0 4vw 22vw;
+                            
+//                             .topLine {
+//                                 @include mobile_Title;
+
+//                                 button {
+//                                     left: 20px;
+//                                 }
+
+//                                 .pageName {
+//                                     font-size: 1.2rem;
+//                                 }
+//                             }
+
+//                             .topnav {
+//                                 margin: 4vw 0;
+//                             }
+
+//                             .feebackBox {
+
+//                                 .title {
+//                                     padding-bottom: 1.5vw;
+//                                     margin-bottom: 2vw;
+
+//                                     &:first-child {
+//                                         margin-top: 4vw;
+//                                     }
+//                                 }
+
+//                                 .selectBox {
+//                                     display: block;
+//                                     width: 100%;
+//                                     height: auto;
+//                                     position: relative;
+//                                     margin-bottom: 8vw;
+                                    
+//                                     select {
+//                                         width: 100%;
+//                                         height: 11vw;
+//                                         @include selectStyle_2;
+//                                     }
+                
+//                                     i {
+//                                         @include arrow_2;
+//                                         transform: translateY(-50%) rotate(90deg);
+//                                         left: unset;
+//                                         right: 6vw;
+//                                     }
+//                                 }
+
+//                                 .textBox {
+//                                     margin-bottom: 8vw;
+
+//                                     textarea {
+//                                         height: 30vh;
+//                                         padding: 3vw;
+//                                     }
+                                    
+//                                     .imgBox {
+//                                         padding: 3vw;
+
+//                                         i {
+//                                             width: 15vw;
+//                                             height: 15vw;
+//                                             margin-bottom: 4vw;
+//                                         }
+//                                     }
+//                                 }
+
+//                                 button {
+//                                     width: 50%;
+//                                     height: auto;
+//                                     padding: 3.2vw;
+//                                 }
+//                             }
+//                         }
+//                     }
+
+//                     //左移除
+//                     .left,
+//                     .leftSide {
+//                         display: none;
+//                     }
+
+//                     .mainArea {
+//                         //網頁版內縮移除
+//                         padding: 0;
+
+//                         //首頁內縮
+//                         &.index {
+//                             padding: 2vw 2vw 22vw;
+
+//                             //首頁專用上搜尋列
+//                             .searchBox {
+//                                 display: flex;
+//                             }
+
+//                             //跑馬燈移除
+//                             .swiper {
+//                                 display: none;
+//                             }
+
+//                             //調整首頁nav大小
+//                             .middleNav {
+
+//                                 .topnav {
+                
+//                                     li {
+//                                         width: 25%;
+//                                     }
+//                                 }
+//                             }
+
+//                             //調整中選項大小
+//                             .typselect{
+
+//                                 &.swiper02 {
+//                                     padding: 4vw 3vw;
+
+//                                     .swiper-wrapper {
+
+//                                         .swiper-slide {
+//                                             width: auto !important;
+
+//                                             .gameTypeBox {
+//                                                 padding: 0 3vw 3vw;
+
+//                                                 .picBox {
+//                                                     width: 16vw;
+//                                                     height: 16vw;
+
+//                                                     svg {
+//                                                         transform: scale(1.5);
+//                                                     }
+//                                                 }
+
+//                                                 p {
+//                                                     max-width: 16vw;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             //首頁調整下選單樣式
+//                             .gameContent {
+//                                 padding: 4vw 0 0;
+
+//                                 .content {
+//                                     gap: 4vw 0;
+//                                     padding: 4vw 0;
+
+//                                     .gBlock {
+
+//                                         .down {
+//                                             padding: 2vw;
+
+//                                             .infoDetail {
+//                                                 width: 100%;
+//                                             }
+
+//                                             .pkTeam {
+//                                                 width: 58%;
+//                                                 padding: 7vw 4vw 4vw;
+//                                                 margin-right: 4vw;
+//                                                 flex-shrink: 0;
+
+//                                                 .outbox {
+
+//                                                     .team {
+
+//                                                         svg {
+//                                                             transform: scale(1.5);
+//                                                             margin: 0 0 5vw;
+//                                                         }
+
+//                                                         .teamName {
+//                                                             font-size: 1rem;
+//                                                             line-height: 1.5rem;
+//                                                             margin-bottom: 4vw;
+//                                                         }
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .swiper03 {
+
+//                                 .swiper-wrapper {
+
+//                                     .swiper-slide {
+
+//                                         .gBlock {
+
+//                                             .down {
+//                                                 padding: 4vw 2vw 2vw;
+
+//                                                 .infoDetail {
+//                                                     width: 100%;
+//                                                 }
+        
+//                                                 .pkTeam {
+//                                                     width: 58%;
+//                                                     padding: 7vw 4vw 4vw;
+//                                                     margin-right: 4vw;
+//                                                     flex-shrink: 0;
+        
+//                                                     .outbox {
+        
+//                                                         .team {
+        
+//                                                             svg {
+//                                                                 transform: scale(1.5);
+//                                                                 margin: 0 0 5vw;
+//                                                             }
+        
+//                                                             .teamName {
+//                                                                 font-size: 1rem;
+//                                                                 line-height: 1.5rem;
+//                                                                 margin-bottom: 4vw;
+//                                                             }
+//                                                         }
+//                                                     }
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+//                         }
+
+//                         //會員內頁
+//                         .innerBox {
+
+//                             &.userHome {
+
+//                                 .topBox {
+//                                     margin-top: 4vw;
+
+//                                     .userBox {
+//                                         padding: 1vw 3vw 2vw;
+//                                         border-bottom: 1px solid $mainColor_6;
+
+//                                         &::before {
+//                                             display: block;
+//                                         }
+
+//                                         .userPic {
+//                                             width: 15vw;
+//                                             height: 15vw;
+//                                             margin: 1vw 4.5vw 1vw 0;
+//                                         }
+
+//                                         p {
+//                                             font-size: 0.95rem;
+
+//                                             span {
+//                                                 font-size: 1rem;
+//                                                 margin-top: 2vw;
+//                                             }
+//                                         }
+//                                     }
+
+//                                     ul {
+//                                         display: flex
+//                                     }
+//                                 }
+
+//                                 .pageList {
+//                                     display: block;
+//                                 }
+//                             }
+
+//                             //投注限額
+//                             &.betLimit {
+//                                 display: block;
+//                             }
+
+//                             .topLine {
+//                                 @include mobile_Title;
+
+//                                 button {
+//                                     display: block;
+//                                 }
+//                             }
+//                         }
+
+//                         .gameContent {
+
+//                             .down {
+
+//                                  .infoDetail {
+
+//                                      .more {
+//                                          padding: 2vw 3vw !important;
+//                                      }
+//                                  }
+//                             }
+//                          }
+//                     }
+
+//                     //右樣式
+//                     .right {
+//                         display: none;
+//                         height: 100%;
+//                         top: 0;
+//                         z-index: 999;
+
+//                         &.active {
+//                             display: block;
+//                         }
+
+//                         .betBlock {
+//                             background: $mainColor_2;
+
+//                             .topList {
+
+//                                 li {
+
+//                                     &.active {
+
+//                                         &::before {
+//                                             background: $mainColor;
+//                                         }
+
+//                                         p {
+//                                             color: $mainColor;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .betTypeList {
+//                                 background: $mainColor_18;
+
+//                                 li {
+
+//                                     &:hover,&:active,&.active {
+                                        
+//                                         &::before {
+//                                             background: $mainColor_7;
+//                                         }
+
+//                                         a {
+
+//                                             p {
+//                                                 color: $mainColor_7;
+//                                             }
+//                                         }
+//                                     }
+
+//                                     a {
+
+//                                         p {
+//                                             color: $mainColor_8;
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .bdTitle {
+//                                 padding: 5px 10px !important;
+//                             }
+
+//                             .betContent {
+
+//                                 .betData {
+//                                     max-height: calc(100vh - 127px);
+//                                     overflow: auto;
+
+//                                     .bdOuter {
+//                                         max-height: auto;
+
+//                                         .top {
+
+//                                             span {
+//                                                 background-color: $mainColor_6;
+//                                                 padding: 7px 10px !important;
+//                                             }
+//                                         }
+
+//                                         .betDetail {
+
+//                                             .bdTitle {
+//                                                 background: $mainColor_4;
+
+//                                                 svg {
+//                                                     fill: $mainColor_9;
+//                                                 }
+//                                             }
+
+//                                             .bdContent {
+
+//                                                 .top {
+//                                                     border-color: $mainColor_6;
+            
+//                                                     span {
+//                                                         background: $mainColor_6;
+//                                                     }
+//                                                 }
+            
+//                                                 .pkTeam {
+            
+//                                                     .VS {
+//                                                         color: $mainColor_3;
+//                                                     }
+//                                                 }
+                                                
+//                                                 .wintext {
+//                                                     color: $mainColor_6;
+//                                                 }
+            
+//                                                 .betwin {
+//                                                     border-color: $mainColor_6;
+            
+//                                                     p {
+//                                                         color: $mainColor_6;
+//                                                     }
+//                                                 }
+            
+//                                                 .betamount {
+//                                                     border-color: $mainColor;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+
+//                                     .betTotal {
+
+//                                         li {
+
+//                                             p {
+//                                                 color: $mainColor_6;
+//                                                 font-weight: bold;
+//                                             }
+
+//                                             .okBtn {
+//                                                 padding: 3.2vw;
+//                                             }
+//                                         }
+//                                     }
+//                                 }
+//                             }
+
+//                             .closeRight {
+//                                 background: $mainColor_7;
+//                             }
+//                         }
+//                     }
+
+//                     //右下懸浮
+//                     .betRecordBtn {
+//                         bottom: 22vw;
+//                         right: 20px;
+//                     }
+//                 }
+//             }
+            
+//             footer {
+//                 background: $mainColor_5;
+//                 position: fixed;
+//                 bottom: 0;
+//                 left: 0;
+//                 z-index: 120;
+        
+//                 .top,
+//                 .bottom {
+//                     display: none;
+//                 }
+        
+//                 .mobileFooter {
+//                     display: flex;
+//                 }
+//             }
+
+//             .filter {
+                
+//                 .jumpWindow {
+//                     width: 80%;
+
+//                     &.plsLogIn {
+//                         width: 80%;
+//                     }
+
+//                     &.chooseball {
+//                         width: 80%;
+//                         height: auto;
+
+//                         .content {
+//                             height: 65vw;
+//                             overflow-y: auto;
+//                             grid-template-columns: repeat(2, 1fr);
+//                             padding: 1.5vw;
+
+//                             input {
+//                                 padding: 1vw;
+//                             }
+//                         }
+
+//                         .closeWindow {
+//                             padding: 2.2vw;
+//                             margin: 20px auto;
+//                         }
+//                     }
+
+//                     .jwTitle {
+//                         height: 8vw;
+
+//                         p {
+//                             font-size: 1rem;
+//                         }
+//                     }
+
+//                     .content {
+//                         min-height: 27vh;
+//                         padding: 0 10px;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
 
 //rwd_500 網頁最小寬 + 手機用
 @media only screen and (max-width: 500px) {
