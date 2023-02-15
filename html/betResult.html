@@ -403,20 +403,10 @@
                         <p class="pageName">レース結果</p>
                     </div>
                     <div class="selectNav">
-                        <label class="selectBox">
-                            <select>
-                                <option>格鬪技</option>
-                                <option>格鬪技</option>
-                            </select>
-                            <i class="arrow_ic"></i>
-                        </label>
-                        <label class="selectBox">
-                            <select>
-                                <option>2022-12-25</option>
-                                <option>2022-12-26</option>
-                            </select>
-                            <i class="arrow_ic"></i>
-                        </label>
+                        <div class="gameType callgameType">
+                            <p>格鬪技</p>
+                        </div>
+                        <div class="today calldate">2023-02-15</div>
                     </div>
                     <!-- 投注結果 -->
                     <div class="resultBox">
@@ -833,5 +823,54 @@
             </li>
         </ul>
     </footer>
+        <!-- 彈窗 -->
+        <div class="filter">
+            <div class="jumpWindow chooseball">
+                <div class="jwTitle">
+                    <p>ボールを選ぶ</p>
+                    <i class="fa-solid fa-xmark closeIC"></i>
+                </div>
+                <div class="content">
+                    <input type="button" value="格鬪技">
+                   <input type="button" value="スポーツ">
+                   <input type="button" value="バスケットボール">
+                   <input type="button" value="野球">
+                   <input type="button" value="アメフト">
+                   <input type="button" value="テニス">
+                   <input type="button" value="カラーボール">
+                   <input type="button" value="競馬グレイハウンド">
+                   <input type="button" value="ストック">
+                   <input type="button" value="ゲーム">
+                   <input type="button" value="ゴルフ">
+                   <input type="button" value="アイスホッケー">
+                   <input type="button" value="バドミントン">
+                   <input type="button" value="バレーボール">
+                   <input type="button" value="卓球">
+                   <input type="button" value="クリケット">
+                   <input type="button" value="ビリヤードボール">
+                   <input type="button" value="ハンドボール">
+                </div>
+                <button class="closeWindow">確認</button>
+            </div>
+            <div class="jumpWindow choosedate">
+                <div class="jwTitle">
+                    <p>日付を選択</p>
+                    <i class="fa-solid fa-xmark closeIC"></i>
+                </div>
+                <div class="content">
+                    <input type="button" value="02/04">
+                   <input type="button" value="02/05">
+                   <input type="button" value="02/06">
+                   <input type="button" value="02/07">
+                   <input type="button" value="02/08">
+                   <input type="button" value="02/09">
+                   <input type="button" value="02/10">
+                   <input type="button" value="02/11">
+                   <input type="button" value="02/12">
+                   <input type="button" value="02/13">
+                </div>
+                <button class="closeWindow">確認</button>
+            </div>
+        </div>
 </body>
 </html>

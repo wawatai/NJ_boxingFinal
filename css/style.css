@@ -2179,6 +2179,27 @@ html .betPage .mainArea .innerBox .selectNav .selectBox i {
   pointer-events: none;
   right: 15px;
 }
+html .betPage .mainArea .innerBox .selectNav .gameType,
+html .betPage .mainArea .innerBox .selectNav .today {
+  width: auto;
+  height: auto;
+  background: none;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #ffffff;
+  padding: 8px 30px 10px 12px;
+  padding: 8px 12px 10px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+html .betPage .mainArea .innerBox .selectNav .gameType:optional,
+html .betPage .mainArea .innerBox .selectNav .today:optional {
+  background: #000000;
+}
+html .betPage .mainArea .innerBox .selectNav .gameType:last-child,
+html .betPage .mainArea .innerBox .selectNav .today:last-child {
+  margin: 0;
+}
 html .betPage .mainArea .innerBox .betBox {
   display: none;
   width: 100%;
@@ -2695,7 +2716,7 @@ html .betPage .mainArea .innerBox .topnav {
   display: -ms-flexbox;
   display: flex;
   border-bottom: 4px solid #b8151b;
-  margin-bottom: 0vw;
+  margin-bottom: 15px;
 }
 html .betPage .mainArea .innerBox .topnav li {
   height: 35px;
@@ -3577,7 +3598,7 @@ html .filter.display {
 }
 html .filter .jumpWindow {
   display: none;
-  width: 80%;
+  width: 50%;
   height: auto;
   background: #131313;
   border: 1px solid #cf0505;
@@ -3586,6 +3607,7 @@ html .filter .jumpWindow {
 }
 html .filter .jumpWindow.plsLogIn {
   display: none;
+  width: 30%;
 }
 html .filter .jumpWindow.plsLogIn.display {
   display: block;
@@ -3626,10 +3648,9 @@ html .filter .jumpWindow.plsLogIn .content .closeWindow {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
+  width: 40%;
   height: auto;
   background: #414141;
-  margin: 0 auto 3vw;
 }
 html .filter .jumpWindow.cancelBet {
   display: none;
@@ -3723,9 +3744,134 @@ html .filter .jumpWindow.cancelBet .content .closeWindow {
   background: #414141;
   margin: 0 auto 3vw;
 }
+html .filter .jumpWindow.chooseball {
+  display: none;
+  width: auto;
+}
+html .filter .jumpWindow.chooseball.display {
+  display: block;
+}
+html .filter .jumpWindow.chooseball .content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+html .filter .jumpWindow.chooseball .content input {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  background: #414141;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+html .filter .jumpWindow.chooseball .content input:hover, html .filter .jumpWindow.chooseball .content input:active, html .filter .jumpWindow.chooseball .content input.active {
+  background: #dd2830;
+}
+html .filter .jumpWindow.chooseball .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: auto;
+  margin: 0 auto 20px;
+}
+html .filter .jumpWindow.choosedate {
+  display: none;
+}
+html .filter .jumpWindow.choosedate.display {
+  display: block;
+}
+html .filter .jumpWindow.choosedate .content {
+  width: 100%;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+html .filter .jumpWindow.choosedate .content input {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  background: #414141;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+html .filter .jumpWindow.choosedate .content input:hover, html .filter .jumpWindow.choosedate .content input:active, html .filter .jumpWindow.choosedate .content input.active {
+  background: #dd2830;
+}
+html .filter .jumpWindow.choosedate .closeWindow {
+  background: #dd2830;
+  border-radius: 50px;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30%;
+  height: auto;
+  margin: 0 auto 20px;
+}
 html .filter .jumpWindow .jwTitle {
   width: 100%;
-  height: 8vw;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3742,7 +3888,7 @@ html .filter .jumpWindow .jwTitle {
 }
 html .filter .jumpWindow .jwTitle p {
   white-space: nowrap;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 html .filter .jumpWindow .jwTitle i {
@@ -3750,12 +3896,16 @@ html .filter .jumpWindow .jwTitle i {
   font-size: 1.275rem;
   position: absolute;
   right: 20px;
+  cursor: pointer;
 }
 html .filter .jumpWindow .content {
   width: 100%;
   height: auto;
-  min-height: 30vh;
+  min-height: 200px;
   padding: 0 10px;
+}
+html .filter .jumpWindow .closeWindow {
+  padding: 15px;
 }
 html .messagePage .mainArea .innerBox {
   display: none;
@@ -6211,6 +6361,10 @@ html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p
     pointer-events: auto !important;
     cursor: pointer;
   }
+  html body .filter .jumpWindow.chooseball .content {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media only screen and (max-width: 1210px) {
   html body header .bottom .mid {
@@ -6567,6 +6721,16 @@ html footer .mobileFooter li:active a p, html footer .mobileFooter li.active a p
   }
   html body footer .top .company .logo {
     margin-bottom: 10px;
+  }
+  html body .filter .jumpWindow {
+    width: 80%;
+  }
+  html body .filter .jumpWindow.choosedate {
+    height: auto;
+  }
+  html body .filter .jumpWindow.choosedate .content {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media only screen and (max-width: 500px) {
@@ -7325,5 +7489,39 @@ html body footer .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  html body .filter .jumpWindow {
+    width: 80%;
+  }
+  html body .filter .jumpWindow.plsLogIn {
+    width: 80%;
+  }
+  html body .filter .jumpWindow.chooseball {
+    width: 80%;
+    height: auto;
+  }
+  html body .filter .jumpWindow.chooseball .content {
+    height: 65vw;
+    overflow-y: auto;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.5vw;
+  }
+  html body .filter .jumpWindow.chooseball .content input {
+    padding: 1vw;
+  }
+  html body .filter .jumpWindow.chooseball .closeWindow {
+    padding: 2.2vw;
+    margin: 20px auto;
+  }
+  html body .filter .jumpWindow .jwTitle {
+    height: 8vw;
+  }
+  html body .filter .jumpWindow .jwTitle p {
+    font-size: 1rem;
+  }
+  html body .filter .jumpWindow .content {
+    min-height: 27vh;
+    padding: 0 10px;
   }
 }

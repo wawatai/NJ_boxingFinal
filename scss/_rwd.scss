@@ -40,6 +40,19 @@
                     }
                 }
             }
+
+            .filter {
+
+                .jumpWindow {
+
+                    &.chooseball {
+                        
+                        .content {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -601,6 +614,21 @@
         
                         .logo {
                             margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 80%;
+
+                    &.choosedate {
+                        height: auto;
+
+                        .content {
+                            grid-template-columns: repeat(3, 1fr);
                         }
                     }
                 }
@@ -1544,6 +1572,51 @@
         
                 .mobileFooter {
                     display: flex;
+                }
+            }
+
+            .filter {
+                
+                .jumpWindow {
+                    width: 80%;
+
+                    &.plsLogIn {
+                        width: 80%;
+                    }
+
+                    &.chooseball {
+                        width: 80%;
+                        height: auto;
+
+                        .content {
+                            height: 65vw;
+                            overflow-y: auto;
+                            grid-template-columns: repeat(2, 1fr);
+                            padding: 1.5vw;
+
+                            input {
+                                padding: 1vw;
+                            }
+                        }
+
+                        .closeWindow {
+                            padding: 2.2vw;
+                            margin: 20px auto;
+                        }
+                    }
+
+                    .jwTitle {
+                        height: 8vw;
+
+                        p {
+                            font-size: 1rem;
+                        }
+                    }
+
+                    .content {
+                        min-height: 27vh;
+                        padding: 0 10px;
+                    }
                 }
             }
         }

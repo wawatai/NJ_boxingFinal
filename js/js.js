@@ -459,4 +459,41 @@ $(function(){
         .find(".jumpWindow.cancelBet")
         .addClass("display");
     })
+
+    //投注結果
+    $(".callgameType").click(function(){
+        $(".filter")
+        .addClass("display")
+        .find(".jumpWindow.chooseball")
+        .addClass("display");
+    })
+
+    //選擇球種
+    $(".jumpWindow.chooseball .content input").click(function(){
+        var value = $(this).val();
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        $(".betPage .mainArea .innerBox .selectNav .gameType p").text(value);
+    })
+
+    $(".calldate").click(function(){
+        $(".filter")
+        .addClass("display")
+        .find(".jumpWindow.choosedate")
+        .addClass("display");
+    })
+    
+    //選擇日期
+    $(".jumpWindow.choosedate .content input").click(function(){
+        var value = $(this).val();
+        $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active");
+
+        $(".betPage .mainArea .innerBox .selectNav .today").text(value);
+    })
 })

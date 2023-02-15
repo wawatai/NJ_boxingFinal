@@ -91,9 +91,25 @@
                         @include selectStyle_1;
                     }
 
+                  
+
                     i {
                         @include arrow_1;
                         right: 15px;
+                    }
+                }
+
+                .gameType,
+                .today {
+                    width: auto;
+                    height: auto;
+                    @include selectStyle_1;
+                    padding: 8px 12px 10px 12px;
+                    margin-right: 10px;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin: 0;
                     }
                 }
             }
@@ -657,7 +673,7 @@
                 width: 100%;
                 height: auto;
                 @include topNav;
-                margin-bottom: 0vw;
+                margin-bottom: 15px;
 
                 li {
                     width: auto;
