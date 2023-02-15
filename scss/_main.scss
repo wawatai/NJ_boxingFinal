@@ -1,7 +1,7 @@
 html {
     width: 100%;
     height: auto;
-    background: $BG;
+    background: $mainColor_2;
     -webkit-tap-highlight-color: rgba(0,0,0,0); 
 
     body {
@@ -14,24 +14,27 @@ html {
             padding-top: 125px;
 
             &.innerPage {
+                padding-top: 120px;
 
-                .center {
-
-                    .left {
-                        display: none;
-                    }
+                .left {
+                    display: none;
                 }
             }
         }
-
-        @import "./header";
-        @import "./memberPage";
-        @import "./betPage";
-        @import "./settingPage";
-        @import "./jumpWIndow";
-        @import "./message";
-        @import "./mainWrap";
-        @import "./footer";
     }
+
+    @import "./header";
+    @import "./login";
+    @import "./register";
+    @import "./memberPage";
+    @import "./betPage";
+    @import "./servicePage";
+    @import "./settingPage";
+    @import "./settingACPW";
+    @import "./overView";
+    @import "./jumpWIndow";
+    @import "./message";
+    @import "./mainWrap";
+    @import "./footer";
 }
 

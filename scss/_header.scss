@@ -10,7 +10,7 @@ header {
     .top {
         width: 100%;
         height: 90px;
-        background: $mainBG_1;
+        background: $mainColor;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -36,7 +36,6 @@ header {
     
             li {
                 width: auto;
-                height: auto;
                 margin-right: 25px;
                
                 &:last-of-type {
@@ -46,11 +45,23 @@ header {
                 &:hover,&:active,&.active {
 
                     p {
-                        color: $mainColor_1;
+                        color: $mainColor_3;
                     }
 
                     i {
-                        background-position-y: 100%;
+
+                        &.sport {
+                            background-position-y: 108%;
+                        }
+                        &.casino {
+                            background-position-y: 109%;
+                        }
+                        &.live {
+                            background-position-y: 107%;
+                        }
+                        &.event {
+                            background-position-y: 107%;
+                        }
                     }
                 }
     
@@ -62,8 +73,8 @@ header {
                     justify-content: space-between;
     
                     i {
-                        width: 35px;
-                        height: 35px;
+                        width: 50px;
+                        height: 50px;
                         margin-right: 5px;
 
                         &.sport {
@@ -81,7 +92,7 @@ header {
                     }
     
                     p {
-                        color: $header_topList_Color;
+                        color: $mainColor_13;
                         font-size: 1rem;
                         font-weight: bold;
                     }
@@ -89,52 +100,70 @@ header {
             }
         }
 
-        // 已登入會員區
-        .mem_Area {
+        // 未登入登入區
+        .loginArea {
             width: auto;
             height: auto;
             display: flex;
             align-items: center;
+            position: absolute;
+            right: 24px;
 
-            // rwd縮排物件
             .checkBox {
-                display: none;
                 width: auto;
                 height: 100%;
+                display: flex;
                 align-items: center;
                 position: relative;
-                cursor: pointer;
                 margin-right: 10px;
+                opacity: 0;
 
                 .title {
-                    color: $header_topList_Color;
+                    color: $mainColor_13;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
                     align-items: center;
+                    user-select: none;
 
                     i {
-                        @include arrow_1;
-                        position: static;
-                        border-color: $header_topList_Color transparent;
-                        transform: translateY(0);
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $mainColor_13 transparent;
                         margin-left: 5px;
                     }
                 }
 
                 ul {
+                    display: none;
                     width: 220px;
                     height: auto;
                     @include bottomList;
+                    padding: 20px;
                     position: absolute;
                     top: 25px;
                     left: -20px;
-                    padding: 20px;
                     z-index: 100;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
 
                     li {
                         width: 100%;
                         height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
                         margin-bottom: 10px;
 
                         &:first-child {
@@ -150,9 +179,124 @@ header {
                             height: auto;
 
                             p {
-                                color: $mainColor_2;
+                                color: $mainColor;
                                 font-size: 0.75rem;
                                 font-weight: bold;
+                                margin-bottom: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button {
+                @include btnStyle_1;
+                background: $mainColor_3;
+                color: $mainColor_6;
+                padding: 0.5vw 3vw;
+                margin-right: 10px;
+
+                &:hover,&:active,&.active {
+                    background: $mainColor_16;
+                    color: $mainColor_2;
+                }
+
+                &:last-child {
+                    background: $mainColor_10;
+                    color: $mainColor_2;
+                    padding: 0.5vw 2vw;
+                    margin: 0;
+
+                    &:hover,&:active,&.active {
+                        background: $mainColor_11;
+                        color: $mainColor_3;
+                    }
+                }
+            }
+        }
+
+        // 已登入會員區
+        .mem_Area {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            // rwd縮排物件
+            .checkBox {
+                width: auto;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-right: 10px;
+                opacity: 0;
+
+                .title {
+                    color: $mainColor_13;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    user-select: none;
+
+                    i {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $mainColor_13 transparent;
+                        margin-left: 5px;
+                    }
+                }
+
+                ul {
+                    display: none;
+                    width: 220px;
+                    height: auto;
+                    @include bottomList;
+                    padding: 20px;
+                    position: absolute;
+                    top: 25px;
+                    left: -20px;
+                    z-index: 100;
+
+                    &.display {
+                        display: block;
+                    }
+
+                    .innerTitle {
+                        color: $mainColor_2;
+                        font-size: 0.875rem;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    li {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        align-items: center;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+
+                        &:first-child {
+                            display: none;
+                        }
+
+                        &:last-child {
+                            margin: 0;
+                        }
+
+                        a {
+                            width: 100%;
+                            height: auto;
+
+                            p {
+                                color: $mainColor;
+                                font-size: 0.75rem;
+                                font-weight: bold;
+                                margin-bottom: 2px;
                             }
                         }
                     }
@@ -164,50 +308,50 @@ header {
                 height: auto;
                 display: flex;
                 align-items: center;
-                margin-right: 15px;
+                margin-right: 5px;
 
                 &.account {
                     cursor: pointer;
 
                     i { 
-                        color: $mainColor_1;
+                        color: $mainColor_3;
                         font-size: 1rem;
                         margin-right: 5px;
                     }
                 }
 
-                .walletTitle {
-                    background: $subBG_1;
-                    border-radius: 5px;
-                    color: $mainColor_1;
-                    font-size: 0.85rem;
-                    font-weight: bold;
-                    padding: 5px;
-                    margin: 0 5px 0 10px;
+                button {
+                  
+                    &:not(:last-child) {
+                        background: $mainColor_6;
+                        color: $mainColor_3;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        padding: 1px 4px;
+                        margin: 0 5px 0 10px;
+                    }
                 }
 
-                p:not(.walletTitle) {
-                    color: $mainColor_1;
-                    font-size: 1rem;
-                    font-weight: bold;
+                p {
+                    color: $mainColor_3;
                 }
             }
 
             .logoutBtn {
                 @include btnStyle_1;
-                background: $header_button_BG;
-                color: $mainColor_2;
-                padding: 5px 10px;
+                background: $mainColor_3;
+                color: $mainColor_6;
+                padding: 0.5vw 1vw;
                 margin-left: 20px;
 
                 &:hover,&:active,&.active {
-                    background: $header_button_ActiveBG;
-                    color: $mainColor_1;
+                    background: $mainColor_13;
+                    color: $mainColor_3;
                 }
             }
         }
 
-        //平板nav
+        // 平板nav
         .rwd_TOPNav {
             display: none;
             width: auto;
@@ -216,32 +360,72 @@ header {
             top: 0;
             right: 0;
 
+            &.logInner {
+
+                .itemBox {
+
+                    &:not(:last-child) {
+                        display: none;
+                    }
+                }
+            }
+
             .itemBox {
-                display: none;
-                width: 65px;
+                width: auto;
                 height: auto;
-                background: $subBG_1;
+                display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 8px 0;
+                padding: 8px;
 
-                &.display {
-                    display: flex;
+                &:first-child {
+                    svg {
+                        margin-left: 5.5px;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    svg {
+                        transform: scale(1.05);
+                        margin: 2px 0 0 3px;
+                    }
+                    p {
+                        margin-top: 4px;
+                    }
+                }
+
+                &.nav {
+                    width: 65px;
+                    background: $mainColor_15;
+                    padding: 8px 0;
+
+                    svg {
+                        fill: $mainColor_3;
+
+                    }
+                }
+
+                &.active {
+                    .hamIC {
+                        display: none;
+                    }
                 }
 
                 svg {
                     width: 21px;
                     height: 21px;
-                    fill: $mainColor_1;
+                    fill: $mainColor_15;
+
+                    &.injected-svg {
+                        display: none;
+                    }
                 }
 
                 p {
-                    color: $mainColor_1;
+                    color: $mainColor_3;
                     font-size: 0.9rem;
-                    font-weight: bold;
-                    cursor: default;
-                    user-select: none;
                     margin-top: 5px;
+                    cursor: default;
                 }
             }
         }
@@ -282,13 +466,28 @@ header {
                 }
             }
         }
+
+        // 手機版登入
+        .mobile_Login {
+            display: none;
+            width: auto;
+            order: 2;
+            background: $mainColor_10;
+            border-radius: 30px;
+            color: $mainColor_2;
+            font-size: 4vw;
+            font-weight: bold;
+            white-space: nowrap;
+            padding: 5px 15px;
+        }
     }
 
     //下
     .bottom {
         width: 100%;
         height: 35px;
-        background: $subBG_1;
+        background: $mainColor_15;
+        position: relative;
 
         .mid {
             width: 1200px;
@@ -309,7 +508,7 @@ header {
                 }
     
                 i {
-                    color: $mainColor_2;
+                    color: $mainColor;
                     font-size: 16px;
                     position: absolute;
                     top: 50%;
@@ -327,7 +526,7 @@ header {
                 margin-left: 10px;
 
                 .title {
-                    color: $mainColor_1;
+                    color: $mainColor_3;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
@@ -336,9 +535,11 @@ header {
                     cursor: pointer;
 
                     i {
-                        @include arrow_1;
-                        position: static;
-                        transform: translateY(0);
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 6px 4px 0 4px;
+                        border-color: $mainColor_3 transparent;
                         margin-left: 5px;
                     }
                 }
@@ -387,7 +588,7 @@ header {
                         }
 
                         p {
-                            color: $mainColor_3;
+                            color: $mainColor;
                             font-size: 0.75rem;
                             font-weight: bold;
                             margin-bottom: 2px;
@@ -397,7 +598,7 @@ header {
             }
 
             .time {
-                color: $mainColor_1;
+                color: $mainColor_3;
                 font-size: 0.75rem;
                 font-weight: bold;
                 margin: 0 0 2px 15px;
