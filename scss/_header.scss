@@ -10,7 +10,7 @@ header {
     .top {
         width: 100%;
         height: 90px;
-        background: $mainColor;
+        background: $mainBG_1;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -36,6 +36,7 @@ header {
     
             li {
                 width: auto;
+                height: auto;
                 margin-right: 25px;
                
                 &:last-of-type {
@@ -45,23 +46,11 @@ header {
                 &:hover,&:active,&.active {
 
                     p {
-                        color: $mainColor_3;
+                        color: $mainColor_1;
                     }
 
                     i {
-
-                        &.sport {
-                            background-position-y: 108%;
-                        }
-                        &.casino {
-                            background-position-y: 109%;
-                        }
-                        &.live {
-                            background-position-y: 107%;
-                        }
-                        &.event {
-                            background-position-y: 107%;
-                        }
+                        background-position-y: 100%;
                     }
                 }
     
@@ -73,8 +62,8 @@ header {
                     justify-content: space-between;
     
                     i {
-                        width: 50px;
-                        height: 50px;
+                        width: 35px;
+                        height: 35px;
                         margin-right: 5px;
 
                         &.sport {
@@ -92,124 +81,9 @@ header {
                     }
     
                     p {
-                        color: $mainColor_13;
+                        color: $header_topList_Color;
                         font-size: 1rem;
                         font-weight: bold;
-                    }
-                }
-            }
-        }
-
-        // 未登入登入區
-        .loginArea {
-            width: auto;
-            height: auto;
-            display: flex;
-            align-items: center;
-            position: absolute;
-            right: 24px;
-
-            .checkBox {
-                width: auto;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                position: relative;
-                margin-right: 10px;
-                opacity: 0;
-
-                .title {
-                    color: $mainColor_13;
-                    font-size: 0.85rem;
-                    font-weight: bold;
-                    display: flex;
-                    align-items: center;
-                    user-select: none;
-
-                    i {
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 6px 4px 0 4px;
-                        border-color: $mainColor_13 transparent;
-                        margin-left: 5px;
-                    }
-                }
-
-                ul {
-                    display: none;
-                    width: 220px;
-                    height: auto;
-                    @include bottomList;
-                    padding: 20px;
-                    position: absolute;
-                    top: 25px;
-                    left: -20px;
-                    z-index: 100;
-
-                    &.display {
-                        display: block;
-                    }
-
-                    .innerTitle {
-                        color: $mainColor_2;
-                        font-size: 0.875rem;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                    }
-
-                    li {
-                        width: 100%;
-                        height: auto;
-                        display: flex;
-                        align-items: center;
-                        cursor: pointer;
-                        margin-bottom: 10px;
-
-                        &:first-child {
-                            display: none;
-                        }
-
-                        &:last-child {
-                            margin: 0;
-                        }
-
-                        a {
-                            width: 100%;
-                            height: auto;
-
-                            p {
-                                color: $mainColor;
-                                font-size: 0.75rem;
-                                font-weight: bold;
-                                margin-bottom: 2px;
-                            }
-                        }
-                    }
-                }
-            }
-
-            button {
-                @include btnStyle_1;
-                background: $mainColor_3;
-                color: $mainColor_6;
-                padding: 0.5vw 3vw;
-                margin-right: 10px;
-
-                &:hover,&:active,&.active {
-                    background: $mainColor_16;
-                    color: $mainColor_2;
-                }
-
-                &:last-child {
-                    background: $mainColor_10;
-                    color: $mainColor_2;
-                    padding: 0.5vw 2vw;
-                    margin: 0;
-
-                    &:hover,&:active,&.active {
-                        background: $mainColor_11;
-                        color: $mainColor_3;
                     }
                 }
             }
@@ -224,60 +98,43 @@ header {
 
             // rwd縮排物件
             .checkBox {
+                display: none;
                 width: auto;
                 height: 100%;
-                display: flex;
                 align-items: center;
                 position: relative;
+                cursor: pointer;
                 margin-right: 10px;
-                opacity: 0;
 
                 .title {
-                    color: $mainColor_13;
+                    color: $header_topList_Color;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
                     align-items: center;
-                    user-select: none;
 
                     i {
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 6px 4px 0 4px;
-                        border-color: $mainColor_13 transparent;
+                        @include arrow_1;
+                        position: static;
+                        border-color: $header_topList_Color transparent;
+                        transform: translateY(0);
                         margin-left: 5px;
                     }
                 }
 
                 ul {
-                    display: none;
                     width: 220px;
                     height: auto;
                     @include bottomList;
-                    padding: 20px;
                     position: absolute;
                     top: 25px;
                     left: -20px;
+                    padding: 20px;
                     z-index: 100;
-
-                    &.display {
-                        display: block;
-                    }
-
-                    .innerTitle {
-                        color: $mainColor_2;
-                        font-size: 0.875rem;
-                        font-weight: bold;
-                        margin-bottom: 20px;
-                    }
 
                     li {
                         width: 100%;
                         height: auto;
-                        display: flex;
-                        align-items: center;
-                        cursor: pointer;
                         margin-bottom: 10px;
 
                         &:first-child {
@@ -293,10 +150,9 @@ header {
                             height: auto;
 
                             p {
-                                color: $mainColor;
+                                color: $mainColor_2;
                                 font-size: 0.75rem;
                                 font-weight: bold;
-                                margin-bottom: 2px;
                             }
                         }
                     }
@@ -308,50 +164,50 @@ header {
                 height: auto;
                 display: flex;
                 align-items: center;
-                margin-right: 5px;
+                margin-right: 15px;
 
                 &.account {
                     cursor: pointer;
 
                     i { 
-                        color: $mainColor_3;
+                        color: $mainColor_1;
                         font-size: 1rem;
                         margin-right: 5px;
                     }
                 }
 
-                button {
-                  
-                    &:not(:last-child) {
-                        background: $mainColor_6;
-                        color: $mainColor_3;
-                        font-weight: bold;
-                        border-radius: 5px;
-                        padding: 1px 4px;
-                        margin: 0 5px 0 10px;
-                    }
+                .walletTitle {
+                    background: $subBG_1;
+                    border-radius: 5px;
+                    color: $mainColor_1;
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    padding: 5px;
+                    margin: 0 5px 0 10px;
                 }
 
-                p {
-                    color: $mainColor_3;
+                p:not(.walletTitle) {
+                    color: $mainColor_1;
+                    font-size: 1rem;
+                    font-weight: bold;
                 }
             }
 
             .logoutBtn {
                 @include btnStyle_1;
-                background: $mainColor_3;
-                color: $mainColor_6;
-                padding: 0.5vw 1vw;
+                background: $header_button_BG;
+                color: $mainColor_2;
+                padding: 5px 10px;
                 margin-left: 20px;
 
                 &:hover,&:active,&.active {
-                    background: $mainColor_13;
-                    color: $mainColor_3;
+                    background: $header_button_ActiveBG;
+                    color: $mainColor_1;
                 }
             }
         }
 
-        // 平板nav
+        //平板nav
         .rwd_TOPNav {
             display: none;
             width: auto;
@@ -360,72 +216,32 @@ header {
             top: 0;
             right: 0;
 
-            &.logInner {
-
-                .itemBox {
-
-                    &:not(:last-child) {
-                        display: none;
-                    }
-                }
-            }
-
             .itemBox {
-                width: auto;
+                display: none;
+                width: 65px;
                 height: auto;
-                display: flex;
+                background: $subBG_1;
                 flex-direction: column;
                 align-items: center;
-                padding: 8px;
+                padding: 8px 0;
 
-                &:first-child {
-                    svg {
-                        margin-left: 5.5px;
-                    }
-                }
-
-                &:nth-of-type(2) {
-                    svg {
-                        transform: scale(1.05);
-                        margin: 2px 0 0 3px;
-                    }
-                    p {
-                        margin-top: 4px;
-                    }
-                }
-
-                &.nav {
-                    width: 65px;
-                    background: $mainColor_15;
-                    padding: 8px 0;
-
-                    svg {
-                        fill: $mainColor_3;
-
-                    }
-                }
-
-                &.active {
-                    .hamIC {
-                        display: none;
-                    }
+                &.display {
+                    display: flex;
                 }
 
                 svg {
                     width: 21px;
                     height: 21px;
-                    fill: $mainColor_15;
-
-                    &.injected-svg {
-                        display: none;
-                    }
+                    fill: $mainColor_1;
                 }
 
                 p {
-                    color: $mainColor_3;
+                    color: $mainColor_1;
                     font-size: 0.9rem;
-                    margin-top: 5px;
+                    font-weight: bold;
                     cursor: default;
+                    user-select: none;
+                    margin-top: 5px;
                 }
             }
         }
@@ -466,28 +282,13 @@ header {
                 }
             }
         }
-
-        // 手機版登入
-        .mobile_Login {
-            display: none;
-            width: auto;
-            order: 2;
-            background: $mainColor_10;
-            border-radius: 30px;
-            color: $mainColor_2;
-            font-size: 4vw;
-            font-weight: bold;
-            white-space: nowrap;
-            padding: 5px 15px;
-        }
     }
 
     //下
     .bottom {
         width: 100%;
         height: 35px;
-        background: $mainColor_15;
-        position: relative;
+        background: $subBG_1;
 
         .mid {
             width: 1200px;
@@ -508,7 +309,7 @@ header {
                 }
     
                 i {
-                    color: $mainColor;
+                    color: $mainColor_2;
                     font-size: 16px;
                     position: absolute;
                     top: 50%;
@@ -526,7 +327,7 @@ header {
                 margin-left: 10px;
 
                 .title {
-                    color: $mainColor_3;
+                    color: $mainColor_1;
                     font-size: 0.85rem;
                     font-weight: bold;
                     display: flex;
@@ -535,11 +336,9 @@ header {
                     cursor: pointer;
 
                     i {
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 6px 4px 0 4px;
-                        border-color: $mainColor_3 transparent;
+                        @include arrow_1;
+                        position: static;
+                        transform: translateY(0);
                         margin-left: 5px;
                     }
                 }
@@ -588,7 +387,7 @@ header {
                         }
 
                         p {
-                            color: $mainColor;
+                            color: $mainColor_3;
                             font-size: 0.75rem;
                             font-weight: bold;
                             margin-bottom: 2px;
@@ -598,7 +397,7 @@ header {
             }
 
             .time {
-                color: $mainColor_3;
+                color: $mainColor_1;
                 font-size: 0.75rem;
                 font-weight: bold;
                 margin: 0 0 2px 15px;
