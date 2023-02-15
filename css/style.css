@@ -3181,6 +3181,7 @@ html .userSetting .mainArea .innerBox form label .submitBtn {
   font-size: 1.1rem;
   padding: 15px;
   margin: 15px auto;
+  cursor: pointer;
 }
 html .userSetting .mainArea .innerBox form label .submitBtn.display {
   display: -webkit-box;
