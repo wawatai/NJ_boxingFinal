@@ -111,6 +111,10 @@
                             }
                         }
                     }
+
+                    .right {
+                        margin-right: 30px;
+                    }
                 }
             }
         }
@@ -194,6 +198,13 @@
                         .leftSide {
                             display: none;
                         }
+
+                        .mainArea {
+
+                            .innerBox {
+                                padding: 0 4vw 19vw;
+                            }
+                        }
                     }
                 }
     
@@ -206,8 +217,8 @@
                         position: fixed;
                         top: 90px;
                         left: 0;
-                        z-index: 90;
-            
+                        z-index: 150;
+        
                         &.active {
                             width: 100%;
                             background: $filter;
@@ -233,1317 +244,376 @@
                     }
                 }
             }
+
+            footer {
+
+                .top {
+
+                    .company {
+                        display: none;
+                    }
+                }
+
+                .bottom {
+                    height: 120px;
+                }
+            }
         }
     }
 }
 
-// //rwd_990 網頁用
-// @media only screen and (max-width: 990px) {
-//     html {
-
-//         body {
-
-//             footer {
-
-//                 .top {
+//rwd_820 平板用
+@media only screen and (max-width: 820px) {
+    html {
         
-//                     .infoLine {
-//                         height: 60px;
-//                         background: $mainColor;
-//                         order: 0;
-//                         margin: 0;
-//                         padding: 0 20%;
-        
-//                         .lang {
-//                             order: 1;
-//                             position: relative;
-//                             left: 0;
-//                             transform: translateX(0);
-//                         }
-        
-//                         .payway {
-//                             display: none;
-//                         }
-        
-//                         .betRate {
-//                             display: flex;
-//                             order: 0;
-//                         }
-//                     }
-        
-//                     .company {
-//                         order: 2;
-//                         margin-top: 30px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
+        body {
 
-// }
+            header {
 
-// //rwd_840 網頁用
-// @media only screen and (max-width: 840px) {
-//     html {
+                .top {
 
-//         body {
+                    .rwd_TOPNav {
+                        width: 12vw;
+                        height: 100%;
 
-//             main {
+                        .itemBox {
+                            width: 100%;
+                            height: 100%;
+                            justify-content: center;
 
-//                 .center {
+                            svg {
+                                width: 5vw;
+                                height: 5vw;
+                            }
 
-//                     .mainArea {
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
 
-//                         .gameContent {
-                
-//                             .content {
-//                                 grid-template-columns: repeat(1,1fr);
-                
-//                                 .gBlock {
-                                    
-//                                     .down {
-//                                         display: flex;
-//                                         justify-content: space-between;
-//                                         padding: 16px;
-                
-//                                         .infoDetail {
-//                                             width: 48%;
-//                                             order: 1;
-                
-//                                             .more {
-//                                                 display: block;
-//                                                 margin: 20px auto 0;
-//                                                 position: static;
-//                                                 transform: translateX(0);
-                
-//                                                 &:hover,&:active,&.active {
-//                                                     transform: translateY(2px);
-//                                                 }
-//                                             }
-//                                         }
-                
-//                                         .pkTeam {
-//                                             width: 48%;
-//                                             order: 0;
-//                                             margin: 0;
-                
-//                                             .winRWD {
-//                                                 display: block;
-//                                             }
-//                                         }
-                
-//                                         .winner {
-//                                             display: none;
-//                                         }
-//                                     }
-                                    
-//                                 }
-//                             }
-//                         }
-                
-//                         .swiper03 {
-                
-//                             .swiper-wrapper {
-                
-//                                 .swiper-slide {
-//                                     width: 100% !important;
-                
-//                                     .gBlock {
-                                    
-//                                         .down {
-//                                             display: flex;
-//                                             justify-content: space-between;
-//                                             padding: 1rem;
-                
-//                                             .infoDetail {
-//                                                 width: 48%;
-//                                                 order: 1;
-                
-//                                                 .more {
-//                                                     display: block;
-//                                                     margin: 20px auto 0;
-//                                                     position: static;
-//                                                     transform: translateX(0);
-                
-//                                                     &:hover,&:active,&.active {
-//                                                         transform: translateY(2px);
-//                                                     }
-//                                                 }
-//                                             }
-                
-//                                             .pkTeam {
-//                                                 width: 48%;
-//                                                 order: 0;
-//                                                 margin: 0;
-                
-//                                                 .winRWD {
-//                                                     display: block;
-//                                                 }
-//                                             }
-                
-//                                             .winner {
-//                                                 display: none;
-//                                             }
-//                                         }
-                                        
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-                
-//                     .right {
-//                         width: 0;
-//                         height: calc(100% - 90px);
-//                         position: fixed;
-//                         top: 90px;
-//                         left: 0;
-//                         z-index: 110;
-//                         margin-top: 0;
-                
-//                         &.active {
-//                             width: 100%;
-//                         }
-                
-//                         .betBlock {
-//                             width: 100%;
-//                             height: 100%;
-//                             border-radius: 0;
-//                             display: flex;
-//                             flex-direction: column;
-                
-//                             .topList {
-//                                 flex-shrink: 0;
-                
-//                                 li {
-//                                     width: 25%;
-                                    
-//                                     p {
-//                                         width: 100%;
-//                                         text-align: center;
-//                                     }
-//                                 }
-//                             }
-                
-//                             .betTypeList {
-//                                 padding: 0;
-//                                 flex-shrink: 0;
-                
-//                                 li {
-//                                     width: 34%;
-                
-//                                     a {
-//                                         width: 100%;
-//                                         justify-content: center;
-//                                     }
-//                                 }
-//                             }
-                
-//                             .betContent {
-//                                 height: 100%;
-//                             }
-                
-//                             .smallFilter {
-//                                 height: calc(100% - 47px);
-//                             }
-                
-//                             .closeRight {
-//                                 display: flex;
-//                                 flex-shrink: 0;
-//                             }
-//                         }
-//                     }
-                    
-//                     aside {
-                
-//                         &.betRecordBtn {
-//                             display: flex;
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                    ul {
+                        top: unset;
+                        bottom: 0;
 
-// //rwd_767 網頁用
-// @media only screen and (max-width: 767px) {
-//     html {
+                        li {
 
-//         body {
+                            a {
 
-//             footer {
+                                p {
+                                    font-size: 1.2rem;
+                                    padding-bottom: 1vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-//                 .top {
-//                     .company {
-//                         flex-direction: column;
-        
-//                         .logo {
-//                             margin-bottom: 10px;
-//                         }
-//                     }
-//                 }
-//             }
+            main {
+                padding-bottom: 12vw;
 
-//             .filter {
-                
-//                 .jumpWindow {
-//                     width: 80%;
+                .center {
 
-//                     &.choosedate {
-//                         height: auto;
+                    .mainArea {
+                        //網頁版內縮移除
+                        padding: 0;
 
-//                         .content {
-//                             grid-template-columns: repeat(3, 1fr);
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
-//rwd_840 平板
-// @media only screen and (max-width: 1024px) {
-//     html {
-//         //rem繼承
-//         font-size: 4vw;
-
-//         body {
-
-//             header {
-//                  // 已登入手機版header
-//                 &.logINN {
-
-//                     .top {
-//                         height: 75px;
-
-//                         .mem_Area {
-//                             order: 2;
-//                             position: relative;
-//                             top: 0;
-//                             right: 0;
-                            
-//                             .account {
-//                                 order: 1;
-//                                 margin: 0;
-            
-//                                 i {
-//                                     font-size: 5vw;
-//                                     cursor: pointer;
-//                                 }
-            
-//                                 p {
-//                                     display: none;
-//                                 }
-//                             }
-//                             .wallet {
-//                                 order: 0;
-//                                 margin-right: 10px;
-//                             }
-
-//                             .logoutBtn {
-//                                 display: none;
-//                             }
-//                         }
-
-//                     }
-
-//                     .bottom {
-//                         display: none;
-//                     }
-//                 }
-
-//                 .top {
-//                     height: 50px;
-//                     position: relative;
-//                     display: flex;
-//                     align-items: center;
-//                     justify-content: space-between;
-//                     padding: 0 20px;
-        
-//                     a {
-
-//                         &.logo {
-//                             width: auto;
-//                             height: auto;
-//                             order: 1;
-//                             margin-top: 3px;
-//                             position: relative;
-//                             top: 0;
-//                             left: 0;
-        
-//                             img {
-//                                 height: 30px;
-//                             }
-//                         }
-//                     }
-                    
-//                     ul {
-//                         display: none;
-//                     }
-        
-//                     .rwd_TOPNav {
-//                         display: none;
-//                     }
-        
-//                     .langBox {
-//                         display: flex;
-//                     }
-        
-//                     .mobile_Login {
-//                         display: block;
-//                     }
-
-//                     .mem_Area {
-//                         display: flex;
-//                         position: absolute;
-//                         top: 20px;
-//                         right: 65px;
-                        
-//                         .checkBox,
-//                         .money,
-//                         .message {
-//                             display: none;
-//                         }
-
-//                         .account {
-//                             order: 1;
-        
-//                             i {
-//                                 font-size: 3rem;
-//                                 cursor: pointer;
-//                             }
-        
-//                             p {
-//                                 display: none;
-//                             }
-//                         }
-
-//                         .wallet {
-//                             order: 0;
-//                             margin-right: 10px;
-        
-//                             button {
-//                                 display: none;
-//                             }
-//                         }
-        
-//                     }
-//                 }
-//             }
-
-//             main {
-//                 //手機版未登入
-//                 padding-top: 0px;
-
-//                 //手機版登入後
-//                 &.inMain {
-//                     padding-top: 50px;
-
-//                     .mainArea {
-
-//                         .searchBox {
-//                             margin-top: 0;
-//                         }
-//                     }
-//                 }
-
-//                 .center {
-
-//                     .mainArea {
-
-//                         .gameContent {
-                
-//                             .content {
-//                                 grid-template-columns: repeat(1,1fr);
-
-//                                 .gBlock {
-                                    
-//                                     .down {
-//                                         display: flex;
-//                                         justify-content: space-between;
-//                                         padding: 16px;
-                
-//                                         .infoDetail {
-//                                             width: 48%;
-//                                             order: 1;
-                
-//                                             .more {
-//                                                 display: block;
-//                                                 margin: 20px auto 0;
-//                                                 position: static;
-//                                                 transform: translateX(0);
-                
-//                                                 &:hover,&:active,&.active {
-//                                                     transform: translateY(2px);
-//                                                 }
-//                                             }
-//                                         }
-                
-//                                         .pkTeam {
-//                                             width: 48%;
-//                                             order: 0;
-//                                             margin: 0;
-                
-//                                             .winRWD {
-//                                                 display: block;
-//                                             }
-//                                         }
-                
-//                                         .winner {
-//                                             display: none;
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }                    
-
-//                     //投注紀錄頁
-//                     &.betPage {
-
-//                         .mainArea {
-
-//                             .innerBox {
-//                                 padding: 0 4vw 45vw;
-                            
-//                                 .topLine {
-//                                     @include mobile_Title;
+                        //首頁內縮
+                        &.index {
+                            padding: 2vw 2vw 22vw;
     
-//                                     button {
-//                                         display: block;
-//                                     }
-//                                 }
+                            //跑馬燈移除
+                            .swiper {
+                                display: none;
+                            }
 
-//                                 .topnav {
-//                                     margin-bottom: 2vw;
-
-//                                     li {
-//                                         width: 20%;
-//                                         padding: 0 1vw;
-//                                         margin-right: 1vw;
-//                                     }
-//                                 }
-
-//                                 &.myResult {
-//                                     display: flex;
-//                                 }
-
-//                                 .betBox {
-
-//                                     .betData {
-
-//                                         li {
-//                                             margin-bottom: 2vw;
-
-//                                             .dataNum {
-//                                                 background: $mainColor_7;
-
-//                                                 table {
-//                                                     margin: 4vw 0;
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-
-//                                     table {
-
-//                                         tr {
-
-//                                             td {
-
-//                                                 div {
-
-//                                                     &.teamBox {
-//                                                         padding: 2vw 0;
-//                                                     }
-
-//                                                     .cancleBtn {
-//                                                         padding: 1.5vw;
-//                                                     }
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //設定帳號密碼頁
-//                     &.settingACPW {
-
-//                         .mainArea {
-
-//                             .innerBox {
-
-//                                 .topLine {
-
-//                                     button {
-//                                         left: 20px;
-//                                     }
-
-//                                     .pageName {
-//                                         font-size: 0.9rem;
-//                                     }
-//                                 }
+                            .gameContent {
                                 
-//                                 form {
-
-//                                     label {
-//                                         padding: 4vw 5vw;
-
-//                                         .inputTitle {
-//                                             margin-bottom: 5vw;
-//                                         }
-
-//                                         input {
-//                                             width: 100%;
-//                                         }
-
-//                                         .databox {
-
-//                                             i {
-//                                                 width: 6vw;
-//                                                 height: 6vw;
-//                                                 right: 5vw;
-//                                             }
-//                                         }
-
-//                                         .safeBlock {
-//                                             width: 100%;
-//                                         }
-
-//                                         .remind {
-//                                             justify-content: flex-start;
-//                                             margin-top: 0;
-
-//                                             i {
-//                                                 width: 6vw;
-//                                                 height: 6vw;
-//                                                 margin-right: 4vw;
-//                                             }
-
-//                                             p {
-//                                                 max-width: 90%;
-//                                             }
-//                                         }
-
-//                                         .submitBtn {
-//                                             width: 50%;
-//                                             padding: 3.2vw;
-//                                             margin: 4vw auto;
-//                                         }
-//                                     }
-
-//                                     .checkBlock {
-
-//                                         .inputTitle {
-//                                             margin-bottom: 5vw;
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //訊息中心頁
-//                     &.messagePage {
-
-//                         .innerBox {
-//                             padding: 0 4vw 22vw;
-                            
-//                             .topLine {
-
-//                                 button {
-//                                     left: 20px;
-//                                 }
-
-//                                 .pageName {
-//                                     font-size: 1.2rem;
-//                                 }
-//                             }
-
-//                             .topnav {
-//                                 margin: 4vw 0;
-//                             }
-
-//                             .messageBox {
-
-//                                 li {
-//                                     padding: 4vw;
-//                                     margin-bottom: 4vw;
-
-//                                     i {
-//                                         width: 9vw;
-//                                         height: 7vw;
-//                                         margin-right: 4vw;
-//                                         flex-shrink: 0;
-//                                     }
-
-//                                     .textBox {
-
-//                                         .title {
-//                                             margin-bottom: 2vw;
-//                                         }
-
-//                                         .subTitle {
-//                                             margin-bottom: 2vw;
-//                                         }
-//                                     }
-
-//                                     .unread {
-//                                         width: 3vw;
-//                                         height: 3vw;
-//                                         margin-left: 4vw;
-//                                     }
-//                                 }
-//                             }
-
-//                             .messageCnt {
-//                                 padding: 4vw;
-//                                 margin-top: 4vw;
-
-//                                 .date {
-//                                     margin-bottom: 4vw;
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //口座殘高
-//                     &.overViewPage {
-
-//                         .innerBox {
-//                             padding: 0 4vw 22vw;
-                            
-//                             .topLine {
-
-//                                 button {
-//                                     left: 20px;
-//                                 }
-
-//                                 .pageName {
-//                                     font-size: 1.2rem;
-//                                 }
-//                             }
-
-//                             ul {
-//                                 padding: 4vw;
-
-//                                 li {
-//                                     padding: 0;
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //設定頁
-//                     &.userSetting {
-                        
-//                         .innerBox {
-//                             padding: 0 4vw 22vw;
-                            
-//                             .topLine {
-
-//                                 button {
-//                                     left: 20px;
-//                                 }
-
-//                                 .pageName {
-//                                     font-size: 1.2rem;
-//                                 }
-//                             }
-
-//                             form {
-
-//                                 label {
-//                                     padding: 4vw 5vw;
-
-//                                     .submitBtn {
-//                                         width: 50%;
-//                                         padding: 3.2vw;
-//                                         margin: 4vw auto;
-//                                     }
-
-//                                     .inBox {
-
-//                                         .switchBtn {
-
-//                                             p {
-//                                                 padding: 2.5vw;
-
-//                                                 span {
-//                                                     padding: 2.5vw;
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-
-//                                 .btnBox {
-
-//                                     p {
-//                                         &.bTitle {
-//                                             margin-bottom: 2vw;
-//                                         }
-                
-//                                         &:nth-last-of-type(1) {
-//                                             position: relative;
-//                                             bottom: unset;
-//                                             left: unset;
-//                                         }
-//                                     }
-
-//                                     .inBox {
-//                                         display: grid;
-//                                         grid-template-columns: repeat(3,1fr);
-//                                         gap: 2vw;
-//                                         margin-top: 4vw;
-                                        
-//                                         input {
-//                                             @include btnStyle_2;
-//                                             width: 100%;
-//                                             margin: 0;
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //feedback
-//                     &.servicePage {
-
-//                         .innerBox {
-//                             padding: 0 4vw 22vw;
-                            
-//                             .topLine {
-//                                 @include mobile_Title;
-
-//                                 button {
-//                                     left: 20px;
-//                                 }
-
-//                                 .pageName {
-//                                     font-size: 1.2rem;
-//                                 }
-//                             }
-
-//                             .topnav {
-//                                 margin: 4vw 0;
-//                             }
-
-//                             .feebackBox {
-
-//                                 .title {
-//                                     padding-bottom: 1.5vw;
-//                                     margin-bottom: 2vw;
-
-//                                     &:first-child {
-//                                         margin-top: 4vw;
-//                                     }
-//                                 }
-
-//                                 .selectBox {
-//                                     display: block;
-//                                     width: 100%;
-//                                     height: auto;
-//                                     position: relative;
-//                                     margin-bottom: 8vw;
-                                    
-//                                     select {
-//                                         width: 100%;
-//                                         height: 11vw;
-//                                         @include selectStyle_2;
-//                                     }
-                
-//                                     i {
-//                                         @include arrow_2;
-//                                         transform: translateY(-50%) rotate(90deg);
-//                                         left: unset;
-//                                         right: 6vw;
-//                                     }
-//                                 }
-
-//                                 .textBox {
-//                                     margin-bottom: 8vw;
-
-//                                     textarea {
-//                                         height: 30vh;
-//                                         padding: 3vw;
-//                                     }
-                                    
-//                                     .imgBox {
-//                                         padding: 3vw;
-
-//                                         i {
-//                                             width: 15vw;
-//                                             height: 15vw;
-//                                             margin-bottom: 4vw;
-//                                         }
-//                                     }
-//                                 }
-
-//                                 button {
-//                                     width: 50%;
-//                                     height: auto;
-//                                     padding: 3.2vw;
-//                                 }
-//                             }
-//                         }
-//                     }
-
-//                     //左移除
-//                     .left,
-//                     .leftSide {
-//                         display: none;
-//                     }
-
-//                     .mainArea {
-//                         //網頁版內縮移除
-//                         padding: 0;
-
-//                         //首頁內縮
-//                         &.index {
-//                             padding: 2vw 2vw 22vw;
-
-//                             //首頁專用上搜尋列
-//                             .searchBox {
-//                                 display: flex;
-//                             }
-
-//                             //跑馬燈移除
-//                             .swiper {
-//                                 display: none;
-//                             }
-
-//                             //調整首頁nav大小
-//                             .middleNav {
-
-//                                 .topnav {
-                
-//                                     li {
-//                                         width: 25%;
-//                                     }
-//                                 }
-//                             }
-
-//                             //調整中選項大小
-//                             .typselect{
-
-//                                 &.swiper02 {
-//                                     padding: 4vw 3vw;
-
-//                                     .swiper-wrapper {
-
-//                                         .swiper-slide {
-//                                             width: auto !important;
-
-//                                             .gameTypeBox {
-//                                                 padding: 0 3vw 3vw;
-
-//                                                 .picBox {
-//                                                     width: 16vw;
-//                                                     height: 16vw;
-
-//                                                     svg {
-//                                                         transform: scale(1.5);
-//                                                     }
-//                                                 }
-
-//                                                 p {
-//                                                     max-width: 16vw;
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-//                             }
-
-//                             //首頁調整下選單樣式
-//                             .gameContent {
-//                                 padding: 4vw 0 0;
-
-//                                 .content {
-//                                     gap: 4vw 0;
-//                                     padding: 4vw 0;
-
-//                                     .gBlock {
-
-//                                         .down {
-//                                             padding: 2vw;
-
-//                                             .infoDetail {
-//                                                 width: 100%;
-//                                             }
-
-//                                             .pkTeam {
-//                                                 width: 58%;
-//                                                 padding: 7vw 4vw 4vw;
-//                                                 margin-right: 4vw;
-//                                                 flex-shrink: 0;
-
-//                                                 .outbox {
-
-//                                                     .team {
-
-//                                                         svg {
-//                                                             transform: scale(1.5);
-//                                                             margin: 0 0 5vw;
-//                                                         }
-
-//                                                         .teamName {
-//                                                             font-size: 1rem;
-//                                                             line-height: 1.5rem;
-//                                                             margin-bottom: 4vw;
-//                                                         }
-//                                                     }
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-//                             }
-
-//                             .swiper03 {
-
-//                                 .swiper-wrapper {
-
-//                                     .swiper-slide {
-
-//                                         .gBlock {
-
-//                                             .down {
-//                                                 padding: 4vw 2vw 2vw;
-
-//                                                 .infoDetail {
-//                                                     width: 100%;
-//                                                 }
+                                .content {
+                                    grid-template-columns: repeat(2,1fr);
+                                }
+                            }
+                        }
+
+                        .innerBox {
+
+                            &.userHome {
+
+                                .topBox {
+                                    margin-top: 4vw;
+
+                                    .userBox {
+                                        padding: 2vw 4vw;
+
+                                        .userPic {
+                                            width: 15vw;
+                                            height: 15vw;
+                                            margin-right: 4vw;
+                                        }
+
+                                        p {
+
+                                            span {
+                                                margin-top: 2vw;
+                                            }
+                                        }
+                                    }
+
+                                    ul {
+                                        display: flex
+                                    }
+                                }
+
+                                .pageList {
+                                    display: block;
+                                }
+                            }
+
+                            &.betPage {
+
+                                .betBox {
+
+                                    .topnav {
+                                        justify-content: space-between;
+                                        margin: 0;
+
+                                        li {
+                                            width: 20%;
+                                            padding: 0;
+
+                                            p {
+                                                font-size: 1rem;
+                                            }
+                                        }
+                                    }
+
+                                    .betData {
+
+                                        li {
+
+                                            table {
+
+                                                &:nth-of-type(1) {
+                                                    margin-top: 4vw;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .myResult {
+                                    display: flex;
+
+                                    div {
+
+                                        p {
+
+                                            span {
+                                                margin-top: 2vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.setting {
+
+                                form {
+
+                                    &>div {
+                                        padding: 4vw 0;
+
+                                        .bTitle {
+                                            margin-bottom: 2vw;
+                                        }
+                                            
+                                        &:nth-of-type(1) {
+                                            
+                                            &>div {
+
+                                                display: block;
+
+                                                p {
+                                                    margin-bottom: 2vw;
+                                                }
+
+                                                .inputBox {
+                                                    display: grid;
+                                                    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+                                                    gap: 2vw;
+
+                                                    input {
+                                                        width: auto;
+                                                        min-width: 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                        &:nth-of-type(2) {
+
+                                            &>div {
+                                                justify-content: flex-start;
+
+                                                p {
+
+                                                    &.state {
+                                                        margin-left: 4vw;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.mailPage {
+
+                                &.inner {
+
+                                    .messageCnt {
+
+                                        .date {
+
+                                            button {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .topLine {
+                                padding: 4vw 0;
+
+                                button {
+                                    display: block;
+                                }
+
+                                .pageName {
+                                    text-align: center;
+                                }
+                            }
+                        }
+                    }
+
+                    //右樣式
+                    .right {
+                        width: 100%;
+                        height: 100%;
+                        position: fixed;
+                        left: 0;
+                        top: 0;
+                        transform: translateX(100%);
+                        transition: 0.3s all;
+                        margin: 0;
+                        z-index: 999;
+
+                        &.active {
+                            transform: translateX(0);
+                        }
+
+                        .betBlock {
+                            height: 100%;
+                            border-radius: 0;
+
+                            .topList {
+                                justify-content: space-between;
+                            }
+
+                            .betContent {
+                                max-height: calc(100% - 70px);
+                                overflow-y: overlay;
+                                padding-bottom: 70px;
+
+                                .betData {
+
+                                    .betTotal {
+
+                                        li {
+
+                                            .okBtn {
+                                                font-size: 1.1rem;
+                                                padding: 3.2vw 5vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .closeRight {
+                                display: flex;
+                            }
+                        }
+                    }
+                }
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                z-index: 120;
         
-//                                                 .pkTeam {
-//                                                     width: 58%;
-//                                                     padding: 7vw 4vw 4vw;
-//                                                     margin-right: 4vw;
-//                                                     flex-shrink: 0;
+                .top,
+                .bottom {
+                    display: none;
+                }
         
-//                                                     .outbox {
+                .mobileFooter {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+//rwd_670 平板用
+@media only screen and (max-width: 670px) {
+    html {
         
-//                                                         .team {
-        
-//                                                             svg {
-//                                                                 transform: scale(1.5);
-//                                                                 margin: 0 0 5vw;
-//                                                             }
-        
-//                                                             .teamName {
-//                                                                 font-size: 1rem;
-//                                                                 line-height: 1.5rem;
-//                                                                 margin-bottom: 4vw;
-//                                                             }
-//                                                         }
-//                                                     }
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-//                             }
-//                         }
+        body {
 
-//                         //會員內頁
-//                         .innerBox {
+            header {
 
-//                             &.userHome {
+                .top {
 
-//                                 .topBox {
-//                                     margin-top: 4vw;
+                    .rwd_TOPNav {
 
-//                                     .userBox {
-//                                         padding: 1vw 3vw 2vw;
-//                                         border-bottom: 1px solid $mainColor_6;
+                        .itemBox {
+                            height: auto;
 
-//                                         &::before {
-//                                             display: block;
-//                                         }
+                            p {
+                                font-size: 0.875rem;
+                            }
+                        }
+                    }
+                }
+            }
 
-//                                         .userPic {
-//                                             width: 15vw;
-//                                             height: 15vw;
-//                                             margin: 1vw 4.5vw 1vw 0;
-//                                         }
+            main {
 
-//                                         p {
-//                                             font-size: 0.95rem;
+                .center {
 
-//                                             span {
-//                                                 font-size: 1rem;
-//                                                 margin-top: 2vw;
-//                                             }
-//                                         }
-//                                     }
+                    .mainArea {
 
-//                                     ul {
-//                                         display: flex
-//                                     }
-//                                 }
+                        //首頁內縮
+                        &.index {
 
-//                                 .pageList {
-//                                     display: block;
-//                                 }
-//                             }
-
-//                             //投注限額
-//                             &.betLimit {
-//                                 display: block;
-//                             }
-
-//                             .topLine {
-//                                 @include mobile_Title;
-
-//                                 button {
-//                                     display: block;
-//                                 }
-//                             }
-//                         }
-
-//                         .gameContent {
-
-//                             .down {
-
-//                                  .infoDetail {
-
-//                                      .more {
-//                                          padding: 2vw 3vw !important;
-//                                      }
-//                                  }
-//                             }
-//                          }
-//                     }
-
-//                     //右樣式
-//                     .right {
-//                         display: none;
-//                         height: 100%;
-//                         top: 0;
-//                         z-index: 999;
-
-//                         &.active {
-//                             display: block;
-//                         }
-
-//                         .betBlock {
-//                             background: $mainColor_2;
-
-//                             .topList {
-
-//                                 li {
-
-//                                     &.active {
-
-//                                         &::before {
-//                                             background: $mainColor;
-//                                         }
-
-//                                         p {
-//                                             color: $mainColor;
-//                                         }
-//                                     }
-//                                 }
-//                             }
-
-//                             .betTypeList {
-//                                 background: $mainColor_18;
-
-//                                 li {
-
-//                                     &:hover,&:active,&.active {
-                                        
-//                                         &::before {
-//                                             background: $mainColor_7;
-//                                         }
-
-//                                         a {
-
-//                                             p {
-//                                                 color: $mainColor_7;
-//                                             }
-//                                         }
-//                                     }
-
-//                                     a {
-
-//                                         p {
-//                                             color: $mainColor_8;
-//                                         }
-//                                     }
-//                                 }
-//                             }
-
-//                             .bdTitle {
-//                                 padding: 5px 10px !important;
-//                             }
-
-//                             .betContent {
-
-//                                 .betData {
-//                                     max-height: calc(100vh - 127px);
-//                                     overflow: auto;
-
-//                                     .bdOuter {
-//                                         max-height: auto;
-
-//                                         .top {
-
-//                                             span {
-//                                                 background-color: $mainColor_6;
-//                                                 padding: 7px 10px !important;
-//                                             }
-//                                         }
-
-//                                         .betDetail {
-
-//                                             .bdTitle {
-//                                                 background: $mainColor_4;
-
-//                                                 svg {
-//                                                     fill: $mainColor_9;
-//                                                 }
-//                                             }
-
-//                                             .bdContent {
-
-//                                                 .top {
-//                                                     border-color: $mainColor_6;
-            
-//                                                     span {
-//                                                         background: $mainColor_6;
-//                                                     }
-//                                                 }
-            
-//                                                 .pkTeam {
-            
-//                                                     .VS {
-//                                                         color: $mainColor_3;
-//                                                     }
-//                                                 }
-                                                
-//                                                 .wintext {
-//                                                     color: $mainColor_6;
-//                                                 }
-            
-//                                                 .betwin {
-//                                                     border-color: $mainColor_6;
-            
-//                                                     p {
-//                                                         color: $mainColor_6;
-//                                                     }
-//                                                 }
-            
-//                                                 .betamount {
-//                                                     border-color: $mainColor;
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-
-//                                     .betTotal {
-
-//                                         li {
-
-//                                             p {
-//                                                 color: $mainColor_6;
-//                                                 font-weight: bold;
-//                                             }
-
-//                                             .okBtn {
-//                                                 padding: 3.2vw;
-//                                             }
-//                                         }
-//                                     }
-//                                 }
-//                             }
-
-//                             .closeRight {
-//                                 background: $mainColor_7;
-//                             }
-//                         }
-//                     }
-
-//                     //右下懸浮
-//                     .betRecordBtn {
-//                         bottom: 22vw;
-//                         right: 20px;
-//                     }
-//                 }
-//             }
-            
-//             footer {
-//                 background: $mainColor_5;
-//                 position: fixed;
-//                 bottom: 0;
-//                 left: 0;
-//                 z-index: 120;
-        
-//                 .top,
-//                 .bottom {
-//                     display: none;
-//                 }
-        
-//                 .mobileFooter {
-//                     display: flex;
-//                 }
-//             }
-
-//             .filter {
-                
-//                 .jumpWindow {
-//                     width: 80%;
-
-//                     &.plsLogIn {
-//                         width: 80%;
-//                     }
-
-//                     &.chooseball {
-//                         width: 80%;
-//                         height: auto;
-
-//                         .content {
-//                             height: 65vw;
-//                             overflow-y: auto;
-//                             grid-template-columns: repeat(2, 1fr);
-//                             padding: 1.5vw;
-
-//                             input {
-//                                 padding: 1vw;
-//                             }
-//                         }
-
-//                         .closeWindow {
-//                             padding: 2.2vw;
-//                             margin: 20px auto;
-//                         }
-//                     }
-
-//                     .jwTitle {
-//                         height: 8vw;
-
-//                         p {
-//                             font-size: 1rem;
-//                         }
-//                     }
-
-//                     .content {
-//                         min-height: 27vh;
-//                         padding: 0 10px;
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+                            .gameContent {
+                                
+                                .content {
+                                    grid-template-columns: repeat(1,1fr);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 //rwd_500 網頁最小寬 + 手機用
 @media only screen and (max-width: 500px) {
@@ -1554,63 +624,18 @@
         body {
 
             header {
-                 // 已登入手機版header
-                &.logINN {
-
-                    .top {
-                        .mem_Area {
-                            order: 2;
-                            position: relative;
-                            top: 0;
-                            right: 0;
-                            
-                            .account {
-                                order: 1;
-                                margin: 0;
-            
-                                i {
-                                    font-size: 5vw;
-                                    cursor: pointer;
-                                }
-            
-                                p {
-                                    display: none;
-                                }
-                            }
-                            .wallet {
-                                order: 0;
-                                margin-right: 10px;
-                            }
-
-                            .logoutBtn {
-                                display: none;
-                            }
-                        }
-                    }
-                }
 
                 .top {
                     height: 50px;
                     position: relative;
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
                     padding: 0 20px;
         
-                    a {
-
-                        &.logo {
-                            width: auto;
-                            height: auto;
-                            order: 1;
-                            margin-top: 3px;
-                            position: relative;
-                            top: 0;
-                            left: 0;
-        
-                            img {
-                                height: 30px;
-                            }
+                    .logo {
+                        position: static;
+                        order: 1;
+    
+                        img {
+                            height: 30px;
                         }
                     }
                     
@@ -1623,463 +648,54 @@
                     }
         
                     .langBox {
-                        display: flex;
-                    }
-        
-                    .mobile_Login {
                         display: block;
                     }
 
                     .mem_Area {
                         display: flex;
-                        position: absolute;
-                        top: 20px;
-                        right: 65px;
+                        order: 2;
+                        margin: 0;
                         
-                        .checkBox,
-                        .money,
-                        .message {
+                        .checkBox {
                             display: none;
                         }
 
-                        .account {
-                            order: 1;
-        
-                            i {
-                                font-size: 3rem;
-                                cursor: pointer;
-                            }
-        
-                            p {
-                                display: none;
+                        div {
+
+                            &.account {
+                                order: 1;
+                                margin: 0;
+    
+                                i {
+                                    margin: 0;
+                                }
+            
+                                p {
+                                    display: none;
+                                }
                             }
                         }
 
                         .wallet {
                             order: 0;
                             margin-right: 10px;
-        
-                            button {
+                            
+                            .walletTitle {
                                 display: none;
                             }
                         }
         
+                        .logoutBtn {
+                            display: none;
+                        }
                     }
                 }
             }
 
             main {
-                //手機版未登入
-                padding-top: 0px;
-
-                //手機版登入後
-                &.inMain {
-                    padding-top: 50px;
-
-                    .mainArea {
-
-                        .searchBox {
-                            margin-top: 0;
-                        }
-                    }
-                }
+                padding-top: 50px;
 
                 .center {
-
-                    //投注紀錄頁
-                    &.betPage {
-
-                        .mainArea {
-
-                            .innerBox {
-                                padding: 0 4vw 45vw;
-                            
-                                .topLine {
-                                    @include mobile_Title;
-    
-                                    button {
-                                        display: block;
-                                    }
-                                }
-
-                                .topnav {
-                                    margin-bottom: 2vw;
-
-                                    li {
-                                        width: 20%;
-                                        padding: 0 1vw;
-                                        margin-right: 1vw;
-                                    }
-                                }
-
-                                &.myResult {
-                                    display: flex;
-                                }
-
-                                .betBox {
-
-                                    .betData {
-
-                                        li {
-                                            margin-bottom: 2vw;
-
-                                            .dataNum {
-                                                background: $mainColor_7;
-
-                                                table {
-                                                    margin: 4vw 0;
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                    table {
-
-                                        tr {
-
-                                            td {
-
-                                                div {
-
-                                                    &.teamBox {
-                                                        padding: 2vw 0;
-                                                    }
-
-                                                    .cancleBtn {
-                                                        padding: 1.5vw;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    //設定帳號密碼頁
-                    &.settingACPW {
-
-                        .mainArea {
-
-                            .innerBox {
-
-                                .topLine {
-
-                                    button {
-                                        left: 20px;
-                                    }
-
-                                    .pageName {
-                                        font-size: 0.9rem;
-                                    }
-                                }
-                                
-                                form {
-
-                                    label {
-                                        padding: 4vw 5vw;
-
-                                        .inputTitle {
-                                            margin-bottom: 5vw;
-                                        }
-
-                                        input {
-                                            width: 100%;
-                                        }
-
-                                        .databox {
-
-                                            i {
-                                                width: 6vw;
-                                                height: 6vw;
-                                                right: 5vw;
-                                            }
-                                        }
-
-                                        .safeBlock {
-                                            width: 100%;
-                                        }
-
-                                        .remind {
-                                            justify-content: flex-start;
-                                            margin-top: 0;
-
-                                            i {
-                                                width: 6vw;
-                                                height: 6vw;
-                                                margin-right: 4vw;
-                                            }
-
-                                            p {
-                                                max-width: 90%;
-                                            }
-                                        }
-
-                                        .submitBtn {
-                                            width: 50%;
-                                            padding: 3.2vw;
-                                            margin: 4vw auto;
-                                        }
-                                    }
-
-                                    .checkBlock {
-
-                                        .inputTitle {
-                                            margin-bottom: 5vw;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    //訊息中心頁
-                    &.messagePage {
-
-                        .innerBox {
-                            padding: 0 4vw 22vw;
-                            
-                            .topLine {
-
-                                button {
-                                    left: 20px;
-                                }
-
-                                .pageName {
-                                    font-size: 1.2rem;
-                                }
-                            }
-
-                            .topnav {
-                                margin: 4vw 0;
-                            }
-
-                            .messageBox {
-
-                                li {
-                                    padding: 4vw;
-                                    margin-bottom: 4vw;
-
-                                    i {
-                                        width: 9vw;
-                                        height: 7vw;
-                                        margin-right: 4vw;
-                                        flex-shrink: 0;
-                                    }
-
-                                    .textBox {
-
-                                        .title {
-                                            margin-bottom: 2vw;
-                                        }
-
-                                        .subTitle {
-                                            margin-bottom: 2vw;
-                                        }
-                                    }
-
-                                    .unread {
-                                        width: 3vw;
-                                        height: 3vw;
-                                        margin-left: 4vw;
-                                    }
-                                }
-                            }
-
-                            .messageCnt {
-                                padding: 4vw;
-                                margin-top: 4vw;
-
-                                .date {
-                                    margin-bottom: 4vw;
-                                }
-                            }
-                        }
-                    }
-
-                    //口座殘高
-                    &.overViewPage {
-
-                        .innerBox {
-                            padding: 0 4vw 22vw;
-                            
-                            .topLine {
-
-                                button {
-                                    left: 20px;
-                                }
-
-                                .pageName {
-                                    font-size: 1.2rem;
-                                }
-                            }
-
-                            ul {
-                                padding: 4vw;
-
-                                li {
-                                    padding: 0;
-                                }
-                            }
-                        }
-                    }
-
-                    //設定頁
-                    &.userSetting {
-                        
-                        .innerBox {
-                            padding: 0 4vw 22vw;
-                            
-                            .topLine {
-
-                                button {
-                                    left: 20px;
-                                }
-
-                                .pageName {
-                                    font-size: 1.2rem;
-                                }
-                            }
-
-                            form {
-
-                                label {
-                                    padding: 4vw 5vw;
-
-                                    .submitBtn {
-                                        width: 50%;
-                                        padding: 3.2vw;
-                                        margin: 4vw auto;
-                                    }
-
-                                    .inBox {
-
-                                        .switchBtn {
-
-                                            p {
-                                                padding: 2.5vw;
-
-                                                span {
-                                                    padding: 2.5vw;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-
-                                .btnBox {
-
-                                    p {
-                                        &.bTitle {
-                                            margin-bottom: 2vw;
-                                        }
-                
-                                        &:nth-last-of-type(1) {
-                                            position: relative;
-                                            bottom: unset;
-                                            left: unset;
-                                        }
-                                    }
-
-                                    .inBox {
-                                        display: grid;
-                                        grid-template-columns: repeat(3,1fr);
-                                        gap: 2vw;
-                                        margin-top: 4vw;
-                                        
-                                        input {
-                                            @include btnStyle_2;
-                                            width: 100%;
-                                            margin: 0;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    //feedback
-                    &.servicePage {
-
-                        .innerBox {
-                            padding: 0 4vw 22vw;
-                            
-                            .topLine {
-                                @include mobile_Title;
-
-                                button {
-                                    left: 20px;
-                                }
-
-                                .pageName {
-                                    font-size: 1.2rem;
-                                }
-                            }
-
-                            .topnav {
-                                margin: 4vw 0;
-                            }
-
-                            .feebackBox {
-
-                                .title {
-                                    padding-bottom: 1.5vw;
-                                    margin-bottom: 2vw;
-
-                                    &:first-child {
-                                        margin-top: 4vw;
-                                    }
-                                }
-
-                                .selectBox {
-                                    display: block;
-                                    width: 100%;
-                                    height: auto;
-                                    position: relative;
-                                    margin-bottom: 8vw;
-                                    
-                                    select {
-                                        width: 100%;
-                                        height: 11vw;
-                                        @include selectStyle_2;
-                                    }
-                
-                                    i {
-                                        @include arrow_2;
-                                        transform: translateY(-50%) rotate(90deg);
-                                        left: unset;
-                                        right: 6vw;
-                                    }
-                                }
-
-                                .textBox {
-                                    margin-bottom: 8vw;
-
-                                    textarea {
-                                        height: 30vh;
-                                        padding: 3vw;
-                                    }
-                                    
-                                    .imgBox {
-                                        padding: 3vw;
-
-                                        i {
-                                            width: 15vw;
-                                            height: 15vw;
-                                            margin-bottom: 4vw;
-                                        }
-                                    }
-                                }
-
-                                button {
-                                    width: 50%;
-                                    height: auto;
-                                    padding: 3.2vw;
-                                }
-                            }
-                        }
-                    }
 
                     //左移除
                     .left,
@@ -2088,22 +704,9 @@
                     }
 
                     .mainArea {
-                        //網頁版內縮移除
-                        padding: 0;
 
                         //首頁內縮
                         &.index {
-                            padding: 2vw 2vw 22vw;
-
-                            //首頁專用上搜尋列
-                            .searchBox {
-                                display: flex;
-                            }
-
-                            //跑馬燈移除
-                            .swiper {
-                                display: none;
-                            }
 
                             //調整首頁nav大小
                             .middleNav {
@@ -2117,31 +720,28 @@
                             }
 
                             //調整中選項大小
-                            .typselect{
+                            .swiper02 {
+                                padding: 4vw 0;
 
-                                &.swiper02 {
-                                    padding: 4vw 3vw;
+                                .swiper-wrapper {
 
-                                    .swiper-wrapper {
+                                    .swiper-slide {
+                                        width: auto !important;
 
-                                        .swiper-slide {
-                                            width: auto !important;
+                                        .gameTypeBox {
+                                            padding: 0 3vw 3vw;
 
-                                            .gameTypeBox {
-                                                padding: 0 3vw 3vw;
+                                            .picBox {
+                                                width: 16vw;
+                                                height: 16vw;
 
-                                                .picBox {
-                                                    width: 16vw;
-                                                    height: 16vw;
-
-                                                    svg {
-                                                        transform: scale(1.5);
-                                                    }
+                                                svg {
+                                                    transform: scale(1.5);
                                                 }
+                                            }
 
-                                                p {
-                                                    max-width: 16vw;
-                                                }
+                                            p {
+                                                max-width: 16vw;
                                             }
                                         }
                                     }
@@ -2150,7 +750,7 @@
 
                             //首頁調整下選單樣式
                             .gameContent {
-                                padding: 4vw 0 0;
+                                padding: 0;
 
                                 .content {
                                     gap: 4vw 0;
@@ -2159,10 +759,12 @@
                                     .gBlock {
 
                                         .down {
+                                            display: flex;
                                             padding: 2vw;
 
                                             .infoDetail {
                                                 width: 100%;
+                                                order: 1;
                                             }
 
                                             .pkTeam {
@@ -2170,6 +772,8 @@
                                                 padding: 7vw 4vw 4vw;
                                                 margin-right: 4vw;
                                                 flex-shrink: 0;
+                                                order: 0;
+                                                margin: 0 2vw 0 0;
 
                                                 .outbox {
 
@@ -2187,50 +791,14 @@
                                                         }
                                                     }
                                                 }
+
+                                                .winRWD {
+                                                    display: block;
+                                                }
                                             }
-                                        }
-                                    }
-                                }
-                            }
 
-                            .swiper03 {
-
-                                .swiper-wrapper {
-
-                                    .swiper-slide {
-
-                                        .gBlock {
-
-                                            .down {
-                                                padding: 4vw 2vw 2vw;
-
-                                                .infoDetail {
-                                                    width: 100%;
-                                                }
-        
-                                                .pkTeam {
-                                                    width: 58%;
-                                                    padding: 7vw 4vw 4vw;
-                                                    margin-right: 4vw;
-                                                    flex-shrink: 0;
-        
-                                                    .outbox {
-        
-                                                        .team {
-        
-                                                            svg {
-                                                                transform: scale(1.5);
-                                                                margin: 0 0 5vw;
-                                                            }
-        
-                                                            .teamName {
-                                                                font-size: 1rem;
-                                                                line-height: 1.5rem;
-                                                                margin-bottom: 4vw;
-                                                            }
-                                                        }
-                                                    }
-                                                }
+                                            .winner {
+                                                display: none;
                                             }
                                         }
                                     }
@@ -2238,247 +806,239 @@
                             }
                         }
 
-                        //會員內頁
+                        //內頁
                         .innerBox {
 
                             &.userHome {
 
                                 .topBox {
-                                    margin-top: 4vw;
 
                                     .userBox {
-                                        padding: 1vw 3vw 2vw;
-                                        border-bottom: 1px solid $mainColor_6;
-
-                                        &::before {
-                                            display: block;
-                                        }
-
-                                        .userPic {
-                                            width: 15vw;
-                                            height: 15vw;
-                                            margin: 1vw 4.5vw 1vw 0;
-                                        }
 
                                         p {
-                                            font-size: 0.95rem;
-
+                                            font-size: 1.2rem;
+                                            
                                             span {
                                                 font-size: 1rem;
-                                                margin-top: 2vw;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.betPage {
+
+                                .selectNav {
+                                    margin: 4vw 0;
+    
+                                    div:not(.selectBox) {
+                                        padding: 2vw 3vw 2.5vw;
+                                        margin-right: 2vw;
+                                    }
+    
+                                    .selectBox {
+    
+                                        select {
+                                            padding: 1.5vw 8vw 2vw 3vw;
+                                        }
+                                    }
+                                }
+    
+                                .topnav {
+                                    margin-bottom: 4vw;
+    
+                                    li {
+                                        padding: 0 5vw;
+                                    }
+                                }
+
+                                .resultBox {
+
+                                    table {
+                                        margin-bottom: 4vw;
+
+                                        tr {
+
+                                            th {
+                                                height: 10vw;
+
+                                                p {
+                                                    padding: 0 2vw;
+                                                }
+
+                                                span {
+                                                    right: 4vw;
+                                                }
+                                            }
+
+                                            td {
+                                                height: 10vw;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .betBox {
+                                    
+                                    table {
+                                        margin-bottom: 4vw;
+
+                                        tr {
+
+                                            th {
+                                                height: 10vw;
+
+                                                &:first-child {
+                                                    padding-left: 5vw;
+                                                }
+
+                                                &:last-child {
+                                                    padding-right: 5vw;
+                                                }
+
+                                                p {
+                                                    font-size: 1rem;
+
+                                                    span {
+                                                        margin-left: 3vw;
+                                                    }
+                                                }
+                                            }
+
+                                            td {
+                                                height: 10vw;
+                                                padding: 0 2vw;
+
+                                                div {
+
+                                                    &.teamBox {
+                                                        padding: 2vw 0;
+
+                                                        p {
+
+                                                            &:last-child {
+                                                                margin-top: 1.5vw;
+
+                                                                span {
+                                                                    margin: 0 2vw;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+
+                                                    .cancleBtn {
+                                                        padding: 1.5vw 3vw;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
 
-                                    ul {
-                                        display: flex
-                                    }
-                                }
+                                    .betData {
 
-                                .pageList {
-                                    display: block;
-                                }
-                            }
-
-                            //投注限額
-                            &.betLimit {
-                                display: block;
-                            }
-
-                            .topLine {
-                                @include mobile_Title;
-
-                                button {
-                                    display: block;
-                                }
-                            }
-                        }
-
-                        .gameContent {
-
-                            .down {
-
-                                 .infoDetail {
-
-                                     .more {
-                                         padding: 2vw 3vw !important;
-                                     }
-                                 }
-                            }
-                         }
-                    }
-
-                    //右樣式
-                    .right {
-                        display: none;
-                        height: 100%;
-                        top: 0;
-                        z-index: 999;
-
-                        &.active {
-                            display: block;
-                        }
-
-                        .betBlock {
-                            background: $mainColor_2;
-
-                            .topList {
-
-                                li {
-
-                                    &.active {
-
-                                        &::before {
-                                            background: $mainColor;
-                                        }
-
-                                        p {
-                                            color: $mainColor;
-                                        }
-                                    }
-                                }
-                            }
-
-                            .betTypeList {
-                                background: $mainColor_18;
-
-                                li {
-
-                                    &:hover,&:active,&.active {
-                                        
-                                        &::before {
-                                            background: $mainColor_7;
-                                        }
-
-                                        a {
+                                        .dataName {
+                                            padding: 2vw 0;
+                                            margin: 2vw 0;
 
                                             p {
-                                                color: $mainColor_7;
-                                            }
-                                        }
-                                    }
 
-                                    a {
-
-                                        p {
-                                            color: $mainColor_8;
-                                        }
-                                    }
-                                }
-                            }
-
-                            .bdTitle {
-                                padding: 5px 10px !important;
-                            }
-
-                            .betContent {
-
-                                .betData {
-                                    max-height: calc(100vh - 127px);
-                                    overflow: auto;
-
-                                    .bdOuter {
-                                        max-height: auto;
-
-                                        .top {
-
-                                            span {
-                                                background-color: $mainColor_6;
-                                                padding: 7px 10px !important;
-                                            }
-                                        }
-
-                                        .betDetail {
-
-                                            .bdTitle {
-                                                background: $mainColor_4;
-
-                                                svg {
-                                                    fill: $mainColor_9;
+                                                &:first-child {
+                                                    padding-left: 5vw;
                                                 }
-                                            }
 
-                                            .bdContent {
-
-                                                .top {
-                                                    border-color: $mainColor_6;
-            
-                                                    span {
-                                                        background: $mainColor_6;
-                                                    }
-                                                }
-            
-                                                .pkTeam {
-            
-                                                    .VS {
-                                                        color: $mainColor_3;
-                                                    }
-                                                }
-                                                
-                                                .wintext {
-                                                    color: $mainColor_6;
-                                                }
-            
-                                                .betwin {
-                                                    border-color: $mainColor_6;
-            
-                                                    p {
-                                                        color: $mainColor_6;
-                                                    }
-                                                }
-            
-                                                .betamount {
-                                                    border-color: $mainColor;
+                                                &:last-child {
+                                                    padding-right: 5vw;
                                                 }
                                             }
                                         }
-                                    }
-
-                                    .betTotal {
 
                                         li {
 
-                                            p {
-                                                color: $mainColor_6;
-                                                font-weight: bold;
-                                            }
+                                            .dataNum {
+                                                padding: 2vw 0;
 
-                                            .okBtn {
-                                                padding: 3.2vw;
+                                                span {
+                                                    left: 1vw;
+                                                    padding: 1vw;
+                                                }
+
+                                                p {
+
+                                                    &:nth-of-type(1) {
+                                                        padding-left: 5vw;
+                                                    }
+    
+                                                    &:last-child {
+                                                        padding-right: 5vw;
+                                                    }
+                                                }
                                             }
                                         }
                                     }
                                 }
                             }
 
-                            .closeRight {
-                                background: $mainColor_7;
+                            &.mailPage {
+
+                                .topnav {
+                                    margin: 4vw 0;
+
+                                    li {
+                                        width: 25%;
+                                        padding: 2vw;
+                                        margin-right: 1vw;
+
+                                        &:last-child {
+                                            margin: 0;
+                                        }
+
+                                        p {
+                                            font-size: 0.75rem;
+                                        }
+                                    }
+                                }
+
+                                .messageBox {
+                                    
+                                    li {
+                                        padding: 5vw;
+                                        margin-bottom: 4vw;
+
+                                        i {
+                                            width: 11vw;
+                                            height: 11vw;
+                                            margin-right: 5vw;
+                                        }
+
+                                        .textBox {
+
+                                            .title {
+                                                margin-bottom: 2vw;
+                                            }
+                                            
+                                            .subTitle {
+                                                margin-bottom: 2vw;
+                                            }
+                                        }
+
+                                        .unRead {
+                                            width: 5vw;
+                                            height: 5vw;
+                                            margin-left: 5vw;
+                                        }
+                                    }
+
+                                }
+                            }
+
+                            .topLine {
+
+                                button {
+                                    padding: 2vw 5vw 2vw 8vw;
+                                }
                             }
                         }
                     }
-
-                    //右下懸浮
-                    .betRecordBtn {
-                        bottom: 22vw;
-                        right: 20px;
-                    }
-                }
-            }
-            
-            footer {
-                background: $mainColor_5;
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                z-index: 120;
-        
-                .top,
-                .bottom {
-                    display: none;
-                }
-        
-                .mobileFooter {
-                    display: flex;
                 }
             }
 
@@ -2487,9 +1047,6 @@
                 .jumpWindow {
                     width: 80%;
 
-                    &.plsLogIn {
-                        width: 80%;
-                    }
 
                     &.chooseball {
                         width: 80%;

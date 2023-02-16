@@ -38,7 +38,7 @@
                         transform: translateX(-34px);
 
                         svg {
-                            fill: $mainColor_3;
+                            fill: $subColor_2;
                         }
 
                         p {
@@ -200,7 +200,7 @@
             align-items: center;
             position: relative;
             overflow: hidden;
-            padding: 20px 10px;
+            padding: 20px 0;
 
             .swiper-wrapper {
                 width: 100%;
@@ -218,7 +218,7 @@
                         cursor: pointer;
         
                         &:hover,&:active,&.active {
-                            background: $mainBG_3;
+                            background: $subBG_3;
 
                             p {
                                 color: $mainColor_1;
@@ -332,6 +332,7 @@
     .right {
         width: 300px;
         height: auto;
+        overflow: hidden;
         margin-top: 20px;
         flex-shrink: 0;
 
@@ -538,9 +539,11 @@
 
                     .betTotal {
                         width: 100%;
+                        height: auto;
 
                         li {
                             width: 100%;
+                            height: auto;
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
@@ -551,63 +554,37 @@
                             }
 
                             p {
-                                color: $mainColor_6;
+                                color: $mainColor_2;
+                                font-size: 1rem;
                                 font-weight: bold;
+                                flex-shrink: 0;
                             }
 
                             span {
-                                color: $mainColor_3;
+                                color: $mainColor_1;
+                                font-size: 1rem;
                                 @include textHide;
                             }
 
                             .changeBtn {
                                 width: 60px;
                                 height: 30px;
-                                display: flex;
-                                align-items: center;
-                                justify-content: space-between;
-                                background: $mainColor_9;
-                                border-radius: 50px;
-                                cursor: pointer;
-
-                                &.active {
-                                    background: $mainColor_10;
-
-                                    i {
-                                        display: block;
-                                    }
-                                }
-
-                                i {
-                                    display: none;
-                                    color: $mainColor_11;
-                                    font-size: 1rem;
-                                    font-weight: bold;
-                                    margin: auto;
-                                }
+                                @include rowBtn;
 
                                 span {
                                     width: 25px;
                                     height: 25px;
-                                    background: $mainColor_3;
-                                    border-radius: 50px;
                                 }
                             }
 
-                           .okBtn {
-                                background: $mainColor_7;
-                                border-radius: 50px;
-                                color: $mainColor_3;
-                                font-size: 0.875rem;
-                                font-weight: bold;
-                                font-size: 1.1rem;
-                                padding: 0.5vw 1vw;
-                                margin: auto;
-
-                                &:hover,&:active,&.active {
-                                    background: $mainColor_5;
-                                }
-                           }
+                            .okBtn {
+                                    width: auto;
+                                    height: auto;
+                                    @include btnStyle_1;
+                                    background: $subBG_3;
+                                    padding: 4px 15px 5px;
+                                    margin: 0 auto;
+                            }
                         }
                     }
                 }
@@ -616,17 +593,18 @@
             .closeRight {
                 display: none;
                 width: 100%;
-                height: 47px;
+                height: 50px;
+                background: $mainBG_1;
                 align-items: center;
                 justify-content: center;
-                background: $mainColor;
-                cursor: pointer;
-                z-index: 1;
+                position: absolute;
+                left: 0;
+                bottom: 0;
 
                 p {
-                    color: $mainColor_3;
+                    color: $mainColor_1;
                     font-size: 1rem;
-                    cursor: pointer;
+                    font-weight: bold;
                 }
             }
         }

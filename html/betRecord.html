@@ -11,137 +11,136 @@
     <script src="../js/js.js"></script>
 </head>
 <body onload="currentTime()">
-    <header class="logINN">
+    <header>
         <!-- 上 -->
-        <div class="top">
-            <a href="./login_index.html" class="logo">
-                <img src="../image/logo.png">
-            </a>
-            <ul>
-              <li>
-                  <a href="./login_index.html">
-                      <i class="sport"></i>
-                      <p>スポーツ</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="./betResult.html">
-                      <i class="casino"></i>
-                      <p>レース結果</p>
-                  </a>
-              </li>
-              <li class="active">
-                  <a href="./betRecord.html">
-                      <i class="live"></i>
-                      <p>ベット履歷</p>
-                  </a>
-              </li>
-              <li>
-                  <a href="./memberPage.html">
-                      <i class="event"></i>
-                      <p>マイページ</p>
-                  </a>
-              </li>
-            </ul>
+       <div class="top">
+           <a href="../index.html" class="logo">
+               <img src="../image/logo.png">
+           </a>
+           <ul>
+               <li>
+                   <a href="../index.html">
+                       <i class="sport"></i>
+                       <p>スポーツ</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="./betResult.html">
+                       <i class="casino"></i>
+                       <p>レース結果</p>
+                   </a>
+               </li>
+               <li class="active">
+                   <a href="./betRecord.html">
+                       <i class="live"></i>
+                       <p>ベット履歷</p>
+                   </a>
+               </li>
+               <li>
+                   <a href="./memberPage.html">
+                       <i class="event"></i>
+                       <p>マイページ</p>
+                   </a>
+               </li>
+           </ul>
            <div class="mem_Area">
-                <div class="checkBox">
-                    <p class="title">
-                        <span>さらに見る</span>
-                        <i class="arrow"></i>
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="./betRecord.html">
-                                <p>ベット履歷</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./memberPage.html">
-                                <p>マイページ</p>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="account" onclick="window.location.href='../html/memberPage.html'">
-                    <i class="fa-solid fa-user"></i>
-                    <p>qa8</p>
-                </div>
-                <div class="wallet" onclick="window.location.href='../html/betRecord.html'">
-                    <button class="walletBtn">マイベット</button>
-                    <p>$<span class="walletNum">0.00</span></p>
-                </div>
-                <button class="logoutBtn" onclick="window.location.href='../index.html'">
-                    ログアウト
-                </button>
-            </div>
-            <div class="rwd_TOPNav logInner">
-                <div class="itemBox" onclick="window.location.href='./html/register.html'">
-                    <svg viewBox="0 0 512 512"><path d="M478.179 161.787c-10.956-10.964-28.373-11.653-40.151-2.056-1.703 1.388-.384.165-26.317 26.098l67.316 67.317 24.193-23.891c11.697-11.697 11.697-30.729 0-42.427zM273.667 325.148l-39.598 84.854a15 15 0 0019.936 19.936l84.854-39.599c3.357-1.567-6.806 7.945 118.822-116.114l-67.183-67.184C265.94 331.6 275.265 321.725 273.667 325.148z"></path><path d="M364.13 408.771a44.89 44.89 0 01-12.585 8.755l-84.854 39.599c-16.686 7.787-37.071 4.822-50.848-8.958-13.331-13.33-16.932-33.765-8.96-50.851l39.599-84.856a44.884 44.884 0 018.957-12.787l127.567-127.567V45c0-24.813-20.187-45-45-45h-293c-24.813 0-45 20.187-45 45v422c0 24.813 20.187 45 45 45h293c24.813 0 45-20.187 45-45v-76.871zM80.007 97h224c8.284 0 15 6.716 15 15s-6.716 15-15 15h-224c-8.284 0-15-6.716-15-15s6.716-15 15-15zm0 80h176c8.284 0 15 6.716 15 15s-6.716 15-15 15h-176c-8.284 0-15-6.716-15-15s6.716-15 15-15zm-15 95c0-8.284 6.716-15 15-15h128c8.284 0 15 6.716 15 15s-6.716 15-15 15h-128c-8.284 0-15-6.716-15-15z"></path></svg>
-                    <p>登錄</p>
-                </div>
-                <div class="itemBox" onclick="window.location.href='./html/login.html'">
-                    <svg><g transform="translate(-251.676 -144)"><circle cx="4.717" cy="4.717" r="4.717" transform="translate(254.281 144)"></circle><path d="M260.67 155.007h-3.341a5.669 5.669 0 00-5.653 5.653v1.961h14.645v-1.961a5.668 5.668 0 00-5.651-5.653z"></path></g></svg>
-                    <p>ログイン</p>
-                </div>
-                <div class="itemBox nav">
-                    <svg viewBox="0 0 374.706 374.706" class="hamIC"><path d="M84.294 56.529h294.412v53.529H84.294zm-4 104.059h298.521l-.28 53.529H80.294zm4 118.059h294.412v53.529H84.294zM1 56.529h53.529v53.529H1zm0 111.059h53.529v53.529H1zm0 111.059h53.529v53.529H1z"></path></svg>
-                    <svg viewBox="0 0 55 55" version="1.1" class="injected-svg">
-                        <g id="Page-1" stroke="none" stroke-width="1">
-                            <g id="close">
-                                <path d="M54.3493454,0.650735181 C53.4816985,-0.216911727 52.0750083,-0.216911727 51.2073614,0.650735181 L0.650735181,51.207254 C-0.216911727,52.0749009 -0.216911727,53.4815911 0.650735181,54.349238 C1.08450492,54.7832226 1.65319661,55 2.22178087,55 C2.79036513,55 3.35894939,54.7831151 3.79282656,54.3491305 L54.3493454,3.79261172 C55.2168849,2.92507223 55.2168849,1.51838209 54.3493454,0.650735181 Z" id="Shape"></path>
-                                <path d="M54.3493308,51.207254 L3.7926182,0.650735181 C2.92507723,-0.216911727 1.51827726,-0.216911727 0.650736293,0.650735181 C-0.216912098,1.51827467 -0.216912098,2.92496481 0.650736293,3.79261172 L51.2074489,54.349238 C51.6412194,54.7831151 52.2099121,55 52.7784973,55 C53.3470825,55 53.9157752,54.7831151 54.3494383,54.3493454 C55.2168718,53.4815911 55.2168718,52.0749009 54.3493308,51.207254 Z" id="Shape"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    <p>メニュー</p>
-                </div>
-            </div>
-            <div class="langBox">
-                <p>日本語
-                    <span></span>
-                </p>
-            </div>
-        </div>
-        <!-- 下 -->
-        <div class="bottom">
-            <div class="mid">
-                <label class="searchBox">
-                    <input type="text">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </label>
-                <div class="checkBox">
-                    <p class="title">
-                        <span>デシマルオッズ</span>
-                        <i class="arrow"></i>
-                    </p>
-                    <ul>
-                        <p class="innerTitle">デシマルオッズ</p>
-                        <li>
-                            <label class="active">
-                                <input type="checkbox">
-                            </label>
-                            <p>デシマルオッズ</p>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox">
-                            </label>
-                            <p>フラクショナルオッズ</p>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="checkbox">
-                            </label>
-                            <p>アメリカンオッズ</p>
-                        </li>
-                    </ul>
-                </div>
-                <p class="time"></p>
-            </div>
-        </div>
+               <div class="checkBox">
+                   <p class="title">
+                       <span>さらに見る</span>
+                       <i class="arrow"></i>
+                   </p>
+                   <ul>
+                       <li>
+                           <a href="./betRecord.html">
+                               <p>ベット履歷</p>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="./memberPage.html">
+                               <p>マイページ</p>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+               <div class="account" onclick="window.location.href='./memberPage.html'">
+                   <i class="fa-solid fa-user"></i>
+                   <p>qa8</p>
+               </div>
+               <div class="wallet">
+                   <p class="walletTitle">マイベット</p>
+                   <p>
+                       $
+                       <span class="walletNum">0.00</span>
+                   </p>
+               </div>
+               <button class="logoutBtn" onclick="window.location.href='../index.html'">
+                   ログアウト
+               </button>
+           </div>
+           <div class="rwd_TOPNav">
+               <div class="itemBox display">
+                   <svg viewBox="0 0 374.706 374.706" class="hamIC"><path d="M84.294 56.529h294.412v53.529H84.294zm-4 104.059h298.521l-.28 53.529H80.294zm4 118.059h294.412v53.529H84.294zM1 56.529h53.529v53.529H1zm0 111.059h53.529v53.529H1zm0 111.059h53.529v53.529H1z"></path></svg>
+                   <p>メニュー</p>
+               </div>
+               <div class="itemBox">
+                   <svg viewBox="0 0 55 55" version="1.1" class="injected-svg">
+                       <g id="Page-1" stroke="none" stroke-width="1">
+                           <g id="close">
+                               <path d="M54.3493454,0.650735181 C53.4816985,-0.216911727 52.0750083,-0.216911727 51.2073614,0.650735181 L0.650735181,51.207254 C-0.216911727,52.0749009 -0.216911727,53.4815911 0.650735181,54.349238 C1.08450492,54.7832226 1.65319661,55 2.22178087,55 C2.79036513,55 3.35894939,54.7831151 3.79282656,54.3491305 L54.3493454,3.79261172 C55.2168849,2.92507223 55.2168849,1.51838209 54.3493454,0.650735181 Z" id="Shape"></path>
+                               <path d="M54.3493308,51.207254 L3.7926182,0.650735181 C2.92507723,-0.216911727 1.51827726,-0.216911727 0.650736293,0.650735181 C-0.216912098,1.51827467 -0.216912098,2.92496481 0.650736293,3.79261172 L51.2074489,54.349238 C51.6412194,54.7831151 52.2099121,55 52.7784973,55 C53.3470825,55 53.9157752,54.7831151 54.3494383,54.3493454 C55.2168718,53.4815911 55.2168718,52.0749009 54.3493308,51.207254 Z" id="Shape"></path>
+                           </g>
+                       </g>
+                   </svg>
+                   <p>閉じる</p>
+               </div>
+           </div>
+           <label class="langBox">
+                <select>
+                    <option value="">日本語</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
+       </div>
+       <!-- 下 -->
+       <div class="bottom">
+           <div class="mid">
+               <label class="searchBox">
+                   <input type="text">
+                   <i class="fa-solid fa-magnifying-glass"></i>
+               </label>
+               <div class="checkBox">
+                   <p class="title">
+                       <span>デシマルオッズ</span>
+                       <i class="arrow"></i>
+                   </p>
+                   <ul>
+                       <p class="innerTitle">デシマルオッズ</p>
+                       <li>
+                           <label class="active">
+                               <input type="checkbox">
+                           </label>
+                           <p>デシマルオッズ</p>
+                       </li>
+                       <li>
+                           <label>
+                               <input type="checkbox">
+                           </label>
+                           <p>フラクショナルオッズ</p>
+                       </li>
+                       <li>
+                           <label>
+                               <input type="checkbox">
+                           </label>
+                           <p>アメリカンオッズ</p>
+                       </li>
+                   </ul>
+               </div>
+               <p class="time"></p>
+           </div>
+       </div>
     </header>
     <main class="inMain innerPage">
-        <div class="center betPage">
+        <div class="center">
             <!-- 左主NAV -->
             <section class="left">
                 <p class="navTitle">スポーツ</p>
@@ -297,18 +296,8 @@
                     </li>
                 </ul>
             </section>
-           <!-- 左 -->
-           <section class="leftSide">
-            <div class="navoutter">
-                <ul>
-                    <li>
-                        <a href="./overView.html">
-                            <p>口座残高</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="navTitle">マイベット</p>
+            <!-- 左 -->
+            <section class="leftSide">
                 <ul>
                     <li>
                         <a href="./betResult.html">
@@ -316,24 +305,9 @@
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </li>
-                    <li>
-                        <a href="./betLimit.html">
-                            <p>ベット リミット</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
                     <li class="active">
                         <a href="./betRecord.html">
                             <p>ベット履歷</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="navTitle">顧客サービス</p>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <p>お問い合わせ</p>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </li>
@@ -344,35 +318,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./service.html">
-                            <p>顧客サービス</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./feeback.html">
-                            <p>フィードバック</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="navTitle">マイアカウント</p>
-                <ul>
-                    <li>
-                        <a href="./memberPage.html">
-                            <p>マイページ</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
                         <a href="#">
                             <p>関連規則</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./settingACPW.html">
-                            <p>セキュリティとパスワ...</p>
                             <i class="fa-solid fa-chevron-right"></i>
                         </a>
                     </li>
@@ -383,19 +330,10 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a href="../index.html">
-                            <p>ログアウト</p>
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
             </section>
             <!-- 中 -->
             <section class="mainArea">
-                <div class="innerBox">
+                <div class="innerBox betPage">
                     <div class="topLine">
                         <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
                         <p class="pageName">ベット履歷</p>
@@ -410,7 +348,7 @@
                         </label>
                     </div>
                     <!-- 即時投注 -->
-                    <div class="betBox current_bet">
+                    <div class="betBox current_bet display">
                         <table class="active">
                             <tr>
                                 <th>
@@ -576,7 +514,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="betBox history_bet display">
+                    <div class="betBox history_bet">
                         <ul class="topnav">
                             <li class="active"><p>今日</p></li>
                             <li><p>昨日</p></li>
@@ -860,17 +798,17 @@
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="innerBox myResult">
-                    <div class="betAmount">
-                        <p>賭け
-                            <span>1000</span>
-                        </p>
-                    </div>
-                    <div class="result">
-                        <p>結果
-                            <span>0</span>
-                        </p>
+                    <div class="myResult">
+                        <div class="betAmount">
+                            <p>賭け
+                                <span>1000</span>
+                            </p>
+                        </div>
+                        <div class="result">
+                            <p>結果
+                                <span>0</span>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>

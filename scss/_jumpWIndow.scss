@@ -24,36 +24,6 @@
         border-radius: 10px 10px 0 0;
         overflow: hidden;
 
-        //請先登入
-        &.plsLogIn {
-            display: none;
-            width: 30%;
-          
-            &.display {
-                display: block;
-            }
-
-            .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                p {
-                    color: $mainColor_3;
-                    text-align: center;
-                    margin: 0vh auto 5vh;
-                }
-
-                .closeWindow {
-                    @include btnStyle_1;
-                    width: 40%;
-                    height: auto;
-                    background: $mainColor_4;
-                }
-            }
-        }
-
         //撤銷投注
         &.cancelBet {
             display: none;
@@ -140,7 +110,7 @@
                             &:last-child {
 
                                 p {
-                                    color: $mainColor_3;
+                                    color: $subColor_2;
                                 }
                             }
 
@@ -255,7 +225,7 @@
             align-items: center;
             justify-content: center;
             background: $mainColor;
-            color: $mainColor_3;
+            color: $subColor_2;
             padding: 20px;
             position: relative;
 
@@ -266,7 +236,7 @@
             }
 
             i {
-                color: $mainColor_3;
+                color: $subColor_2;
                 font-size: 1.275rem;
                 position: absolute;
                 right: 20px;

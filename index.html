@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8858aac5ee.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="../js/js.js"></script>
+    <script src="./js/js.js"></script>
 </head>
 <body onload="currentTime()">
     <header>
@@ -96,11 +96,12 @@
                     <p>閉じる</p>
                 </div>
             </div>
-            <div class="langBox">
-                <p>日本語
-                    <span></span>
-                </p>
-            </div>
+            <label class="langBox">
+                <select>
+                    <option value="">日本語</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
         </div>
         <!-- 下 -->
         <div class="bottom">
@@ -716,10 +717,10 @@
                         </li>
                     </ul>
                     <div class="betContent">
-                        <div class="noData">
+                        <div class="noData display">
                             <p>まだベットを選択していません。</p>
                         </div>
-                        <div class="betData display">
+                        <div class="betData">
                             <div class="bdOuter">
                                  <!-- 投注注單 -->
                                 <div class="betDetail">
@@ -840,7 +841,6 @@
             </div>
             <div class="company">
                 <img class="logo" src="../image/logo.png">
-                <div class="line"></div>
                 <p class="coDetail">
                     MANEKIの運営とサービスはキュラソー政府に登録されている1ban Ventures B.V. (ライセンス番号 No. 8048/JAZ)が提供しており、キュラソー政府の法令に則り行っています。
                 </p>
@@ -854,25 +854,25 @@
         <!-- 手機版 -->
         <ul class="mobileFooter">
             <li class="active">
-                <a href="#">
+                <a href="./index.html">
                     <i class="home"></i>
                     <p>ホーム</p>
                 </a>
             </li>
             <li>
-                <a href="./betResult.html">
+                <a href="./html/betResult.html">
                     <i class="winlose"></i>
                     <p>レース結果</p>
                 </a>
             </li>
             <li>
-                <a href="./betRecord.html">
+                <a href="./html/betRecord.html">
                     <i class="bet"></i>
                     <p>ベット履歷</p>
                 </a>
             </li>
             <li>
-                <a href="./memberPage.html">
+                <a href="./html/memberPage.html">
                     <i class="member"></i>
                     <p>マイページ</p>
                 </a>

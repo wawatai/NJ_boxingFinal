@@ -2,17 +2,24 @@
 $BG: #000000;
 $mainBG_1: #b8151b;
 $mainBG_2: #202020;
-$mainBG_3: #cf0505;
  
 $subBG_1: #8f2d2c;
 $subBG_2: #131313;
+$subBG_3: #cf0505;
+$subBG_4: #851316;
+$subBG_5: #66E123;
+$subBG_6: #8f2d2c;
 
 //主字色
 $mainColor_1: #ffffff;
 $mainColor_2: #dd2830;
-$mainColor_3: #b8151b;
 
 $subColor_1: #848484;
+$subColor_2: #b8151b;
+$subColor_3: #27A7F0;
+$subColor_4: #66E123;
+$subColor_5: #000000;
+$subColor_6: #0F7E06;
 
 //主邊框
 $mainBorder_1: #cf0505;
@@ -22,30 +29,41 @@ $mainBorder_2: #b1b1b1;
 $header_topList_Color: #FF9B9F;
 $header_button_BG: #ffffff;
 $header_button_ActiveBG: #FF9B9F;
+@mixin lang {
+    display: none;
+    border: solid 1px #ffffff;
+    border-radius: 50px;
+    position: relative;
+    
+    select {
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1vw 8vw 1vw 3vw;
+        
+        option {
+            background: #000000;
+        }
+    }
 
-//jumpWindow
-$filter: #00000080;
-
-//主色
-$mainColor: #b8151b;
-
-
-$mainColor_4: #414141;
-$mainColor_5: #851316;
-$mainColor_6: #dd2830;
-$mainColor_7: #cf0505;
-$mainColor_8: #B1B1B1;
-$mainColor_9: #848484;
-$mainColor_10: #66E123;
-$mainColor_11: #0F7E06;
-$mainColor_12: #27A7F0;
-$mainColor_13: #FF9B9F;
-$mainColor_14: #280606;
-$mainColor_15: #8f2d2c;
-$mainColor_16: #f3c01a;
-$mainColor_17: #202020;
-$mainColor_18: #131313;
-$mainColor_19: #2d2d2d;
+    i {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 6px 4px 0 4px;
+        border-color: #ffffff transparent;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3vw;
+        transition: 0.3s all;
+        pointer-events: none;
+    }
+}
 
 //mainWrap
 @mixin gBlock {
@@ -318,35 +336,24 @@ $mainColor_19: #2d2d2d;
     }
 }
 
-
+//jumpWindow
+$filter: #00000080;
 
 //button
 @mixin btnStyle_1 {
-    background: $mainColor_6;
+    background: #dd2830;
     border-radius: 50px;
     border: none;
-    color: $mainColor_3;
+    color: #ffffff;
     font-size: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-@mixin btnStyle_2 {
-    background: $mainColor_14;
-    border-radius: 8px;
-    border: 2px solid $mainColor_7;
-    color: $mainColor_3;
-    font-size: 1rem;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2vw 3vw;
+    cursor: pointer;
 
     &:hover,&:active,&.active {
-        background: $mainColor_3;
-        color: $mainColor_2;
+        background: #b8151b;
     }
 }
 
@@ -356,42 +363,36 @@ $mainColor_19: #2d2d2d;
     border-radius: 3px;
     border: none;
     color: #000000;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: bold;
     padding-left: 10px;
 }
 @mixin inputStyle_2 {
-    background: $mainColor_14;
-    border: 1px solid $mainColor_6;
-    border-radius: 30px;
-    color: $mainColor_3;
+    background: #280606;
+    border: 1px solid #cf0505;
+    border-radius: 5px;
+    color: #ffffff;
     font-size: 1rem;
-    padding: 8px 15px;
+    font-weight: bold;
+    padding-left: 10px;
 
-    &::placeholder {
-        color: $mainColor_6;
+    &:focus {
+        background: #ffffff;
+        color: #000000;
     }
 }
 
 //select
 @mixin selectStyle_1 {
     background: none;
-    border: 2px solid $mainColor_3;
+    border: 2px solid #ffffff;
     border-radius: 30px;
-    color: $mainColor_3;
+    color: #ffffff;
     padding: 8px 30px 10px 12px;
 
-    &:optional {
-        background: $mainColor_2
+    option {
+        background: #000000;
     }
-}
-@mixin selectStyle_2 {
-    background: $mainColor_14;
-    border: 1px solid $mainColor_6;
-    border-radius: 30px;
-    color: $mainColor_6;
-    font-size: 1rem;
-    padding: 8px 30px 10px 12px;
 }
 
 //共用
@@ -407,90 +408,64 @@ $mainColor_19: #2d2d2d;
     transition: 0.3s all;
     pointer-events: none;
 }
-@mixin arrow_2 {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 4px 0px 4px 6px;
-    border-color:  transparent transparent  transparent $mainColor_6;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: 0.3s all;
-    pointer-events: none;
+@mixin textHide {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
-@mixin mobile_Title {
+@mixin rowBtn {
+    background: #848484;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid $mainColor_8;
     position: relative;
-    padding: 4vw 0;
+    cursor: pointer;
 
-    button {
-        background: transparent;
-        border: 1px solid $mainColor_6;
-        border-radius: 30px;
-        color: $mainColor_6;
+    &.active {
+        background: #66E123;
+
+        span {
+            left: 52%;
+        }
+    }
+
+    i {
+        color: #0F7E06;
         font-size: 1rem;
         font-weight: bold;
+        margin-left: 10px;
+    }
+
+    span {
+        background: #ffffff;
+        border-radius: 50%;
         position: absolute;
-        left: 0;
-        padding: 5px 20px 6px 30px;
-
-        &:before {
-            content: "";
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 4px 5px 4px 0;
-            border-color: transparent $mainColor_6 transparent transparent;
-            position: absolute;
-            top: 50%;
-            left: 15px;
-            transform: translateY(-50%);
-            margin-right: 10px;
-        }
-    }
-
-    p {
-        color: $mainColor_3;
-        font-size: 1.5rem;
-        font-weight: bold;
+        left: 8%;
+        transition: 0.3s all;
     }
 }
+@mixin bottomList {
+    display: none;
+    background: #ffffff;
+    border-radius: 3px;
+    padding: 10px;
 
-@mixin topNav {
-    display: flex;
-    border-bottom: 4px solid $mainColor;
+    &:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0px 4px 6px 4px;
+        border-color: #ffffff transparent;
+        position: absolute;
+        top: -5px;
+        right: 10px;
+    }
 
-    li {
-        height: 35px;
-        background: $mainColor_4;
-        border-radius: 5px 5px 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        &.active {
-            background: $mainColor_7;
-        }
-
-        &:last-child {
-            margin: 0;
-        }
-
-        p {
-            color: $mainColor_3;
-            font-size: 0.85rem;
-            font-weight: bold;
-            @include textHide;
-        }
+    &.display {
+        display: block;
     }
 }
-
 @mixin checkboxStyle_1 {
     position: relative;
     cursor: pointer;
@@ -527,49 +502,129 @@ $mainColor_19: #2d2d2d;
         }
     }
 }
+@mixin topNav {
+    display: flex;
+    border-bottom: 4px solid #b8151b;
 
-@mixin bigtitle_Line {
-    color: $mainColor_3;
-    font-size: 1.3rem;
+    li {
+        background: #414141;
+        border-radius: 5px 5px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0 25px;
+
+        &.active {
+            background: #cf0505;
+        }
+
+        p {
+            color: #ffffff;
+            font-size: 1rem;
+            font-weight: bold;
+            @include textHide;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//主色
+$mainColor: #b8151b;
+$mainColor_4: #414141;
+$mainColor_5: #851316;
+$mainColor_6: #dd2830;
+$mainColor_7: #cf0505;
+$mainColor_8: #B1B1B1;
+$mainColor_9: #848484;
+$mainColor_10: #66E123;
+$mainColor_11: #0F7E06;
+$mainColor_12: #27A7F0;
+$mainColor_13: #FF9B9F;
+$mainColor_14: #280606;
+$mainColor_15: #8f2d2c;
+$mainColor_16: #f3c01a;
+$mainColor_17: #202020;
+$mainColor_18: #131313;
+$mainColor_19: #2d2d2d;
+
+
+
+
+
+
+
+@mixin btnStyle_2 {
+    background: $mainColor_14;
+    border-radius: 8px;
+    border: 2px solid $mainColor_7;
+    color: $subColor_2;
+    font-size: 1rem;
     font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 1px;
-    padding: 0 0 10px;
-    position: relative;
-    
-    &::after {
-        content: "";
-        width: 100%;
-        height: 3px;
-        background: $mainColor;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2vw 3vw;
+
+    &:hover,&:active,&.active {
+        background: $subColor_2;
+        color: $mainColor_2;
     }
 }
 
-@mixin bottomList {
-    display: none;
-    background: #ffffff;
-    border-radius: 3px;
-    padding: 10px;
 
-    &:before {
-        content: "";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0px 4px 6px 4px;
-        border-color: #ffffff transparent;
-        position: absolute;
-        top: -5px;
-        right: 10px;
-    }
 
-    &.display {
-        display: block;
-    }
+
+
+@mixin selectStyle_2 {
+    background: $mainColor_14;
+    border: 1px solid $mainColor_6;
+    border-radius: 30px;
+    color: $mainColor_6;
+    font-size: 1rem;
+    padding: 8px 30px 10px 12px;
 }
+
+
+@mixin arrow_2 {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 0px 4px 6px;
+    border-color:  transparent transparent  transparent $mainColor_6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s all;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -590,8 +645,3 @@ $mainColor_19: #2d2d2d;
     }
 }
 
-@mixin textHide {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}

@@ -4,82 +4,19 @@ header .top li i {
     background-size: 500%;
 }
 
-//mainArea
-.mainArea .searchBox i {
-    background: url('../image/icon/searchIC.png') no-repeat center;
-    background-size: 100%;
-}
-
 //memberPage
-.myPage .userPic {
+.userHome .userPic {
     background: url(../image/user.png) no-repeat center;
     background-size: 100%;
 }
-
-.myPage .picEdit i {
-    background: url(../image/icon/editpic_IC.png) no-repeat center;
-    background-size: 100%;
-}
-
-.myPage .datebox i {
-    background: url(../image/icon/date.png) no-repeat center;
-    background-size: 100%;
-}
-
-.myPage .topBox ul li a .userNav_IC {
-    background: url(../image/icon/mybigNav_IC.png) no-repeat center;
-    background-size: 100%;
-}
-
-.myPage .topBox ul li a .acpw_IC {
-    background: url(../image/icon/acpw_ic.png) no-repeat center;
-    background-size: 100%;
-}
-
-.myPage .pageList i {
-    background: url(../image/icon/mysmallNav_IC.png) no-repeat center;
-    background-size: 100%;
-}
-
-//service
-.servicePage .userPic {
-    background: url('../image/user.png') no-repeat center;
-    background-size: contain;
-}
-.servicePage .service_ic {
-    background: url('../image/icon/service_ic.png') no-repeat;
-    background-size: 200%;
-}
-.servicePage .feeback_ic {
-    background: url('../image/icon/mysmallNav_IC.png') no-repeat;
-    background-size: 100%;
-}
-
-//contact
-.servicePage .contact_ic {
-    background: url('../image/icon/contact_ic.png') no-repeat;
+.userHome .topBox ul li a .userNav_IC {
+    background: url(../image/icon/mybigNav_IC.png) no-repeat;
     background-size: 500%;
-}
-//feeback
-.servicePage .addPic_ic {
-    background: url('../image/icon/feeback_addPicture_ic.png') no-repeat center;
-    background-size: contain;
 }
 
 //message
-.messagePage .message_ic {
+.mailPage .message_ic {
     background: url('../image/icon/message_ic.png') no-repeat center;
-    background-size: contain;
-}
-
-//settingAWPC
-.settingACPW .databox i {
-    background: url('../image/icon/eye_ic.png') no-repeat center;
-    background-size: contain;
-}
-
-.settingACPW .remind i {
-    background: url('../image/icon/remind_green.png') no-repeat center;
     background-size: contain;
 }
 
@@ -88,12 +25,10 @@ footer .flag.jp {
     background: url("../image/icon/flag/JP.svg") no-repeat center;
     background-size: contain;
 }
-
 footer .flag.uk {
     background: url("../image/icon/flag/UK.svg") no-repeat center;
     background-size: contain;
 }
-
 footer .mobileFooter li a i {
     background: url('../image/icon/footer_ic.png') no-repeat;
     background-size: 500%;

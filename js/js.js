@@ -115,90 +115,42 @@ $(function(){
     })
 
     //gBlock 投注
-    $(".pkTeam .team button").click(function(){
-        $(this)
-        .addClass("active")
-        .closest(".team")
-        .siblings()
-        .find("button")
+    $(".mainArea .pkTeam .team button").click(function(){
+        $(".mainArea .pkTeam .team button")
         .removeClass("active");
+
+        $(this)
+        .addClass("active");
+
+        $(".right")
+        .addClass("active");
 
         $(".center .right .betTypeList li:first-child")
         .addClass("active");
 
-        $(".center .right .betBlock .betContent .noData")
-        .removeClass("display")
-        .next()
-        .addClass("display");
+        $(".right .betContent .betData")
+        .addClass("display")
+        .siblings().removeClass("display");
     })
 
     //right
     $(".center .right .closeRight").click(function(){
-        $(this)
-        .closest(".right")
+        $(".right")
         .removeClass("active");
     })
 
-    $(".right .betBlock .betContent .betDetail .bdContent .top i").click(function(){
-        $(this)
-        .closest(".betDetail")
-        .remove();
+    $(".betDetail .bdContent .top i").click(function(){
+        $(".right .betContent>div")
+        .toggleClass("display");
 
-        if( $(".right .betBlock .betContent .betData .bdOuter").length() == 0 )
-        {
-            $(this)
-            .closest(".betData")
-            .removeClass("active")
-            .next()
-            .addClass("active");
-        }
+        $(".center .right .betTypeList li")
+        .removeClass("active");
+
+        $(".mainArea .pkTeam .team button")
+        .removeClass("active");
     })
 
     $(".right .betBlock .betContent .changeBtn").click(function(){
-        $(this)
-        .toggleClass("active");
-    })
-
-    var ww = $(window).innerWidth();
-
-    if(ww < 1024)
-    {
-        var wh = $(window).innerHeight();
-
-        $(".left")
-        .css("height",""+ (wh - 90) +"");
-
-        $(window).resize(function(){
-            var wh = $(window).innerHeight();
-
-            $(".left")
-            .css("height",""+ (wh - 90) +"");
-        })
-    }
-
-    $(window).resize(function(){
-        var ww = $(window).innerWidth();
-
-        if(ww < 1024)
-        {
-            var wh = $(window).innerHeight();
-
-            $(".left")
-            .css("height",""+ (wh - 90) +"");
-
-            $(window).resize(function(){
-                var wh = $(window).innerHeight();
-
-                $(".left")
-                .css("height",""+ (wh - 90) +"");
-            })
-        }
-    })
-})
-
-//gameDetail
-$(function(){
-    $(".center .gameDetail .info_content .infoBlock").click(function(){
         $(this)
         .toggleClass("active");
     })
@@ -223,6 +175,21 @@ $(function(){
     })
 })
 
+//myResult
+$(function(){
+    var n = $("footer").prop("scrollHeight");
+
+    $(".myResult")
+    .css("bottom",""+ n +"px");
+
+    $(window).resize(function(){
+        var n = $("footer").prop("scrollHeight");
+
+        $(".myResult")
+        .css("bottom",""+ n +"px");
+    })
+})
+
 //textHide 按了字會展開
 $(document).on("click","table p",function(){
     var length = $(this).text().length;
@@ -232,46 +199,6 @@ $(document).on("click","table p",function(){
         $(this)
         .toggleClass("active");
     }
-})
-
-//memberPage
-$(function(){
-    $(".myPage .rewrad_btn button").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-
-        if ($(this).index() == 0) {
-            $(".reward_stauts span").text('使用中');
-        }
-        else {
-            $(".reward_stauts span").text('未使用');
-        }
-    })
-
-    $(".myPage .userOther .submitBtn").click(function(){
-        $(this)
-        .closest(".userOther")
-        .toggleClass("edit")
-        .find(".submitBtn")
-        .toggleClass("display");
-    })
-})
-
-//memberSetting
-$(function(){
-    $(".userSetting .mainArea .switchBtn").click(function(){
-        $(this)
-        .toggleClass("active");
-    })
-
-    $(".userSetting .mainArea .btnBox input").click(function(){
-        $(this)
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    })
 })
 
 //footer
@@ -297,65 +224,16 @@ $(function(){
         $("footer .checkBox")
         .removeClass("display");
     })
-
-    //rwd 手機版
-    $("footer .mobileFooter li a").click(function(){
-        $(this).parent()
-        .addClass("active")
-        .siblings()
-        .removeClass("active");
-    })
 })
 
 //message
 $(function(){
-    $(".messagePage .messageBox li,.messagePage .innerBox.inner .backBtn").click(function(){
-        $(".messagePage .innerBox")
+    $(".mailPage .messageBox li,.innerBox.mailPage.inner .backBtn").click(function(){
+        $(".innerBox.mailPage")
         .toggleClass("display");
 
         $(this).find(".unread")
         .removeClass("display");
-
-        if ($(window).innerWidth() > 501)
-        {
-            $(".messagePage .innerBox.inner.display .topLine button")
-            .css("display","block")
-            .css("top","85px")
-            .css("left","unset")
-            .css("right","52px")
-            .css("transform","translateY(0)");
-        }
-
-        else {
-            $(".messagePage .innerBox.inner.display .topLine button")
-            .css({
-                "top" : "50%",
-                "left" : "0",
-                "right" : "unset",
-                "transform" : "translateY(-50%)"
-            });
-        }
-    })
-
-    $(window).resize(function(){
-        
-        if ($(window).innerWidth() > 501)
-        {
-            $(".messagePage .innerBox.inner.display .topLine button")
-            .css("top","85px")
-            .css("left","unset")
-            .css("right","52px")
-            .css("transform","translateY(0)");
-        }
-        else {
-            $(".messagePage .innerBox.inner.display .topLine button")
-            .css({
-                "top" : "50%",
-                "left" : "0",
-                "right" : "unset",
-                "transform" : "translateY(-50%)"
-            });
-        }
     })
 })
 

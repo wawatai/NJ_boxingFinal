@@ -1,19 +1,16 @@
 footer {
     width: 100%;
     height: auto;
-    background: $mainColor_17;
+    background: $mainBG_2;
 
     //上
     .top {
         width: 100%;
         height: auto;
-        display: flex;
-        flex-direction: column;
 
         .infoLine {
             width: 100%;
-            height: auto;
-            min-height: 90px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -27,7 +24,7 @@ footer {
                 align-items: center;
 
                 .langTitle {
-                    color: $mainColor_3;
+                    color: $mainColor_1;
                     font-size: 1rem;
                     margin-right: 20px;
                     white-space: nowrap;
@@ -44,8 +41,8 @@ footer {
                     height: auto;
                     @include bottomList;
                     position: absolute;
-                    top: 70px;
-                    left: -150px;
+                    top: 35px;
+                    left: -138px;
 
                     .innerTitle {
                         color: $mainColor_2;
@@ -87,17 +84,16 @@ footer {
                         }
 
                         p {
-                            color: $mainColor;
+                            color: $subColor_2;
                             font-size: 0.75rem;
                             font-weight: bold;
-                            margin-bottom: 2px;
                         }
                     }
                 }
             }
 
             .payway {
-                color: $mainColor_3;
+                color: $subColor_2;
                 font-size: 1rem;
                 font-weight: bold;
 
@@ -112,7 +108,7 @@ footer {
                 align-items: center;
 
                 p {
-                    color: $mainColor_3;
+                    color: $subColor_2;
                     font-size: 1rem;
                     margin-right: 10px;
                     white-space: nowrap;
@@ -121,7 +117,7 @@ footer {
                 select {
                     width: auto;
                     background: none;
-                    color: $mainColor_3;
+                    color: $subColor_2;
                     font-size: 1rem;
                     border: none;
                     cursor: pointer;
@@ -131,30 +127,23 @@ footer {
 
         .company {
             width: 100%;
-            height: auto;
-            min-height: 60px;
+            height: 90px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 20px;
+            margin-bottom: 20px;
             
             .logo {
                 height: 69px;
                 object-fit: contain;
-            }
-
-            .line {
-                width: 1px;
-                height: 100%;
-                background: $mainColor_4;
-                margin: 0 10px;
+                margin-right: 20px;
             }
 
             .coDetail {
                 max-width: 670px;
-                color: $mainColor_8;
+                color: $subColor_1;
                 font-size: 1rem;
-                line-height: 20px;
+                line-height: 1.5rem;
             }
         }
     }
@@ -162,15 +151,16 @@ footer {
     //下
     .bottom {
         width: 100%;
-        height: 70px;
-        background: $mainColor;
+        height: auto;
+        background: $mainBG_1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding: 20px 0;
         
         p {
-            color: $mainColor_3;
+            color: $mainColor_1;
             font-size: 0.875rem;
             font-weight: bold;
             
@@ -185,6 +175,7 @@ footer {
         display: none;
         width: 100%;
         height: auto;
+        background: $subBG_4;
 
         li {
             width: 25%;
@@ -219,9 +210,10 @@ footer {
                 }
 
                 p {
-                    color: $mainColor_13;
-                    font-size: 3vw;
-                    margin-top: 5px;
+                    color: $header_topList_Color;
+                    font-size: 0.875rem;
+                    font-weight: bold;
+                    margin-top: 1vw;
                 }
             }
 
@@ -229,14 +221,14 @@ footer {
             &.active {
 
                 a {
-                    background: $mainColor_6;
+                    background: $mainBG_1;
                     
                     i {
                         background-position-y: 100%;
                     }
 
                     p {
-                        color: $mainColor_3;
+                        color: $mainColor_1;
                     }
                 }
             }

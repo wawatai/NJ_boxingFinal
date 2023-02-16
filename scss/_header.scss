@@ -248,39 +248,10 @@ header {
 
         // 手機版語言列
         .langBox {
-            display: none;
             width: auto;
             height: auto;
+            @include lang;
             order: 0;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid $mainColor_3;
-            border-radius: 30px;
-           
-            p {
-                color: $mainColor_3;
-                font-size: 4vw;
-                margin: 7px 10px;
-                white-space: nowrap;
-                
-                span {
-                    margin-left: 25px;
-                    position: relative;
-
-                    &::before {
-                        content: "";
-                        width: 0;
-                        height: 0;
-                        border-style: solid;
-                        border-width: 6px 4px 0 4px;
-                        border-color: $mainColor_3 transparent;
-                        position: absolute;
-                        top: 50%;
-                        left: -13px;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
         }
     }
 
@@ -387,10 +358,9 @@ header {
                         }
 
                         p {
-                            color: $mainColor_3;
+                            color: $subColor_2;
                             font-size: 0.75rem;
                             font-weight: bold;
-                            margin-bottom: 2px;
                         }
                     }
                 }

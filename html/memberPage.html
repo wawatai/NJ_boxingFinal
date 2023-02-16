@@ -18,7 +18,7 @@
                <img src="../image/logo.png">
            </a>
            <ul>
-               <li class="active">
+               <li>
                    <a href="../index.html">
                        <i class="sport"></i>
                        <p>スポーツ</p>
@@ -36,7 +36,7 @@
                        <p>ベット履歷</p>
                    </a>
                </li>
-               <li>
+               <li class="active">
                    <a href="./memberPage.html">
                        <i class="event"></i>
                        <p>マイページ</p>
@@ -94,11 +94,12 @@
                    <p>閉じる</p>
                </div>
            </div>
-           <div class="langBox">
-               <p>日本語
-                   <span></span>
-               </p>
-           </div>
+           <label class="langBox">
+                <select>
+                    <option value="">日本語</option>
+                </select>
+                <i class="arrow_ic"></i>
+            </label>
        </div>
        <!-- 下 -->
        <div class="bottom">
@@ -138,8 +139,8 @@
            </div>
        </div>
    </header>
-    <main class="inMain innerPage">
-        <div class="center myPage">
+    <main class="innerPage">
+        <div class="center">
             <!-- 左主NAV -->
             <section class="left">
                 <p class="navTitle">スポーツ</p>
@@ -295,8 +296,8 @@
                     </li>
                 </ul>
             </section>
-             <!-- 左 -->
-             <section class="leftSide">
+            <!-- 左 -->
+            <section class="leftSide">
                 <ul>
                     <li>
                         <a href="./betResult.html">
@@ -335,7 +336,6 @@
                 <!-- 個人頁主頁 -->
                 <div class="innerBox userHome">
                     <div class="topLine">
-                        <button class="backBtn" onclick="window.location.href='../html/login_index.html'">戻る</button>
                         <p class="pageName">マイページ</p>
                     </div>
                     <div class="topBox">
@@ -346,82 +346,32 @@
                             </p>
                         </div>
                         <ul>
-                            <!-- <li class="betLimit">
-                                <a href="./betLimit.html">
-                                    <i class="userNav_IC"></i>
-                                    <p>ベット<br>リミット</p>
+                            <li>
+                                <a href="./message.html">
+                                    <i class="userNav_IC message"></i>
+                                    <p>メッセージセンター</p>
                                 </a>
-                            </li> -->
-                            <li class="rule">
+                            </li>
+                            <li>
                                 <a href="javascript:;">
-                                    <i class="userNav_IC"></i>
+                                    <i class="userNav_IC rule"></i>
                                     <p>関連規則</p>
                                 </a>
                             </li> 
-                            <li class="setting">
+                            <li>
                                 <a href="./memberSetting.html">
-                                    <i class="userNav_IC"></i>
+                                    <i class="userNav_IC setting"></i>
                                     <p>設定</p>
                                 </a>
                             </li>
-                            <!-- <li class="acpw">
-                                <a href="./settingACPW.html">
-                                    <i class="acpw_IC"></i>
-                                    <p>セキュリティとパスワード</p>
-                                </a>
-                            </li> -->
-                            <li class="goWeb">
+                            <li>
                                 <a href="javascript:;">
-                                    <i class="userNav_IC"></i>
+                                    <i class="userNav_IC goWeb"></i>
                                     <p>PC版</p>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <ul class="pageList">
-                        <!-- <li>
-                            <a href="./overView.html" class="overView">
-                                <i class="pageList_ic"></i>
-                                <p>口座残高</p>
-                            </a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="./contact.html" class="qa">
-                                <i class="pageList_ic"></i>
-                                <p>お問い合わせ</p>
-                            </a>
-                        </li> -->
-                        <li>
-                            <a href="./message.html" class="message_center">
-                                <i class="pageList_ic"></i>
-                                <p>メッセージセンター</p>
-                            </a>
-                        </li>
-                        <!-- <li>
-                            <a href="./service.html" class="cs_service">
-                                <i class="pageList_ic"></i>
-                                <p>顧客サービス</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./feeback.html" class="feedback">
-                                <i class="pageList_ic"></i>
-                                <p>フィードバック</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./settingACPW.html" class="acpw">
-                                <i class="pageList_ic"></i>
-                                <p>セキュリティとパスワード</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../index.html" class="logout">
-                                <i class="pageList_ic"></i>
-                                <p>ログアウト</p>
-                            </a>
-                        </li> -->
-                    </ul>
                 </div>
             </section>
         </div>
@@ -481,7 +431,7 @@
         <!-- 手機版 -->
         <ul class="mobileFooter">
             <li>
-                <a href="./login_index.html">
+                <a href="../index.html">
                     <i class="home"></i>
                     <p>ホーム</p>
                 </a>
